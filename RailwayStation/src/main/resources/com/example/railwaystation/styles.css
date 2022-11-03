@@ -9,7 +9,7 @@
 }
 
 .m{
-    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/startwindow2.png');
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/startwindow.gif');
     -fx-background-size: 100% 100%;
 
 }
