@@ -4,13 +4,12 @@ enum State{
     MOVING,
     PROCESSING, //користувача обслуговує каса
     PENDING //стоїть в черзі
-
 }
 
 public class UserGame  {
 
-    private float speed;
+    protected float speed;
 
-    private State state;
-    public int priority;
+    protected State state;
+    protected Priority priority;
 }
