@@ -2,14 +2,19 @@ package Moduls.Users;
 
 import Game.Priority;
 
-import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserPrototypeManager {
     public static List<User> basicUsers;
-   /* public UserPrototypeManager() {
-        basicUsers.add(new User(new BufferedImage(), UserType.STANDARD, Priority.LOW, 5));
-        basicUsers.add(new User(new BufferedImage(), UserType.PREGNANT, Priority.MEDIUM, 3));
-        basicUsers.add(new User(new BufferedImage(), UserType.DISABLED, Priority.HIGH, 1));
-    }*/
+    public UserPrototypeManager() throws IOException {
+        basicUsers = new ArrayList<>();
+
+        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.STANDARD, Priority.LOW, 5));
+        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.PREGNANT, Priority.MEDIUM, 3));
+        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.DISABLED, Priority.HIGH, 1));
+    }
 }

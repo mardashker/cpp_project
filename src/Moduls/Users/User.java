@@ -4,11 +4,12 @@ import Game.Priority;
 import Game.UserGame;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.Dictionary;
 
 public class User extends UserGame implements Cloneable {
 
-    private Image profileImage;
+    private BufferedImage profileImage;
     private String name;
     private String surname;
     private int age;
@@ -16,7 +17,7 @@ public class User extends UserGame implements Cloneable {
     private String phoneNumber;
     private UserType type;
 
-    public User(Image profileImage, String name, String surname, int age, String passportId, String phoneNumber, UserType type) {
+    public User(BufferedImage profileImage, String name, String surname, int age, String passportId, String phoneNumber, UserType type) {
         this.profileImage = profileImage;
         this.name = name;
         this.surname = surname;
@@ -38,7 +39,22 @@ public class User extends UserGame implements Cloneable {
         return type;
     }
 
-    private User(Image profileImage, UserType type, Priority priority, float speed){
+    @Override
+    public String toString() {
+        return "User{" +
+                " name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", passportId='" + passportId + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", type=" + type +
+                ", speed=" + speed +
+                ", state=" + state +
+                ", priority=" + priority +
+                '}';
+    }
+
+    User(BufferedImage profileImage, UserType type, Priority priority, float speed){
         this.profileImage = profileImage;
         this.type = type;
         this.priority = priority;

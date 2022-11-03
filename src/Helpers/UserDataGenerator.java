@@ -16,8 +16,8 @@ public class UserDataGenerator {
         }
         return userDataGenerator;
     }
-    private String fileFisrtName = "src/recources/first_name.txt";
-    private String fileLastName = "src/recources/last_name.txt";
+    private String fileFirstName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\first_name.txt";
+    private String fileLastName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\last_name.txt";
     private static SplittableRandom  randomizer;
 
     private static List<String> randomFisrtNameList;
@@ -25,7 +25,7 @@ public class UserDataGenerator {
 
     private UserDataGenerator() throws IOException {
         randomizer = new SplittableRandom();
-        try (Stream<String> lines = Files.lines(Paths.get(fileFisrtName))) {
+        try (Stream<String> lines = Files.lines(Paths.get(fileFirstName))) {
             randomFisrtNameList = lines.collect(Collectors.toList());
         }
         try (Stream<String> lines = Files.lines(Paths.get(fileLastName))) {

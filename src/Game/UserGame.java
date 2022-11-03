@@ -11,5 +11,10 @@ public class UserGame  {
     protected float speed;
 
     protected State state;
+
+    public Priority getPriority() {
+        return priority;
+    }
+
     protected Priority priority;
 }
