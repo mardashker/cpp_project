@@ -58,7 +58,7 @@ public class GameObject {
     public void setAngle(double angle) {
         this.angle = angle;
     }
-    private void DrawSprite(Rendering ctx){
+    public void DrawSprite(Rendering ctx){
         //TODO: implement
     }
 }

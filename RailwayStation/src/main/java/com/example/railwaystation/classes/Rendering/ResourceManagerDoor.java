@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ResourceManagerDoor {
-    private static final Map<Integer, Image> sprites = new HashMap<>();
-    public Image getSprite(Integer key){
+    private static final Map<String, Image> sprites = new HashMap<>();
+    public static Image getSprite(String key){
         return sprites.get(key);
     }
-    public void setSprite(Integer key, Image sprite){
+    public static void setSprite(String key, Image sprite){
         sprites.put(key, sprite);
     }
 }

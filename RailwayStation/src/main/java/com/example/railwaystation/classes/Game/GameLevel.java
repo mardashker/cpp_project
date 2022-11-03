@@ -17,12 +17,34 @@ enum CellState{
 
 public class GameLevel {
 
-    private List<Door> doorsList;
-    private List<CashRegister> cashRegistersList;
-    private List<QueuePoligon> poligons;
+    public List<Door> get_doorsList() {
+        return _doorsList;
+    }
+
+    public List<CashRegister> get_cashRegistersList() {
+        return _cashRegistersList;
+    }
+
+    public List<QueuePoligon> get_poligons() {
+        return _poligons;
+    }
+
+    public CellState[][] get_matrix() {
+        return _matrix;
+    }
+
+    private final List<Door> _doorsList;
+    private final List<CashRegister> _cashRegistersList;
+    private final List<QueuePoligon> _poligons;
 
     //дані можуть міститися в файлі (незалежно від формату файлу матриця не змінюється)
     //TODO: знайти клас Matrix або щось подібне
-    private Collection<Collection<CellState>> matrix;
+    private final CellState[][] _matrix;
 
+    public GameLevel(List<Door> doorsList, List<CashRegister> cashRegistersList, List<QueuePoligon> poligons, CellState[][] matrix) {
+        this._doorsList = doorsList;
+        this._cashRegistersList = cashRegistersList;
+        this._poligons = poligons;
+        this._matrix = matrix;
+    }
 }

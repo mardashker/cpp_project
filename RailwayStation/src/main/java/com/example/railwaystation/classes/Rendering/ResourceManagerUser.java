@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ResourceManagerUser {
-    static Map<String, Image> sprites = new HashMap<>();
-    public Image getSprite(String key){
+    private static Map<String, Image> sprites = new HashMap<>();
+    public static Image getSprite(String key){
         return sprites.get(key);
     }
-    public void setSprite(String key, Image sprite){
+    public static void setSprite(String key, Image sprite){
         sprites.put(key, sprite);
     }
 }
