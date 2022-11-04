@@ -24,7 +24,7 @@ import java.util.List;
 //клас для читання інфи для Level з файлу
 public class LevelReader {
     @Nullable
-    static GameLevel loadLevel(String fileName)  {
+    public static GameLevel loadLevel(String fileName)  {
         BufferedReader bw = null;
         try {
             bw = new BufferedReader(new FileReader(fileName));

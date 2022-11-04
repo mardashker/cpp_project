@@ -19,21 +19,21 @@
       "west" : "sprites/cash_register_west.png"
   },
   "queue_cells": {
-      "0000": "sprites/queue_tiles/0.png",
-      "0001": "sprites/queue_tiles/1.png",
-      "0010": "sprites/queue_tiles/2.png",
-      "0011": "sprites/queue_tiles/3.png",
-      "0100": "sprites/queue_tiles/4.png",
-      "0101": "sprites/queue_tiles/5.png",
-      "0110": "sprites/queue_tiles/6.png",
-      "0111": "sprites/queue_tiles/7.png",
-      "1000": "sprites/queue_tiles/8.png",
-      "1001": "sprites/queue_tiles/9.png",
-      "1010": "sprites/queue_tiles/10.png",
-      "1011": "sprites/queue_tiles/11.png",
-      "1100": "sprites/queue_tiles/12.png",
-      "1101": "sprites/queue_tiles/13.png",
-      "1110": "sprites/queue_tiles/14.png",
-      "1111": "sprites/queue_tiles/15.png"
+      "0000": "sprites/queue_tiles/0000.jpeg",
+      "0001": "sprites/queue_tiles/0001.jpeg",
+      "0010": "sprites/queue_tiles/0010.jpeg",
+      "0011": "sprites/queue_tiles/0011.jpeg",
+      "0100": "sprites/queue_tiles/0100.jpeg",
+      "0101": "sprites/queue_tiles/0101.jpeg",
+      "0110": "sprites/queue_tiles/0110.jpeg",
+      "0111": "sprites/queue_tiles/0111.jpeg",
+      "1000": "sprites/queue_tiles/1000.jpeg",
+      "1001": "sprites/queue_tiles/1001.jpeg",
+      "1010": "sprites/queue_tiles/1010.jpeg",
+      "1011": "sprites/queue_tiles/1011.jpeg",
+      "1100": "sprites/queue_tiles/1100.jpeg",
+      "1101": "sprites/queue_tiles/1101.jpeg",
+      "1110": "sprites/queue_tiles/1110.jpeg",
+      "1111": "sprites/queue_tiles/1111.jpeg"
   }
 }

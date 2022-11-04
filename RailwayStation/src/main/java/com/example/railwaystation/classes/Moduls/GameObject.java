@@ -59,6 +59,6 @@ public class GameObject {
         this.angle = angle;
     }
     public void DrawSprite(Rendering ctx){
-        //TODO: implement
+        ctx.DrawSprite(position,width,height,angle,sprite);
     }
 }

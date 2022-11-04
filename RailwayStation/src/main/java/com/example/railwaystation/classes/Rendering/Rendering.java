@@ -5,5 +5,5 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import javafx.scene.image.Image;
 
 public interface Rendering {
-    public void DrawSprite(Coordinates pos, float width, float height, float angle, Image sprite);
+    public void DrawSprite(Coordinates pos, double width, double height, double angle, Image sprite);
 }

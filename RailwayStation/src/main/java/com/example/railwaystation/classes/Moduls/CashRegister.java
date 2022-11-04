@@ -28,12 +28,12 @@ public class CashRegister extends GameObject {
 
     public void closeCashRegister(){
         //TODO: закрити касу
-        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
+//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
     }
 
     public void openCashRegister(){
         //TODO: відкрити касу
-        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
+//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
 
     }
 
