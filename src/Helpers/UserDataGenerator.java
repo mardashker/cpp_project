@@ -3,7 +3,6 @@ package Helpers;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.SplittableRandom;
 import java.util.stream.Collectors;
@@ -18,12 +17,12 @@ public class UserDataGenerator {
         return userDataGenerator;
     }
 
-    File tmp = new File("src/resources/first_name.txt");
+    File fileFirstName = new File("src/resources/first_name.txt");
 
-    File tmp2 = new File("src/resources/first_name.txt");
+    File fileLastName = new File("src/resources/last_name.txt");
 
-    private String fileFirstName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\first_name.txt";
-    private String fileLastName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\last_name.txt";
+    //private String fileFirstName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\first_name.txt";
+    //private String fileLastName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\last_name.txt";
     private static SplittableRandom  randomizer;
 
     private static List<String> randomFisrtNameList;
@@ -31,10 +30,10 @@ public class UserDataGenerator {
 
     private UserDataGenerator() throws IOException {
         randomizer = new SplittableRandom();
-        try (Stream<String> lines = Files.lines(tmp.toPath())){
+        try (Stream<String> lines = Files.lines(fileFirstName.toPath())){
             randomFisrtNameList = lines.collect(Collectors.toList());
         }
-        try (Stream<String> lines = Files.lines(tmp2.toPath())) {
+        try (Stream<String> lines = Files.lines(fileLastName.toPath())) {
             randomLastNameList = lines.collect(Collectors.toList());
         }
     }
