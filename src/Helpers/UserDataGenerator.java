@@ -1,5 +1,6 @@
 package Helpers;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,6 +17,11 @@ public class UserDataGenerator {
         }
         return userDataGenerator;
     }
+
+    File tmp = new File("src/resources/first_name.txt");
+
+    File tmp2 = new File("src/resources/first_name.txt");
+
     private String fileFirstName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\first_name.txt";
     private String fileLastName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\last_name.txt";
     private static SplittableRandom  randomizer;
@@ -25,10 +31,10 @@ public class UserDataGenerator {
 
     private UserDataGenerator() throws IOException {
         randomizer = new SplittableRandom();
-        try (Stream<String> lines = Files.lines(Paths.get(fileFirstName))) {
+        try (Stream<String> lines = Files.lines(tmp.toPath())){
             randomFisrtNameList = lines.collect(Collectors.toList());
         }
-        try (Stream<String> lines = Files.lines(Paths.get(fileLastName))) {
+        try (Stream<String> lines = Files.lines(tmp2.toPath())) {
             randomLastNameList = lines.collect(Collectors.toList());
         }
     }

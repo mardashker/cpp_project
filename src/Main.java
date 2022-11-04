@@ -12,8 +12,9 @@ import java.net.URI;
 public class Main {
     public static void main(String[] args) throws IOException {
         //  ТЕСТ ГЕНЕРАТОРІВ
-        /*
+
         System.out.println("Hello world!");
+
         var manager = new UserPrototypeManager();
         var wise = new WiseGenerator(new Door(new Coordinates(2,2,45)));
         var standard = new ConstUserGenerator(new Door(new Coordinates(2,2,45)));
@@ -32,6 +33,6 @@ public class Main {
 
         for(int i = 0; i < 20; i++){
             System.out.println(typeG.generateUser());
-        }*/
+        }
     }
 }

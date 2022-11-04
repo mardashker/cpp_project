@@ -13,8 +13,8 @@ public class UserPrototypeManager {
     public UserPrototypeManager() throws IOException {
         basicUsers = new ArrayList<>();
 
-        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.STANDARD, Priority.LOW, 5));
-        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.PREGNANT, Priority.MEDIUM, 3));
-        basicUsers.add(new User(ImageIO.read(new File("C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\tree.jpg")), UserType.DISABLED, Priority.HIGH, 1));
+        basicUsers.add(new User(ImageIO.read(new File("src/resources/tree.jpg")), UserType.STANDARD, Priority.LOW, 5));
+        basicUsers.add(new User(ImageIO.read(new File("src/resources/tree.jpg")), UserType.PREGNANT, Priority.MEDIUM, 3));
+        basicUsers.add(new User(ImageIO.read(new File("src/resources/tree.jpg")), UserType.DISABLED, Priority.HIGH, 1));
     }
 }
