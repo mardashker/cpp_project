@@ -13,4 +13,14 @@ public class Ticket {
         this.price = price;
         this. arrivalPlace = arrivalPlace;
     }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "type=" + type +
+                ", departureDate=" + departureDate +
+                ", price=" + price +
+                ", arrivalPlace='" + arrivalPlace + '\'' +
+                '}';
+    }
 }

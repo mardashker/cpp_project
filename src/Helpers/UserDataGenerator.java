@@ -5,7 +5,9 @@ import Moduls.TicketType;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -23,25 +25,26 @@ public class UserDataGenerator {
         }
         return userDataGenerator;
     }
-    private String fileFirstName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\first_name.txt";
-    private String fileLastName = "C:\\Users\\User\\IdeaProjects\\Project\\cpp_project\\src\\resources\\last_name.txt";
-    private String fileCities = "";
+
     private static SplittableRandom  randomizer;
 
     private static List<String> randomFisrtNameList;
-    private List<String> randomCity;
+    private List<String> randomCityList;
     private static List<String> randomLastNameList;
 
     private UserDataGenerator() throws IOException {
         randomizer = new SplittableRandom();
-        try (Stream<String> lines = Files.lines(Paths.get(fileFirstName))) {
+        File fileFirstName = new File("cpp_project/src/resources/first_name.txt");
+        File fileLastName = new File("cpp_project/src/resources/last_name.txt");
+        File fileCities = new File("cpp_project/src/resources/city.txt");
+        try (Stream<String> lines = Files.lines(fileFirstName.toPath())){
             randomFisrtNameList = lines.collect(Collectors.toList());
         }
-        try (Stream<String> lines = Files.lines(Paths.get(fileLastName))) {
+        try (Stream<String> lines = Files.lines(fileLastName.toPath())) {
             randomLastNameList = lines.collect(Collectors.toList());
         }
-        try (Stream<String> lines = Files.lines(Paths.get(fileCities))) {
-            randomCity = lines.collect(Collectors.toList());
+        try (Stream<String> lines = Files.lines(fileCities.toPath())) {
+            randomCityList = lines.collect(Collectors.toList());
         }
     }
     public  String generatePhoneNumber(){
@@ -63,7 +66,7 @@ public class UserDataGenerator {
     public List<Ticket> generateTickets(){
         var tickets = new ArrayList<Ticket>();
         for(int i = randomizer.nextInt(1,5); i > 0; i--){
-            tickets.add(new Ticket(TicketType.values()[randomizer.nextInt(TicketType.values().length)],randomizer.nextInt(100,1000),randomCity.get(randomizer.nextInt(randomCity.size())),randomDate(LocalDate.now(),12)));
+            tickets.add(new Ticket(TicketType.values()[randomizer.nextInt(TicketType.values().length)],randomizer.nextInt(100,1000),randomCityList.get(randomizer.nextInt(randomCityList.size())),randomDate(LocalDate.now(),12)));
         }
         return tickets;
     }
