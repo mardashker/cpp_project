@@ -1,5 +1,6 @@
 package Game;
 
+import Helpers.Coordinates;
 import Moduls.Users.Priority;
 
 enum State{
@@ -19,4 +20,5 @@ public class UserGame  {
     }
 
     protected Priority priority;
+    protected Coordinates coordinates;
 }

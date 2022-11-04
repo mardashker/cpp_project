@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserPrototypeManager {
+    //TODO зробити доступ до ліста через гетер аналог ResourceManagerUser (HashMap)
     public static List<User> basicUsers;
     public UserPrototypeManager() throws IOException {
         basicUsers = new ArrayList<>();

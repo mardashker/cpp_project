@@ -42,7 +42,7 @@ public class UserTypeGenerator implements Generator {
             Game.usersCount++;
             var user = UserPrototypeManager.basicUsers.get(userType.ordinal()).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets());
+                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getCoordinates());
             return user;
             //return new User(Game.imageForUserType.get(userType), "Stephan", "Mariik", 18, "FD1223", "+380987197943", userType,door.coordinates);
         }

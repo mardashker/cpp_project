@@ -1,6 +1,7 @@
 package Moduls.Users;
 
 import Game.UserGame;
+import Helpers.Coordinates;
 import Moduls.Ticket;
 
 import java.awt.image.BufferedImage;
@@ -29,13 +30,14 @@ public class User extends UserGame implements Cloneable {
         this.tickets = tickets;
     }
 
-    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets){
+    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates){
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.passportId = passportId;
         this.phoneNumber = phoneNumber;
         this.tickets = tickets;
+        this.coordinates = coordinates;
     }
 
     public UserType getType() {
@@ -55,6 +57,7 @@ public class User extends UserGame implements Cloneable {
                 ", state=" + state +
                 ", priority=" + priority +
                 "tickets=" + tickets +
+                "coordinates=" + coordinates+
                 '}';
     }
 

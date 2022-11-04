@@ -33,10 +33,11 @@ public class ConstUserGenerator implements Generator{
     public User generateUser() {
         if (this.door.getIsOpen()){
             Game.usersCount++;
+            // Додати координати дверей
             var typeIndex = randomizer.nextInt(UserType.values().length);
             var user = UserPrototypeManager.basicUsers.get(typeIndex).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets());
+                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getCoordinates());
             return user;
         } return null;
     }

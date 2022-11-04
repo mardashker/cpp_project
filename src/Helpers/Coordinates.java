@@ -13,6 +13,14 @@ public class Coordinates {
         this.y = y;
         this.angle = angle;
     }
+
+    @Override
+    public String toString() {
+        return "Coordinates{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
     //зробити гетери сетери
 
 }

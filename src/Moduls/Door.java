@@ -20,4 +20,8 @@ public class Door {
     public void openDoor(){
         this.isOpen = true;
     }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
 }

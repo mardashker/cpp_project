@@ -32,7 +32,7 @@ public class WiseGenerator implements Generator {
                 Game.usersCount++;
                 var user = UserPrototypeManager.basicUsers.get(typeIndex).userClone();
                 user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets());
+                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets(), door.getCoordinates());
                 return user;
                 //return new User(Game.imageForUserType.get(type),"Zakhar","Boiko",14,"730423","0631166494",type, door.coordinates);
             }
