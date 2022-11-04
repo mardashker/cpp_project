@@ -1,4 +1,4 @@
-package Game;
+package Moduls.Users;
 
 public enum Priority {
     LOW,

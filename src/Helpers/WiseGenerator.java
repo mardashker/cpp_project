@@ -25,13 +25,14 @@ public class WiseGenerator implements Generator {
 
     @Override
     public User generateUser() {
+        checkProbability();
         if(this.door.getIsOpen()){
             if(randomizer.nextInt(1, 101) <= probability){
                 var typeIndex = randomizer.nextInt(UserType.values().length);
                 Game.usersCount++;
                 var user = UserPrototypeManager.basicUsers.get(typeIndex).userClone();
                 user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber());
+                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets());
                 return user;
                 //return new User(Game.imageForUserType.get(type),"Zakhar","Boiko",14,"730423","0631166494",type, door.coordinates);
             }

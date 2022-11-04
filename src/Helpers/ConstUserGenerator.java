@@ -36,7 +36,7 @@ public class ConstUserGenerator implements Generator{
             var typeIndex = randomizer.nextInt(UserType.values().length);
             var user = UserPrototypeManager.basicUsers.get(typeIndex).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber());
+                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets());
             return user;
         } return null;
     }

@@ -1,5 +1,7 @@
 package Game;
 
+import Moduls.Users.Priority;
+
 enum State{
     MOVING,
     PROCESSING, //користувача обслуговує каса

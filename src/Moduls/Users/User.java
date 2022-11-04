@@ -1,14 +1,15 @@
 package Moduls.Users;
 
-import Game.Priority;
 import Game.UserGame;
+import Moduls.Ticket;
 
-import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.Dictionary;
+import java.util.ArrayList;
+import java.util.List;
 
 public class User extends UserGame implements Cloneable {
 
+    List<Ticket> tickets;
     private BufferedImage profileImage;
     private String name;
     private String surname;
@@ -17,7 +18,7 @@ public class User extends UserGame implements Cloneable {
     private String phoneNumber;
     private UserType type;
 
-    public User(BufferedImage profileImage, String name, String surname, int age, String passportId, String phoneNumber, UserType type) {
+    public User(BufferedImage profileImage, String name, String surname, int age, String passportId, String phoneNumber, UserType type, List<Ticket> tickets) {
         this.profileImage = profileImage;
         this.name = name;
         this.surname = surname;
@@ -25,14 +26,16 @@ public class User extends UserGame implements Cloneable {
         this.passportId = passportId;
         this.phoneNumber = phoneNumber;
         this.type = type;
+        this.tickets = tickets;
     }
 
-    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber){
+    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets){
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.passportId = passportId;
         this.phoneNumber = phoneNumber;
+        this.tickets = tickets;
     }
 
     public UserType getType() {
@@ -51,10 +54,12 @@ public class User extends UserGame implements Cloneable {
                 ", speed=" + speed +
                 ", state=" + state +
                 ", priority=" + priority +
+                "tickets=" + tickets +
                 '}';
     }
 
     User(BufferedImage profileImage, UserType type, Priority priority, float speed){
+        this.tickets = new ArrayList<Ticket>();
         this.profileImage = profileImage;
         this.type = type;
         this.priority = priority;

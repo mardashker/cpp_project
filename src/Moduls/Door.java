@@ -14,4 +14,10 @@ public class Door {
         this.coordinates = coordinates;
         this.isOpen = true;
     }
+    public void closeDoor(){
+        this.isOpen = false;
+    }
+    public void openDoor(){
+        this.isOpen = true;
+    }
 }
