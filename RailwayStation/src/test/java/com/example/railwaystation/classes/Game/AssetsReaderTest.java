@@ -1,4 +1,4 @@
-package java.com.example.railwaystation.classes.Game;
+package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.classes.Game.AssetsReader;
 import org.junit.jupiter.api.Test;

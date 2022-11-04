@@ -1,6 +1,7 @@
 package com.example.railwaystation.classes.Rendering;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Logic.Game;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
 
@@ -13,6 +14,6 @@ public class CanvasRendering implements Rendering {
 
     @Override
     public void DrawSprite(Coordinates pos, double width, double height, double angle, Image sprite) {
-        canvas.getGraphicsContext2D().drawImage(sprite, pos.getX()*50, pos.getY()*50);
+        canvas.getGraphicsContext2D().drawImage(sprite, pos.getX()* Game.cell_width, pos.getY()*Game.cell_height, Game.cell_width, Game.cell_height);
     }
 }

@@ -1,35 +1,50 @@
 {
-  "width": 6,
-  "height": 6,
+  "width": 10,
+  "height": 10,
   "doors": [
     {
-      "x": 1,
-      "y": 0,
+      "x": 3,
+      "y": 9,
+      "side": "south"
+    },
+    {
+      "x": 7,
+      "y": 9,
       "side": "south"
     }
   ],
   "cash_registers": [
     {
       "x": 5,
-      "y": 2,
+      "y": 0,
       "side": "north"
     }
   ],
   "queues": [
     [
       {
-        "x": 3,
-        "y": 5,
+        "x": 5,
+        "y": 1,
         "sidemask": "0101"
       },
       {
-        "x": 3,
-        "y": 4,
+        "x": 5,
+        "y": 2,
         "sidemask": "0101"
       },
       {
-        "x": 3,
+        "x": 5,
         "y": 3,
+        "sidemask": "0011"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "sidemask": "1100"
+      },
+      {
+        "x": 6,
+        "y": 4,
         "sidemask": "0101"
       }
     ]

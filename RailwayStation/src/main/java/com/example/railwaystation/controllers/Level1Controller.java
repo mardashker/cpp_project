@@ -16,6 +16,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
 
 import java.net.URL;
+import java.util.Collection;
 import java.util.ResourceBundle;
 
 public class Level1Controller implements Initializable {
@@ -30,11 +31,15 @@ public class Level1Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         AssetsReader.loadAssets();
-        LevelReader level=new LevelReader();
-        GameLevel gl= level.loadLevel("/Users/oksanaspodarik/Documents/RailwayStation/cpp_project/RailwayStation/src/main/resources/com/example/railwaystation/assets/levels/sample.json");
+        URL assetFolder = Level1Controller.class.getClassLoader().getResource("com/example/railwaystation/assets");
+        Collection<GameLevel> gameLevels = LevelReader.loadLevels();
+        if(gameLevels.isEmpty())
+            return;
+        GameLevel gl = gameLevels.stream().toList().get(0);
         CanvasRendering ctx=new CanvasRendering(canvasL1);
         gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));
-
+        gl.get_cashRegistersList().forEach(c -> c.DrawSprite(ctx));
+        gl.get_poligons().forEach(q -> q.DrawSprite(ctx));
     }
 
 }

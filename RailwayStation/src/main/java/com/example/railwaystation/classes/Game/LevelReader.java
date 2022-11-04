@@ -5,6 +5,7 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.GameObject;
+import com.example.railwaystation.classes.Rendering.ResourceManagerCashRegister;
 import com.example.railwaystation.classes.Rendering.ResourceManagerDoor;
 import com.example.railwaystation.classes.Rendering.ResourceManagerGameObjects;
 import com.example.railwaystation.classes.Rendering.ResourceManagerQueueCell;
@@ -16,13 +17,28 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 //клас для читання інфи для Level з файлу
 public class LevelReader {
+    public static Collection<GameLevel> loadLevels(){
+        URL levelFolder = LevelReader.class.getClassLoader().getResource("com/example/railwaystation/assets/levels");
+        File dir = new File(levelFolder.getPath());
+        List<GameLevel> levels = new ArrayList<>();
+        for (File file: dir.listFiles()){
+            if(file.isFile() && file.getPath().endsWith(".json")){
+                GameLevel lvl = loadLevel(file.getPath());
+                if(lvl != null) levels.add(lvl);
+            }
+        }
+        return levels;
+    }
     @Nullable
     public static GameLevel loadLevel(String fileName)  {
         BufferedReader bw = null;
@@ -124,7 +140,7 @@ public class LevelReader {
             cashRegister.setPosition(new Coordinates(x, y));
 
             // TODO: add fallback image(in case image is not present)
-            Image sp = ResourceManagerGameObjects.getSprite((String) o.get("side"));
+            Image sp = ResourceManagerCashRegister.getSprite((String) o.get("side"));
             cashRegister.setSprite(sp);
 
             return cashRegister;
@@ -146,7 +162,7 @@ public class LevelReader {
 
                 cell.setHeight(Game.cell_height);
                 cell.setWidth(Game.cell_width);
-                cell.setPosition(new Coordinates());
+                cell.setPosition(new Coordinates(x,y));
                 cell.setSprite(ResourceManagerQueueCell.getSprite((String)cellJSON.get("sidemask")));
                 qcells.add(cell);
             }
