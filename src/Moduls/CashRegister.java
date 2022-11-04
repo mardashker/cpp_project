@@ -10,9 +10,7 @@ enum State{
 public class CashRegister {
 
     private OurQueue ourQueue;
-
     private State state;
-
     private boolean isOpen;
 
     public void processUser(){
@@ -24,7 +22,7 @@ public class CashRegister {
     }
 
     public void closeCashRegister(){
-        //TODO: закрити касу
+        this.isOpen = false;
     }
 
     public void openCashRegister(){
