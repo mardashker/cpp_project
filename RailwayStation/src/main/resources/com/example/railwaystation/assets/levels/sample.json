@@ -1,6 +1,6 @@
 {
-  "width": "6",
-  "height": "6",
+  "width": 6,
+  "height": 6,
   "doors": [
     {
       "x": 1,
@@ -10,7 +10,7 @@
   ],
   "cash_registers": [
     {
-      "x": 6,
+      "x": 5,
       "y": 2,
       "side": "north"
     }
@@ -32,5 +32,6 @@
         "y": 3,
         "sidemask": "0101"
       }
-    ],
-    }
+    ]
+  ]
+}

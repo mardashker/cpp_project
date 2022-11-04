@@ -68,7 +68,7 @@ public class LevelReader {
                 queuePoligons.add(qPoligon);
             }
 
-            JSONArray cashRegistersJSON = (JSONArray) jsonObjectdecode.get("cash_register");
+            JSONArray cashRegistersJSON = (JSONArray) jsonObjectdecode.get("cash_registers");
             List<CashRegister> cashRegisters = new ArrayList<>();
             for (Object o: cashRegistersJSON){
                 CashRegister cashRegister = cashRegisterFromJSON((JSONObject) o);
@@ -94,8 +94,8 @@ public class LevelReader {
             newDoor.setWidth(Game.cell_width);
             newDoor.setHeight(Game.cell_height);
 
-            double x = (double) ((JSONObject) o).get("x");
-            double y = (double) ((JSONObject) o).get("y");
+            double x = (long) ((JSONObject) o).get("x");
+            double y = (long) ((JSONObject) o).get("y");
 
             newDoor.setPosition(new Coordinates(x, y));
 
@@ -118,8 +118,8 @@ public class LevelReader {
             cashRegister.setWidth(Game.cell_width);
             cashRegister.setHeight(Game.cell_height);
 
-            double x = (double) ((JSONObject) o).get("x");
-            double y = (double) ((JSONObject) o).get("y");
+            double x = (long) ((JSONObject) o).get("x");
+            double y = (long) ((JSONObject) o).get("y");
 
             cashRegister.setPosition(new Coordinates(x, y));
 
@@ -141,8 +141,8 @@ public class LevelReader {
                 JSONObject cellJSON = (JSONObject) o1;
                 GameObject cell = new GameObject();
 
-                double x = (Double) cellJSON.get("x");
-                double y = (Double) cellJSON.get("y");
+                double x = (long) cellJSON.get("x");
+                double y = (long) cellJSON.get("y");
 
                 cell.setHeight(Game.cell_height);
                 cell.setWidth(Game.cell_width);
