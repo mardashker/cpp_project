@@ -4,6 +4,7 @@ import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
@@ -16,6 +17,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.ResourceBundle;
 
@@ -35,9 +37,13 @@ public class Level1Controller implements Initializable {
         Collection<GameLevel> gameLevels = LevelReader.loadLevels();
         if(gameLevels.isEmpty())
             return;
-        GameLevel gl = gameLevels.stream().toList().get(0);
+        GameLevel gl = gameLevels.stream().toList().get(2);
         CanvasRendering ctx=new CanvasRendering(canvasL1);
+
+        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
+                Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
         gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));
+        gl.get_cashRegistersList().get(0).closeCashRegister();
         gl.get_cashRegistersList().forEach(c -> c.DrawSprite(ctx));
         gl.get_poligons().forEach(q -> q.DrawSprite(ctx));
     }

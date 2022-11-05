@@ -16,7 +16,8 @@
       "north" : "sprites/cash_register_north.png",
       "east" : "sprites/cash_register_east.png",
       "south" : "sprites/cash_register_south.png",
-      "west" : "sprites/cash_register_west.png"
+      "west" : "sprites/cash_register_west.png",
+      "closed" : "sprites/nocash.png"
   },
   "queue_cells": {
       "0000": "sprites/queue_tiles/0000.jpeg",

@@ -56,6 +56,7 @@ public class AssetsReader {
             ResourceManagerCashRegister.setSprite("east", new Image(base + "/" + (String) cashRegistersJSON.get("east")));
             ResourceManagerCashRegister.setSprite("south", new Image(base + "/" + (String) cashRegistersJSON.get("south")));
             ResourceManagerCashRegister.setSprite("west", new Image(base + "/" + (String) cashRegistersJSON.get("west")));
+            ResourceManagerCashRegister.setSprite("closed", new Image(base + "/" + (String) cashRegistersJSON.get("closed")));
 
             JSONObject queueCellsJSON = (JSONObject) assetObjJSON.get("queue_cells");
             ResourceManagerQueueCell.setSprite("0000", new Image(base + "/" + (String) queueCellsJSON.get("0000")));

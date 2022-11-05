@@ -1,6 +1,7 @@
 package com.example.railwaystation.classes.Moduls;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Rendering.ResourceManagerCashRegister;
 import javafx.scene.image.Image;
 
 //стан каси
@@ -27,13 +28,12 @@ public class CashRegister extends GameObject {
     }
 
     public void closeCashRegister(){
-        //TODO: закрити касу
-//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
+        this.setSprite(ResourceManagerCashRegister.getSprite("closed"));
     }
 
     public void openCashRegister(){
-        //TODO: відкрити касу
-//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
+        // TODO: change CashRegister to also store direction it is looking to **north** is just as stub
+        this.setSprite(ResourceManagerCashRegister.getSprite("north"));
 
     }
 
