@@ -52,7 +52,7 @@ public class DrawingManager {
     /**
      * Clears canvas. Usually before drawing a new frame.
      */
-    void void clearCanvas(){
+    public void clearCanvas(){
         _context.ClearCanvas();
     }
 }

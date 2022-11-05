@@ -26,8 +26,19 @@ public class GameLoop {
     }
 
     private void drawFrame(){
-        // 1. GENERATING NEW USERS AND ADD THEM TO THE COLLECTION OF MOVING USERS, CHECK
-        //    IF THE STATION IS OVERCROWDED AND CLOSE DOORS IF IT IS
+        /*
+        *  1. GENERATING NEW USERS AND ADD THEM TO THE COLLECTION OF MOVING USERS, CHECK
+             IF THE STATION IS OVERCROWDED AND CLOSE DOORS IF IT IS */
+        checkDoorsAndNewUsers();
+        /*  2. REMOVING SERVED USER IF THERE'S SUCH ONES */
+        checkRegistryServices();
+        /*  3. MOVING EACH USER */
+        moveUsers();
+        /*  4. RENDERING ALL OBJECTS */
+        renderNewFrame();
+    }
+
+    private void checkDoorsAndNewUsers(){
         GeneratingManager manager =
                 new GeneratingManager(_game.get_currentLevel(), this._userSources);
 
@@ -35,11 +46,16 @@ public class GameLoop {
         boolean isCrowded = userNumber >= MAX_USER_NUMBER;
         if(isCrowded)
             manager.closeDoors();
-        /*
-        *  2. REMOVING SERVED USER IF THERE'S SUCH ONES
-        *  3. MOVING EACH USER
-        *  4. RENDERING ALL OBJECTS
-        * */
+    }
+
+    private void checkRegistryServices(){
+
+    }
+    private void moveUsers(){
+
+    }
+    private void renderNewFrame(){
+
     }
 }
 
