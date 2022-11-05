@@ -5,6 +5,7 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
@@ -35,6 +36,19 @@ public class OurQueue implements Iterable<User> {
         //TODO
     }
 
+    public Collection<User> getUsers() {
+        return usersQueue;
+    }
+
+    public User getFirsUser() {
+        return usersQueue.peek();
+    }
+
+    public void removeFirsUser() {
+        if(usersQueue.size() > 0)
+            usersQueue.remove();
+     }
+           
     /**
      * realization of Itretor so we can iterate through OurQueue without a getter for usersQueue.
      * @return iterator
