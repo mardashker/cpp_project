@@ -22,6 +22,8 @@ public class GeneratingManager {
      * @param userSources - collection of user generators
      */
     public GeneratingManager(GameLevel level, List<Generator> userSources){
+        if(level == null || userSources == null)
+            throw new IllegalArgumentException("Neither parameter is allowed to be null!");
         this._level = level;
         this._userSources = userSources;
     }
