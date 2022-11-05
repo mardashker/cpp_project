@@ -1,0 +1,37 @@
+.t {
+    -fx-text-fill: white;
+}
+
+.anchor {
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/background2.png');
+    -fx-background-size: 100% 100%;
+     -fx-text-fill: white;
+}
+
+.m{
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/startwindow.gif');
+    -fx-background-size: 100% 100%;
+
+}
+.button1 {
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/cosmos.jpeg');
+}
+.button2 {
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/cosmos.jpeg');
+}
+.button3 {
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/cosmos.jpeg');
+}
+.button4 {
+    -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/cosmos.jpeg');
+}
+.level{
+   -fx-background-color: #5bbad4;
+    -fx-background-size: 100% 100%;
+
+}
+.levelView{
+   -fx-background-color: #F5F2F0;
+    -fx-background-size: 100% 100%;
+
+}
