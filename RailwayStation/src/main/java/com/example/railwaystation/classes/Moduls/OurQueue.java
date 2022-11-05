@@ -23,7 +23,7 @@ public class OurQueue {
     public OurQueue() {
         this.usersQueue = new PriorityQueue<User>(10, new Comparator<User>() {
             public int compare(User u1, User u2) {
-                return Integer.compare(u1.priority, u2.priority);
+                return Integer.compare(u1.priority.ordinal(), u2.priority.ordinal());
             }
         });
     }
