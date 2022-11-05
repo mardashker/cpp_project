@@ -26,7 +26,7 @@ public class DrawingManager {
     /**
      * Draws a new frame using information received from GameLevel.
      */
-    private void drawFrame(){
+    public void drawFrame(){
         // draw doors
         for(var door : _level.get_doorsList())
             door.DrawSprite(_context);

@@ -1,8 +1,10 @@
 package com.example.railwaystation.classes.Logic;
 
 import com.example.railwaystation.classes.Game.GameLevel;
+import com.example.railwaystation.classes.Helpers.DrawingManagement.DrawingManager;
 import com.example.railwaystation.classes.Helpers.GeneratingManagement.GeneratingManager;
 import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.classes.Rendering.Rendering;
 
 import java.util.List;
 
@@ -11,12 +13,15 @@ public class GameLoop {
 
     private final List<Generator> _userSources;
     private final Game _game;
+
+    private final Rendering _renderingUnit;
     public static final int MAX_USER_NUMBER = 25;
-    public GameLoop(Game game, List<Generator> userSources){
-        if(game == null || userSources == null)
-            throw new IllegalArgumentException("Game can't be null!");
+    public GameLoop(Game game, List<Generator> userSources, Rendering renderingUnit){
+        if(game == null || userSources == null || renderingUnit == null)
+            throw new IllegalArgumentException("Parameters can't be null!");
         this._game = game;
         this._userSources = userSources;
+        this._renderingUnit = renderingUnit;
     }
 
     public void run(){
@@ -26,9 +31,9 @@ public class GameLoop {
     }
 
     private void drawFrame(){
-        /*
-        *  1. GENERATING NEW USERS AND ADD THEM TO THE COLLECTION OF MOVING USERS, CHECK
-             IF THE STATION IS OVERCROWDED AND CLOSE DOORS IF IT IS */
+
+        /*  1. GENERATING NEW USERS AND ADD THEM TO THE COLLECTION OF MOVING USERS,
+                CHECK IF THE STATION IS OVERCROWDED AND CLOSE DOORS IF IT IS */
         checkDoorsAndNewUsers();
         /*  2. REMOVING SERVED USER IF THERE'S SUCH ONES */
         checkRegistryServices();
@@ -55,7 +60,10 @@ public class GameLoop {
 
     }
     private void renderNewFrame(){
-
+        var drawingManager
+                = new DrawingManager(_game.get_currentLevel(), _renderingUnit);
+        drawingManager.clearCanvas();
+        drawingManager.drawFrame();
     }
 }
 
