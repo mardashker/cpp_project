@@ -4,6 +4,7 @@ package com.example.railwaystation.classes.Moduls;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Moduls.Users.User;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -31,5 +32,18 @@ public class OurQueue {
     public void addUser(User user){
         this.usersQueue.add(user);
         //TODO
+    }
+
+    public Collection<User> getUsers() {
+        return usersQueue;
+    }
+
+    public User getFirsUser() {
+        return usersQueue.peek();
+    }
+
+    public void removeFirsUser() {
+        if(usersQueue.size() > 0)
+            usersQueue.remove();
     }
 }
