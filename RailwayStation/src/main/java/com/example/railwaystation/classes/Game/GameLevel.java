@@ -9,15 +9,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-//потрібно щоб знати чи можна сатвати на певну клітинку
-enum CellState{
-    DOOR,
-    CASH_REGISTER_PART, //чатина каса, бо коли закривається, то закривається не 1 клітинка а вся каса
-    QUEUE,
-    EMPTY,
-    SOLID //зайнята клітинка, але ще не знаємо причину
-}
-
 public class GameLevel {
 
     public List<Door> get_doorsList() {
