@@ -14,7 +14,11 @@ public class OurQueue {
 
     private Coordinates coordinates;
 
-    private PriorityQueue<User> usersQueue;
+    private final PriorityQueue<User> usersQueue;
+
+    public int size(){
+        return usersQueue.size();
+    }
 
     public OurQueue() {
         this.usersQueue = new PriorityQueue<User>(10, new Comparator<User>() {
