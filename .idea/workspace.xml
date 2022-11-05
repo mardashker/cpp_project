@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1b4f4c9-23a9-402b-9050-2de0ae6e6227" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_core_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_entity_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_gameplay_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_io_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_github_almasb_fxgl_scene_11_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_gluonhq_attach_audio_4_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_gluonhq_attach_lifecycle_4_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_gluonhq_attach_storage_4_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_gluonhq_attach_util_4_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_jtransc_jtransc_rt_0_5_0_ALPHA4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__com_jtransc_jtransc_rt_core_0_5_0_ALPHA4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_modular_1_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_base_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_controls_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_fxml_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_graphics_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Game/QueuePoligon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/WiseGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Interfaces/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/Rendering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/ResourceManagerCashRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/ResourceManagerDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/ResourceManagerGameObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/ResourceManagerQueueCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Rendering/ResourceManagerUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/ChooseLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/Level2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/Level3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/Level4Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/levels/sample.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/cash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/cash_register_east.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/cash_register_north.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/cash_register_south.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/cash_register_west.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/door_east.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/door_north.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/door_south.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/door_west.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/man3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/nocash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/nodoor1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/nodoor2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/nodoor3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/nodoor4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/ordinary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/pregnant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0011.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0101.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0110.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/0111.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1000.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1011.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1101.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/queue_tiles/1110.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/senior.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/student.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/assets/sprites/woman2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/chooselevel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/7IsD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/cosmos.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/cash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/dis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/door1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/door2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/door3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/door4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/man1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/man2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/man3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/nocash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/nodoor1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/nodoor2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/nodoor3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/nodoor4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/pregnant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/woman1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/icons/woman2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/l1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0011.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0101.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0110.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/0111.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1000.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1010.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1011.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1100.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1101.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/queue/1110.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/startwindow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/startwindow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/img/startwindow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/level2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/level3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/level4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/main/resources/com/example/railwaystation/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/test/java/com/example/railwaystation/classes/Game/AssetsReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RailwayStation/src/test/java/com/example/railwaystation/classes/Game/LevelReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/ConstTimeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/ConstTimeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/ConstUserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/ConstUserGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/UserDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/UserDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/UserTypeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Helpers/UserTypeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/TicketType.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/TicketType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/Priority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/LevelReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/QueuePoligon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/UserGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/UserGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/ConstUserGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/UserDataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/UserTypeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/WiseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/WiseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moduls/CashRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moduls/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moduls/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/TicketType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Users/Priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Users/PrototypeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation/src/main/java/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moduls/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Users/UserPrototypeManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Moduls/Users/UserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2H7kZiOWQqPodXEPcAiFQSRe4bt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Dariia_Martyniuk/Desktop/cpp_project"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1b4f4c9-23a9-402b-9050-2de0ae6e6227" name="Changes" comment="" />
+      <created>1667643566329</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667643566329</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
