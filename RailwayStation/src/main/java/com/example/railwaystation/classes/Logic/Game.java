@@ -12,6 +12,10 @@ public class Game {
 
     private GameLevel currentLevel;
 
+    public GameLevel get_currentLevel(){
+        return currentLevel;
+    }
+
     //TODO: підтягування текстур, завантаження початкових даних
     private void InitAssets(){
         String assetsFolder = "";

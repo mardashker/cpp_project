@@ -11,12 +11,20 @@ enum State{
 }
 
 public class CashRegister extends GameObject {
-
     private OurQueue ourQueue;
-
     private State state;
-
     private boolean isOpen;
+
+    public OurQueue getOurQueue() {
+        return ourQueue;
+    }
+    public State getState() {
+        return state;
+    }
+    public boolean isOpen() {
+        return isOpen;
+    }
+
 
     public void processUser(){
         //TODO: процес обробки першого юзера з черги
