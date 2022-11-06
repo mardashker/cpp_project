@@ -2,18 +2,11 @@ package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
+import com.example.railwaystation.classes.Moduls.Users.User;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-//потрібно щоб знати чи можна сатвати на певну клітинку
-enum CellState{
-    DOOR,
-    CASH_REGISTER_PART, //чатина каса, бо коли закривається, то закривається не 1 клітинка а вся каса
-    QUEUE,
-    EMPTY,
-    SOLID //зайнята клітинка, але ще не знаємо причину
-}
 
 public class GameLevel {
 
@@ -36,6 +29,8 @@ public class GameLevel {
     private final List<Door> _doorsList;
     private final List<CashRegister> _cashRegistersList;
     private final List<QueuePoligon> _poligons;
+    private final List<User> _movingUsers = new ArrayList<User>();
+
 
     //дані можуть міститися в файлі (незалежно від формату файлу матриця не змінюється)
     //TODO: знайти клас Matrix або щось подібне
@@ -46,5 +41,9 @@ public class GameLevel {
         this._cashRegistersList = cashRegistersList;
         this._poligons = poligons;
         this._matrix = matrix;
+    }
+
+    public List<User> get_movingUsers() {
+        return _movingUsers;
     }
 }

@@ -1,21 +1,16 @@
 package com.example.railwaystation.classes.Moduls;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Moduls.Users.User;
 import javafx.scene.image.Image;
-
-//стан каси
-enum State{
-    OPEN,
-    CLOSE,
-    WORKING
-}
 
 public class CashRegister extends GameObject {
 
     private OurQueue ourQueue;
-
+    private User processingUser;
+    private long secondsToProcessUser = 0;
     private State state;
-
+    private StopWatch timer;
     private boolean isOpen;
 
     public void processUser(){
@@ -51,5 +46,53 @@ public class CashRegister extends GameObject {
         this.ourQueue = ourQueue;
         this.state = state;
         this.isOpen = isOpen;
+    }
+
+    public OurQueue getOurQueue() {
+        return ourQueue;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public boolean isOpen() {
+        return isOpen;
+    }
+
+    public void setOurQueue(OurQueue ourQueue) {
+        this.ourQueue = ourQueue;
+    }
+
+    public User getProcessingUser() {
+        return processingUser;
+    }
+
+    public void setProcessingUser(User processingUser) {
+        this.processingUser = processingUser;
+    }
+
+    public long getSecondsToProcessUser() {
+        return secondsToProcessUser;
+    }
+
+    public void setSecondsToProcessUser(long secondsToProcessUser) {
+        this.secondsToProcessUser = secondsToProcessUser;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public StopWatch getTimer() {
+        return timer;
+    }
+
+    public void setTimer(StopWatch timer) {
+        this.timer = timer;
+    }
+
+    public void setOpen(boolean open) {
+        isOpen = open;
     }
 }

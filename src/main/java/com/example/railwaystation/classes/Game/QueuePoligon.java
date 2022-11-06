@@ -23,6 +23,16 @@ public class QueuePoligon extends GameObject {
         return _queueCells;
     }
 
+    public GameObject getQueueTailCoordinates() {
+        GameObject lastElement = null;
+
+        for (GameObject element : _queueCells) {
+            lastElement = element;
+        }
+
+        return lastElement;
+    }
+
     public void set_queue(OurQueue _queue) {
         this._queue = _queue;
     }

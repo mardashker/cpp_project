@@ -28,6 +28,10 @@ public class Game {
         return generators;
     }
 
+    public GameLevel get_currentLevel(){
+        return currentLevel;
+    }
+
     public void setGenerators(List<Generator> generators) {
         this.generators = generators;
     }

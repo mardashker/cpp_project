@@ -18,10 +18,10 @@ public class User extends GameObject implements Cloneable {
     // TODO: add get setters and getters
     private UserType type;
     private UserInfo userInfo;
+    private List<Ticket> tickets;
     public Priority priority;
     private float speed;
     private State state;
-    List<Ticket> tickets;
 
     public User(UserType type, UserInfo userInfo, Priority priority, float speed, State state, List<Ticket> tickets) {
         this.type = type;
@@ -63,6 +63,22 @@ public class User extends GameObject implements Cloneable {
 
     public Priority getPriority() {
         return priority;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public State getState() {
+        return state;
     }
 }
 
