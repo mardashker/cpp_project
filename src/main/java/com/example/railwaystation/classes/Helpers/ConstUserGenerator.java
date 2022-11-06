@@ -10,7 +10,7 @@ import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
-import com.example.railwaystation.classes.Moduls.Users.UserPrototypeManager;
+import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
 import com.example.railwaystation.classes.Moduls.Users.UserType;
 
 //генерує конкретний тип юзеру
@@ -33,7 +33,7 @@ public class ConstUserGenerator implements Generator{
             Game.usersCount++;
             // Додати координати дверей
             var typeIndex = randomizer.nextInt(UserType.values().length);
-            var user = UserPrototypeManager.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
+            var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
                     dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(), door.getAngle());
             return user;

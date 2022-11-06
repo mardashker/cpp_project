@@ -42,7 +42,12 @@ public class AssetsReader {
             JSONObject usersJSON = (JSONObject) assetObjJSON.get("users");
 
             SplittableRandom random = new SplittableRandom();
-            ResourceManagerUser.setSprite("ordinary", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_"+(random.nextInt(1,4))+ ".png"));
+            ResourceManagerUser.setSprite("ordinary", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_1.png"));
+            ResourceManagerUser.setSprite("ordinary_1", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_1.png"));
+            ResourceManagerUser.setSprite("ordinary_2", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_2.png"));
+            ResourceManagerUser.setSprite("ordinary_3", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_3.png"));
+            ResourceManagerUser.setSprite("ordinary_4", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_4.png"));
+
             ResourceManagerUser.setSprite("disabled", new Image(base + "/" + (String) usersJSON.get("disabled")));
             ResourceManagerUser.setSprite("pregnant", new Image(base + "/" + (String) usersJSON.get("pregnant")));
 
