@@ -12,8 +12,24 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.railwaystation.controllers.Level1Controller"
-            prefHeight="900.0" prefWidth="667.0"
+            prefHeight="900.0" prefWidth="2000.0"
             styleClass="levelView">
+    <Button fx:id="startGame" layoutX="1064.0" layoutY="500.0" mnemonicParsing="false" onAction="#startGame" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: FFFBFB; -fx-border-color: F2BEBE; -fx-border-radius: 5;" text="Start" textFill="#3c3c3c">
+        <font>
+            <Font name="Georgia" size="19.0" />
+        </font>
+        <tooltip>
+            <Tooltip text="Draw fractal" />
+        </tooltip>
+    </Button>
+    <Button fx:id="BogdanFunction" layoutX="1064.0" layoutY="700.0" mnemonicParsing="false" onAction="#BogdanFunction" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: FFFBFB; -fx-border-color: F2BEBE; -fx-border-radius: 5;" text="BogdanFunction" textFill="#3c3c3c">
+        <font>
+            <Font name="Georgia" size="19.0" />
+        </font>
+        <tooltip>
+            <Tooltip text="Draw fractal" />
+        </tooltip>
+    </Button>
     <Canvas fx:id="canvasL1" height="900.0" width="667.0" layoutX="0.0" layoutY="0.0" />
 
 </AnchorPane>

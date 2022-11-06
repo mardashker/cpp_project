@@ -18,8 +18,7 @@ public class UserPrototypeManager {
         basicUsers.put(UserType.ORDINARY,new User(ResourceManagerUser.getSprite("ordinary"),UserType.ORDINARY,Priority.LOW,5));
         basicUsers.put(UserType.PREGNANT,new User(ResourceManagerUser.getSprite("pregnant"),UserType.PREGNANT,Priority.MEDIUM,3));
         basicUsers.put(UserType.DISABLED,new User(ResourceManagerUser.getSprite("disabled"),UserType.DISABLED,Priority.HIGH,2));
-        basicUsers.put(UserType.STUDENT,new User(ResourceManagerUser.getSprite("student"),UserType.STUDENT,Priority.LOW,6));
-        basicUsers.put(UserType.SENIOR,new User(ResourceManagerUser.getSprite("senior"),UserType.ORDINARY,Priority.MEDIUM,4));
+
     }
     private static Map<UserType, User> basicUsers = new HashMap<>();
 

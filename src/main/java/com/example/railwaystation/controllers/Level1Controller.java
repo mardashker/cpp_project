@@ -8,7 +8,9 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.UserPrototypeManager;
+import com.example.railwaystation.classes.Moduls.Users.UserType;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -28,11 +30,27 @@ public class Level1Controller implements Initializable {
    //якщо каса в стані відкритого то навіщо там bool?
    //навіщо width height?
     //зробити картинки мапою щоб діставати по ключу
+   @FXML
+   public void BogdanFunction(){
+
+   }
+    @FXML
+    public void startGame(){
+        System.out.println("we start game");
+        Game game = new Game();
+        System.out.println("we init game ");
+
+        game.InitAssets();
+
+        System.out.println("we InitAssets game");
+    }
     public double mapValue(double a){
         return a*50;
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+       canvasL1.setHeight(1920);
+       canvasL1.setWidth(1920);
         AssetsReader.loadAssets();
         URL assetFolder = Level1Controller.class.getClassLoader().getResource("com/example/railwaystation/assets");
         Collection<GameLevel> gameLevels = LevelReader.loadLevels();

@@ -39,11 +39,12 @@ public class AssetsReader {
             // TODO: fix relative path
             String base = "file:src/main/resources/com/example/railwaystation/assets";
             JSONObject usersJSON = (JSONObject) assetObjJSON.get("users");
-            ResourceManagerUser.setSprite("ordinary", new Image(base + "/" + (String) usersJSON.get("ordinary")));
+
+            SplittableRandom random = new SplittableRandom();
+            ResourceManagerUser.setSprite("ordinary", new Image(base + "/" + (String) usersJSON.get("ordinary")+ "_"+(random.nextInt(1,4))+ ".png"));
             ResourceManagerUser.setSprite("disabled", new Image(base + "/" + (String) usersJSON.get("disabled")));
             ResourceManagerUser.setSprite("pregnant", new Image(base + "/" + (String) usersJSON.get("pregnant")));
-            ResourceManagerUser.setSprite("student", new Image(base + "/" + (String) usersJSON.get("student")));
-            ResourceManagerUser.setSprite("senior", new Image(base + "/" + (String) usersJSON.get("senior")));
+
 
             JSONObject doorsJSON = (JSONObject) assetObjJSON.get("door");
             ResourceManagerDoor.setSprite("north", new Image(base + "/" + (String) doorsJSON.get("north")));
