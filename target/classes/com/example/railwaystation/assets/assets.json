@@ -1,10 +1,9 @@
 {
   "users": {
-      "ordinary": "sprites/ordinary.png",
+      "ordinary": "sprites/ordinary/ordinary",
       "disabled" : "sprites/disabled.png",
-      "pregnant" : "sprites/pregnant.png",
-      "student" : "sprites/student.png",
-      "senior" : "sprites/senior.png"
+      "pregnant" : "sprites/pregnant.png"
+
   },
   "door": {
       "north": "sprites/door_north.png",

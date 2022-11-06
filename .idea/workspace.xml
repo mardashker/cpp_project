@@ -7,51 +7,52 @@
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
       <change afterPath="$USER_HOME$/.vscode/extensions/xdebug.php-debug-1.27.0/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/AppData/Local/Programs/Microsoft Azure Storage Explorer/resources/app/node_modules/tunnel/.idea/node-tunnel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_core_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_entity_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_gameplay_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_io_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_scene_11_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_audio_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_lifecycle_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_storage_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_attach_util_4_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jtransc_jtransc_rt_0_5_0_ALPHA4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jtransc_jtransc_rt_core_0_5_0_ALPHA4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_modular_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RailwayStation.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/PycharmProjects/CMAD/Lab1/.idea/Lab1.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/man3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/ordinary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/senior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/student.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/woman2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/Rendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/Rendering.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" afterDir="false" />
+    </list>
+    <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/Rendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/Rendering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
+    </list>
+    <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/man3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/senior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/student.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/woman2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
+    </list>
+    <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +74,57 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="9" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+        <range start1="4" end1="4" start2="10" end2="13" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+        <range start1="7" end1="8" start2="16" end2="16" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="11" end1="11" start2="19" end2="20" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+        <range start1="12" end1="13" start2="21" end2="23" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="15" end1="15" start2="25" end2="39" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="17" end1="18" start2="41" end2="62" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="19" end1="20" start2="63" end2="63" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="7" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="9" end1="10" start2="10" end2="11" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="11" end1="12" start2="12" end2="13" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="16" end1="17" start2="17" end2="18" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="18" end1="18" start2="19" end2="35" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="4" end1="4" start2="9" end2="15" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java">
+      <ranges>
+        <range start1="18" end1="18" start2="18" end2="19" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
+        <range start1="41" end1="42" start2="42" end2="45" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+        <range start1="44" end1="46" start2="47" end2="48" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java">
+      <ranges>
+        <range start1="5" end1="7" start2="5" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="10" end1="10" start2="10" end2="11" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+        <range start1="11" end1="11" start2="12" end2="13" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+        <range start1="21" end1="23" start2="23" end2="24" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="27" end1="27" start2="28" end2="29" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="30" end1="30" start2="32" end2="46" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+        <range start1="35" end1="35" start2="51" end2="53" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
+        <range start1="41" end1="42" start2="59" end2="62" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
+        <range start1="46" end1="46" start2="66" end2="97" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="47" end1="48" start2="98" end2="98" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+        <range start1="49" end1="49" start2="99" end2="101" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,6 +155,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dariia_Martyniuk\Desktop\cpp_project\src\main\resources\com\example\railwaystation\assets\sprites\ordinary" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
@@ -159,5 +216,16 @@
     <MESSAGE value="generators" />
     <option name="LAST_COMMIT_MESSAGE" value="generators" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
