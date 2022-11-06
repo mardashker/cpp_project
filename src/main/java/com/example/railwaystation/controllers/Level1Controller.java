@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 
 public class Level1Controller implements Initializable {
     public Canvas canvasL1;
+    public CanvasRendering ctx;
    //якщо каса в стані відкритого то навіщо там bool?
    //навіщо width height?
     //зробити картинки мапою щоб діставати по ключу
@@ -38,7 +39,9 @@ public class Level1Controller implements Initializable {
         if(gameLevels.isEmpty())
             return;
         GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
-        CanvasRendering ctx=new CanvasRendering(canvasL1);
+        ctx=new CanvasRendering(canvasL1);
+        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
+                Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
         gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));
         gl.get_cashRegistersList().forEach(c -> c.DrawSprite(ctx));
         gl.get_poligons().forEach(q -> q.DrawSprite(ctx));

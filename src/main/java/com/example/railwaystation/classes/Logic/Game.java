@@ -9,7 +9,8 @@ public class Game {
     public static final double cell_height = 32;
     public static int usersCount;
 
-    private List<GameLevel> levels;
+    private Collection<GameLevel> _levels;
+    private Collection<User> _users;
 
     private GameLevel currentLevel;
 

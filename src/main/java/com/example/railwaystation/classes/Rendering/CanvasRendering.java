@@ -4,17 +4,18 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Logic.Game;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
+import javafx.scene.paint.Color;
 
 
 public class CanvasRendering implements Rendering {
-    Canvas canvas =new Canvas();
+    private Canvas _canvas;
     public CanvasRendering(Canvas canvas_1) {
-        canvas=canvas_1;
+        _canvas=canvas_1;
     }
 
     @Override
     public void DrawSprite(Coordinates pos, double width, double height, double angle, Image sprite) {
-        canvas.getGraphicsContext2D().drawImage(sprite, pos.getX()* Game.cell_width, pos.getY()*Game.cell_height, Game.cell_width, Game.cell_height);
+        _canvas.getGraphicsContext2D().drawImage(sprite, pos.getX()* Game.cell_width, pos.getY()*Game.cell_height, Game.cell_width, Game.cell_height);
     }
 
     @Override
