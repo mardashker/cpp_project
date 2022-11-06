@@ -5,55 +5,203 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
-      <change afterPath="$USER_HOME$/.vscode/extensions/xdebug.php-debug-1.27.0/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/AppData/Local/Programs/Microsoft Azure Storage Explorer/resources/app/node_modules/tunnel/.idea/node-tunnel.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/PycharmProjects/CMAD/Lab1/.idea/Lab1.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/cpp_project-rendering/untitled.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/cpp_project-users_creating/untitled.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/Project/Project.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab01/.idea/lab01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab01/Javalab01/Javalab01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab02/.idea/lab02.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab02/Lab02/Lab02.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab03/lab03.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab03/lab03_2/lab03_2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04/lab04.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04/untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04_GUI/lab04_GUI.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/EXAM/Calculator/.idea/Calculator.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab01/.idea/lab01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab02/.idea/lab02.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab03/.idea/lab03.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab4/.idea/lab4.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac01/.idea/Prac01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac03/.idea/Prac03.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac04/.idea/Prac04.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac05/.idea/Prac05.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/pract02/.idea/pract02.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/prac3/.idea/prac3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac3/.idea/prac3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac4/.idea/prac4.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac5/.idea/prac5.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Л†°4/Л†°4.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/graphics_project (3)/graphics_project/graphics_project.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/graphics_project/graphics_project/graphics_project.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/Твій Погляд/graphics_project/graphics_project.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/JavaTests/JavaTests.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Test/Test.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°1/Л†°1.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°2/Л†°2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°3/Л†°3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°4/Л†°4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLionProjects/.idea/CLionProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project/testKG/testKG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PyCharmDoc/.idea/PyCharmDoc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/AVPZ/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/try/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/try/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QT/try/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD1/.idea/CMAD1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD2/.idea/CMAD2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD3/.idea/CMAD3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD4/.idea/CMAD4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD5/.idea/CMAD5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD6.2/.idea/CMAD6.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD6/.idea/CMAD6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/CMAD7/.idea/CMAD7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/KG/.idea/KG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/L1/.idea/L1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Lab7_2/.idea/Lab7_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py4/.idea/Py4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py4_2/.idea/Py4_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py5_1/.idea/Py5_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py5_2/.idea/Py5_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py5_3/.idea/Py5_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/Py6/.idea/Py6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/TIKTOK/.idea/TIKTOK.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/l3/.idea/l3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/lab2/.idea/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/lab2_g1/.idea/lab2_g1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/lab2_g2/.idea/lab2_g2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/lab2_g3/.idea/lab2_g3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/lab6_2/.idea/lab6_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/part/.idea/part.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/pr/.idea/pr.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/pythonProject1/.idea/pythonProject1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/pythonProject2/.idea/pythonProject2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/pythonProject3/.idea/pythonProject3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject/ЛП/.idea/ЛП.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject1/.idea/pythonProject1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProject2/.idea/pythonProject2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pythonProjectFractal/.idea/pythonProjectFractal.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/JavaDesktopSudoku-withoutgradle/JavaDesktopSudoku-withoutgradle.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/JavaDesktopSudoku-withoutgradle/JavaDesktopSudoku.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/JavaDesktopSudoku-withoutgradle/src/JavaDesktopSudoku.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab1/lab1/lab1.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab2/lab2/lab2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab3/lab3/lab3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab4/lab4/lab4.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab5/lab5/lab5.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab6/lab6.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab6/lab6/lab6.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab7/lab7.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab7/lab7/lab7.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic2/.idea/MLPractic2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic3/.idea/MLPractic3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic4/.idea/mlLab03.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic5/.idea/MLPractic5.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab01/.idea/mlLab01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab02/.idea/mlLab02.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab03/.idea/mlLab03.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab04/.idea/mlLab04.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab01/lab01.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab2/lab2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab3/lab3.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab4/lab4.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/test/test.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/R_V.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/RailwayStation 18.11.08/RailwayStation.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/RailwayStation/RailwayStation.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/cpp_project-master/untitled.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/mainwindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/CG_Fractal/mainwindow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/FractalMain/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/FractalMain/FractalMain.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/FractalMain/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/FractalMain/fractalmainwidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/fractal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/fractal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/mainwindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/mainwindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/Lab1/mainwindow.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/f/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/f/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/f/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/ff/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/ff/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/ff/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fff/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fff/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fff/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/frac_code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/frac_code/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/frac_code/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/frac_code/ramCanvas.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fractalm/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fractalm/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fractalm/fractalm.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/fractalm/fractalmainwidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hh/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hh/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hh/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hh/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hvcgrcxfgcgnfcfgfgfgfgfggft/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hvcgrcxfgcgnfcfgfgfgfgfggft/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hvcgrcxfgcgnfcfgfgfgfgfggft/hvcgrcxfgcgnfcfgfgfgfgfggft.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/hvcgrcxfgcgnfcfgfgfgfgfggft/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/j/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/j/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/j/j.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/j/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/m.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/main.qml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/m/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/n/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/n/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/n/n.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/n/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/nnn/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/nnn/form.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/nnn/nnn.pyproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QT/nnn/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_18_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_18_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RailwayStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/man3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/ordinary.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/senior.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/assets/sprites/woman2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/Rendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/Rendering.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" afterDir="false" />
     </list>
-    <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/Rendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/Rendering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
-    </list>
-    <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/man3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/senior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/student.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/woman2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/sprites/ordinary/ordinary_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
-    </list>
-    <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
-    </list>
+    <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
+    <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="" />
+    <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,57 +222,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="9" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="4" end1="4" start2="10" end2="13" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="7" end1="8" start2="16" end2="16" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="11" end1="11" start2="19" end2="20" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="12" end1="13" start2="21" end2="23" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="15" end1="15" start2="25" end2="39" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="17" end1="18" start2="41" end2="62" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="19" end1="20" start2="63" end2="63" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="7" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="9" end1="10" start2="10" end2="11" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="11" end1="12" start2="12" end2="13" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="16" end1="17" start2="17" end2="18" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="18" end1="18" start2="19" end2="35" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="4" end1="4" start2="9" end2="15" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java">
-      <ranges>
-        <range start1="18" end1="18" start2="18" end2="19" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="41" end1="42" start2="42" end2="45" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-        <range start1="44" end1="46" start2="47" end2="48" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java">
-      <ranges>
-        <range start1="5" end1="7" start2="5" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="10" end1="10" start2="10" end2="11" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-        <range start1="11" end1="11" start2="12" end2="13" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-        <range start1="21" end1="23" start2="23" end2="24" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="27" end1="27" start2="28" end2="29" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="30" end1="30" start2="32" end2="46" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-        <range start1="35" end1="35" start2="51" end2="53" changelist="fda6ec05-20ad-444d-b094-ca5e8d4ca510" />
-        <range start1="41" end1="42" start2="59" end2="62" changelist="ee84df1c-4ce1-4843-ae27-d0251c72ae95" />
-        <range start1="46" end1="46" start2="66" end2="97" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="47" end1="48" start2="98" end2="98" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="49" end1="49" start2="99" end2="101" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -222,10 +319,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
-          <line>84</line>
+          <line>101</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.railwaystation.classes.Moduls.Users.User" memberName="position" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

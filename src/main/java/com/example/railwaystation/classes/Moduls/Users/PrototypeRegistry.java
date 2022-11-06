@@ -13,4 +13,12 @@ public class PrototypeRegistry {
     public static void setPrototype(UserType type, User user){
         basicUsers.put(type, user);
     }
+
+    public static Map<UserType, User> getBasicUsers() {
+        return basicUsers;
+    }
+
+    public static void setBasicUsers(Map<UserType, User> basicUsers) {
+        PrototypeRegistry.basicUsers = basicUsers;
+    }
 }
