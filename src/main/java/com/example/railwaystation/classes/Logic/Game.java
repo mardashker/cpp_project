@@ -14,8 +14,8 @@ import java.util.Collection;
 import java.util.List;
 
 public class Game {
-    public static final double cell_width = 32;
-    public static final double cell_height = 32;
+    public static final double cell_width = 20;
+    public static final double cell_height = 20;
     public static int usersCount;
     private List<Generator> generators;
 
@@ -46,6 +46,7 @@ public class Game {
         PrototypeRegistry.setPrototype(UserType.ORDINARY,new User(ResourceManagerUser.getSprite("ordinary"),UserType.ORDINARY, Priority.LOW,5));
         PrototypeRegistry.setPrototype(UserType.PREGNANT,new User(ResourceManagerUser.getSprite("pregnant"),UserType.PREGNANT,Priority.MEDIUM,3));
         PrototypeRegistry.setPrototype(UserType.DISABLED,new User(ResourceManagerUser.getSprite("disabled"),UserType.DISABLED,Priority.HIGH,2));
+
 
     }
 

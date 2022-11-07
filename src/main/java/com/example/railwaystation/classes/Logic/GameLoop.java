@@ -26,7 +26,6 @@ public class GameLoop {
     }
 
 
-
     public void run() throws InterruptedException {
         this._isRunning = true;
 

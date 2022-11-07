@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
     </list>
+    <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
+    <list id="ae22d8d5-94ca-437f-b8fe-31292c775097" name="Changes by Eduard" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
+    </list>
     <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="" />
     <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667643246115</updated>
       <workItem from="1667758536321" duration="6187000" />
+      <workItem from="1667847790520" duration="3123000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1667659728489</created>
@@ -135,16 +145,5 @@
     <MESSAGE value="generators" />
     <option name="LAST_COMMIT_MESSAGE" value="generators" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
