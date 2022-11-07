@@ -9,9 +9,9 @@ import com.example.railwaystation.classes.Rendering.Rendering;
 import java.util.List;
 
 //TODO: клас для управління всієї логіки програми
-public class GameLoop {
+public class GameLoop implements Runnable {
 
-    private static final int FPS = 30;
+    private static final int FPS = 5;
     private int _maxUserCount = 25;
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
@@ -26,13 +26,14 @@ public class GameLoop {
     }
 
 
-    public void run() throws InterruptedException {
+    public void run() {
         this._isRunning = true;
 
         double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
         double nextFrameTime = System.nanoTime() + drawInterval;// next frame time in nanoseconds
         double timeToWaitBeforeNext = 0;                        // free time after rendering before next iteration
 
+        int i = 0;
         while(_isRunning){
 
             updateStationState();
@@ -42,9 +43,17 @@ public class GameLoop {
             timeToWaitBeforeNext = Math.max(timeToWaitBeforeNext, 0);   //calculate a time to wait before next iteration
             timeToWaitBeforeNext /= 1_000_000;                          //
 
-            Thread.sleep((long)timeToWaitBeforeNext);
+            try {
+                Thread.sleep(1000);
+            } catch (Exception ex ){
+
+            }
+
 
             nextFrameTime += drawInterval;
+            ++i;
+            if(i >= 5)
+                _isRunning = false;
         }
     }
 
@@ -60,6 +69,8 @@ public class GameLoop {
 
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = userNumber >= _maxUserCount;
+        var newUsers = manager.collectUsers();
+        //Game.currentLevel.get_movingUsers().addAll(newUsers);
         if(isCrowded)
             manager.closeDoors();
     }

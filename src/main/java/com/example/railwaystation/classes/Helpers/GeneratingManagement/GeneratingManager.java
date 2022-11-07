@@ -66,8 +66,8 @@ public class GeneratingManager {
 
         _level.get_movingUsers().addAll(newUsers);
 
-        System.out.println("Generated users : " + newUsers.size());
-        return collectUsers();
+        newUsers.forEach(u -> System.out.println(u.toString()));
+        return newUsers;
     }
 
     /**

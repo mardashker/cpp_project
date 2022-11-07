@@ -80,6 +80,18 @@ public class User extends GameObject implements Cloneable {
     public State getState() {
         return state;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "type=" + type +
+                ", userInfo=" + userInfo +
+                ", tickets=" + tickets +
+                ", priority=" + priority +
+                ", speed=" + speed +
+                ", state=" + state +
+                '}';
+    }
 }
 
 

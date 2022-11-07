@@ -17,23 +17,26 @@ public class Game {
     public static final double cell_width = 20;
     public static final double cell_height = 20;
     public static int usersCount;
-    private List<Generator> generators;
+    private static List<Generator> _generators;
 
     private static Collection<GameLevel> _levels;
-    private Collection<User> _users;
 
-    private GameLevel currentLevel;
-
-    public List<Generator> getGenerators() {
-        return generators;
-    }
-
-    public GameLevel get_currentLevel(){
+    public static GameLevel getCurrentLevel() {
         return currentLevel;
     }
 
-    public void setGenerators(List<Generator> generators) {
-        this.generators = generators;
+    public static GameLevel currentLevel;
+
+    public static List<Generator> getGenerators() {
+        return _generators;
+    }
+
+    public static GameLevel get_currentLevel(){
+        return currentLevel;
+    }
+
+    public static void setGenerators(List<Generator> generators) {
+        _generators = generators;
     }
 
     // Load all needed resources and populate UserPrototypeManger with resources

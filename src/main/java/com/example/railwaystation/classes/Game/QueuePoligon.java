@@ -10,7 +10,7 @@ import java.util.Collection;
 public class QueuePoligon extends GameObject {
     private final Collection<GameObject> _queueCells;
 
-    private OurQueue _queue = null;
+    private OurQueue _queue = new OurQueue();
     public QueuePoligon(Collection<GameObject> queueCells) {
         this._queueCells = queueCells;
     }

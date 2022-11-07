@@ -1,6 +1,7 @@
 package com.example.railwaystation.classes.Helpers.DrawingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
+import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
 /**
@@ -41,7 +42,7 @@ public class DrawingManager {
 
         //draw users beyond any polygon
         for(var user : _level.get_movingUsers())
-            user.DrawSprite(_context);
+            _context.DrawSprite(user.getPosition(), Game.cell_width, Game.cell_height, 0, user.getSprite());
     }
 
     /**

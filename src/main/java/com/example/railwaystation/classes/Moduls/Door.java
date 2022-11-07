@@ -7,7 +7,7 @@ public class Door extends GameObject {
 
     private boolean _open;
     public Door(){
-        _open = false;
+        _open = true;
     }
 
     public Door(Coordinates position, double width, double height, Image sprite, float angle, boolean _open) {
