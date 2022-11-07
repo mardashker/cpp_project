@@ -11,11 +11,12 @@ import java.util.List;
 //TODO: клас для управління всієї логіки програми
 public class GameLoop {
 
+    private static final int FPS = 30;
+    private int _maxUserCount = 25;
+    private boolean _isRunning = true;
     private final List<Generator> _userSources;
     private final Game _game;
-
     private final Rendering _renderingUnit;
-    public static final int MAX_USER_NUMBER = 25;
     public GameLoop(Game game, List<Generator> userSources, Rendering renderingUnit){
         if(game == null || userSources == null || renderingUnit == null)
             throw new IllegalArgumentException("Parameters can't be null!");
@@ -24,35 +25,45 @@ public class GameLoop {
         this._renderingUnit = renderingUnit;
     }
 
-    public void run(){
-        while(true){
-            drawFrame();
+
+
+    public void run() throws InterruptedException {
+        this._isRunning = true;
+
+        double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
+        double nextFrameTime = System.nanoTime() + drawInterval;// next frame time in nanoseconds
+        double timeToWaitBeforeNext = 0;                        // free time after rendering before next iteration
+
+        while(_isRunning){
+
+            updateStationState();
+            renderNewFrame();
+
+            timeToWaitBeforeNext = nextFrameTime - System.nanoTime();   //
+            timeToWaitBeforeNext = Math.max(timeToWaitBeforeNext, 0);   //calculate a time to wait before next iteration
+            timeToWaitBeforeNext /= 1_000_000;                          //
+
+            Thread.sleep((long)timeToWaitBeforeNext);
+
+            nextFrameTime += drawInterval;
         }
     }
 
-    private void drawFrame(){
 
-        /*  1. GENERATING NEW USERS AND ADD THEM TO THE COLLECTION OF MOVING USERS,
-                CHECK IF THE STATION IS OVERCROWDED AND CLOSE DOORS IF IT IS */
+    private void updateStationState(){
         checkDoorsAndNewUsers();
-        /*  2. REMOVING SERVED USER IF THERE'S SUCH ONES */
         checkRegistryServices();
-        /*  3. MOVING EACH USER */
         moveUsers();
-        /*  4. RENDERING ALL OBJECTS */
-        renderNewFrame();
     }
-
     private void checkDoorsAndNewUsers(){
         GeneratingManager manager =
                 new GeneratingManager(_game.get_currentLevel(), this._userSources);
 
         int userNumber = manager.countUsersInStation();
-        boolean isCrowded = userNumber >= MAX_USER_NUMBER;
+        boolean isCrowded = userNumber >= _maxUserCount;
         if(isCrowded)
             manager.closeDoors();
     }
-
     private void checkRegistryServices(){
 
     }
@@ -64,6 +75,15 @@ public class GameLoop {
                 = new DrawingManager(_game.get_currentLevel(), _renderingUnit);
         drawingManager.clearCanvas();
         drawingManager.drawFrame();
+    }
+
+
+
+    public boolean isRunning(){
+        return _isRunning;
+    }
+    public void stop(){
+        this._isRunning = false;
     }
 }
 

@@ -5,44 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CellState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/ConstTimeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DistanceHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/MovingManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/QueueManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/icons/iconX.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2022_3_12_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_4_2022_3_12_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_03_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_03_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/QueuePoligon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/QueuePoligon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/AssetsReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/PrototypeRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/UserPrototypeManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
     <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="" />
@@ -86,19 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Oleh/Desktop/KPP/cpp_project/src/main/java/com/example/railwaystation/classes/Moduls",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Oleh/Desktop/KPP/cpp_project/src/main/java/com/example/railwaystation/classes/Moduls&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Oleh\Desktop\KPP\cpp_project\src\main\java\com\example\railwaystation\classes\Moduls" />
