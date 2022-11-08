@@ -16,8 +16,12 @@ public class QueuePoligon extends GameObject {
     }
     @Override
     public void DrawSprite(Rendering ctx){
-        // TODO: Draw first n object in cells
-        _queueCells.stream().forEach(g -> g.DrawSprite(ctx));
+        // TODO: Check if not to slow
+        for(int i=0; i < _queueCells.size(); i++){
+            _queueCells.stream().toList().get(i).DrawSprite(ctx);
+            if(i < _queue.size())
+                _queue.getUsers().stream().toList().get(i).DrawSprite(ctx);
+        }
     }
     public Collection<GameObject> get_queueCells() {
         return _queueCells;

@@ -1,6 +1,7 @@
 package com.example.railwaystation.controllers;
 
 import com.example.railwaystation.classes.Game.AssetsReader;
+import com.example.railwaystation.classes.Game.Camera2D;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Helpers.*;
@@ -36,17 +37,7 @@ public class Level1Controller implements Initializable {
     public void PaintEverything() {
         AssetsReader.loadAssets();
         URL assetFolder = Level1Controller.class.getClassLoader().getResource("com/example/railwaystation/assets");
-        Collection<GameLevel> gameLevels = LevelReader.loadLevels();
-        if (gameLevels.isEmpty())
-            return;
-        GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
-        ctx = new CanvasRendering(canvasL1);
-        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
-                Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
-        gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));
-        gl.get_cashRegistersList().forEach(c -> c.DrawSprite(ctx));
-        gl.get_poligons().forEach(q -> q.DrawSprite(ctx));
-    }
+   }
 
     @FXML
     public void startGame() throws IOException{
@@ -98,6 +89,7 @@ public class Level1Controller implements Initializable {
             return;
         GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
         ctx = new CanvasRendering(canvasL1);
+        ctx.set_camera(new Camera2D(new Coordinates(0,0),1));
         ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
                 Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
 //        gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));

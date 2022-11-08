@@ -76,6 +76,7 @@ public class LevelReader {
                 if (door == null)
                     continue;
                 matrix[(int) door.getPosition().getX()][(int) door.getPosition().getY()] = CellState.DOOR;
+                door.setPosition(new Coordinates(door.getPosition().getX()*Game.cell_width, door.getPosition().getY()*Game.cell_height));
                 doors.add(door);
             }
 
@@ -87,6 +88,7 @@ public class LevelReader {
                     continue;
                 for (GameObject cell : qPoligon.get_queueCells()) {
                     matrix[(int) cell.getPosition().getX()][(int) cell.getPosition().getY()] = CellState.QUEUE;
+                    cell.setPosition(new Coordinates(cell.getPosition().getX()*Game.cell_width, cell.getPosition().getY() * Game.cell_height));
                 }
                 queuePoligons.add(qPoligon);
             }
@@ -99,6 +101,7 @@ public class LevelReader {
                     continue;
                 }
                 matrix[(int) cashRegister.getPosition().getX()][(int) cashRegister.getPosition().getY()] = CellState.CASH_REGISTER_PART;
+                cashRegister.setPosition(new Coordinates(cashRegister.getPosition().getX()*Game.cell_width, cashRegister.getPosition().getY()*Game.cell_height));
                 cashRegisters.add(cashRegister);
             }
             if (cashRegisters.size() != queuePoligons.size())
