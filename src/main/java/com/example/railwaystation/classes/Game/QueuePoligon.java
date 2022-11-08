@@ -7,8 +7,6 @@ import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
 import java.util.Collection;
-import java.util.stream.Stream;
-
 public class QueuePoligon extends GameObject {
     private final Collection<GameObject> _queueCells;
 
@@ -16,10 +14,8 @@ public class QueuePoligon extends GameObject {
     public QueuePoligon(Collection<GameObject> queueCells) {
         this._queueCells = queueCells;
     }
-
     @Override
     public void DrawSprite(Rendering ctx){
-
         // draw N first users from the queue
         _queueCells.forEach(g -> g.DrawSprite(ctx));
 
@@ -36,9 +32,6 @@ public class QueuePoligon extends GameObject {
                 .toList()
                 .get(_queue.getUsers().size() - 1).DrawSprite(ctx);
     }
-
-
-
     public Collection<GameObject> get_queueCells() {
         return _queueCells;
     }
