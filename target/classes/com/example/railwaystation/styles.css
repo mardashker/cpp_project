@@ -25,13 +25,20 @@
 .button4 {
     -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/cosmos.jpeg');
 }
+
+.button{
+   -fx-background-color: #b6906a;
+}
 .level{
    -fx-background-color: #5bbad4;
     -fx-background-size: 100% 100%;
 
 }
 .levelView{
-   -fx-background-color: #F5F2F0;
+   -fx-background-color: #d7f1f8;
     -fx-background-size: 100% 100%;
 
+}
+.spin {
+-fx-font-size : 16pt;
 }

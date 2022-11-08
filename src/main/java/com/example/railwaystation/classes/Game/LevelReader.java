@@ -27,20 +27,24 @@ import java.util.List;
 
 //клас для читання інфи для Level з файлу
 public class LevelReader {
-    public static Collection<GameLevel> loadLevels(){
+    public static int level_width = 1;
+    public static int level_height = 1;
+
+    public static Collection<GameLevel> loadLevels() {
         URL levelFolder = LevelReader.class.getClassLoader().getResource("com/example/railwaystation/assets/levels");
         File dir = new File(levelFolder.getPath());
         List<GameLevel> levels = new ArrayList<>();
-        for (File file: dir.listFiles()){
-            if(file.isFile() && file.getPath().endsWith(".json")){
+        for (File file : dir.listFiles()) {
+            if (file.isFile() && file.getPath().endsWith(".json")) {
                 GameLevel lvl = loadLevel(file.getPath());
-                if(lvl != null) levels.add(lvl);
+                if (lvl != null) levels.add(lvl);
             }
         }
         return levels;
     }
+
     @Nullable
-    public static GameLevel loadLevel(String fileName)  {
+    public static GameLevel loadLevel(String fileName) {
         BufferedReader bw = null;
         try {
             bw = new BufferedReader(new FileReader(fileName));
@@ -56,17 +60,20 @@ public class LevelReader {
         } catch (ParseException e) {
             return null;
         }
-        try{
-            int width =(int) (long) jsonObjectdecode.get("width");
-            int height =(int) (long) jsonObjectdecode.get("height");
+        try {
+            int width = (int) (long) jsonObjectdecode.get("width");
+            int height = (int) (long) jsonObjectdecode.get("height");
+
+            level_width = width;
+            level_height = height;
 
             CellState[][] matrix = new CellState[width][height];
 
             JSONArray doorsJSON = (JSONArray) jsonObjectdecode.get("doors");
             List<Door> doors = new ArrayList<>();
-            for (Object o: doorsJSON){
+            for (Object o : doorsJSON) {
                 Door door = doorFromJSON((JSONObject) o);
-                if(door == null)
+                if (door == null)
                     continue;
                 matrix[(int) door.getPosition().getX()][(int) door.getPosition().getY()] = CellState.DOOR;
                 doors.add(door);
@@ -74,11 +81,11 @@ public class LevelReader {
 
             JSONArray queuePoligonsJSON = (JSONArray) jsonObjectdecode.get("queues");
             List<QueuePoligon> queuePoligons = new ArrayList<>();
-            for(Object o:queuePoligonsJSON){
+            for (Object o : queuePoligonsJSON) {
                 QueuePoligon qPoligon = queueFromJSON((JSONArray) o);
                 if (qPoligon == null)
                     continue;
-                for(GameObject cell: qPoligon.get_queueCells()){
+                for (GameObject cell : qPoligon.get_queueCells()) {
                     matrix[(int) cell.getPosition().getX()][(int) cell.getPosition().getY()] = CellState.QUEUE;
                 }
                 queuePoligons.add(qPoligon);
@@ -86,24 +93,24 @@ public class LevelReader {
 
             JSONArray cashRegistersJSON = (JSONArray) jsonObjectdecode.get("cash_registers");
             List<CashRegister> cashRegisters = new ArrayList<>();
-            for (Object o: cashRegistersJSON){
+            for (Object o : cashRegistersJSON) {
                 CashRegister cashRegister = cashRegisterFromJSON((JSONObject) o);
-                if (cashRegister == null){
+                if (cashRegister == null) {
                     continue;
                 }
                 matrix[(int) cashRegister.getPosition().getX()][(int) cashRegister.getPosition().getY()] = CellState.CASH_REGISTER_PART;
                 cashRegisters.add(cashRegister);
             }
-            if(cashRegisters.size() != queuePoligons.size())
+            if (cashRegisters.size() != queuePoligons.size())
                 return null;
             return new GameLevel(doors, cashRegisters, queuePoligons, matrix);
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             return null;
         }
     }
-    @ Nullable
-    static private Door doorFromJSON(JSONObject o){
+
+    @Nullable
+    static private Door doorFromJSON(JSONObject o) {
         try {
             Door newDoor = new Door();
 
@@ -116,18 +123,17 @@ public class LevelReader {
             newDoor.setPosition(new Coordinates(x, y));
 
             // TODO: add fallback image(in case image is not present)
-            Image sp = ResourceManagerDoor.getSprite((String)o.get("side"));
+            Image sp = ResourceManagerDoor.getSprite((String) o.get("side"));
             newDoor.setSprite(sp);
 
             return newDoor;
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             return null;
         }
     }
 
     @Nullable
-    static private CashRegister cashRegisterFromJSON(JSONObject o){
+    static private CashRegister cashRegisterFromJSON(JSONObject o) {
         try {
             CashRegister cashRegister = new CashRegister();
 
@@ -144,16 +150,16 @@ public class LevelReader {
             cashRegister.setSprite(sp);
 
             return cashRegister;
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             return null;
         }
     }
+
     @Nullable
-    static private QueuePoligon queueFromJSON(JSONArray o){
-        try{
+    static private QueuePoligon queueFromJSON(JSONArray o) {
+        try {
             List<GameObject> qcells = new ArrayList<>();
-            for(Object o1: (JSONArray) o){
+            for (Object o1 : (JSONArray) o) {
                 JSONObject cellJSON = (JSONObject) o1;
                 GameObject cell = new GameObject();
 
@@ -162,13 +168,12 @@ public class LevelReader {
 
                 cell.setHeight(Game.cell_height);
                 cell.setWidth(Game.cell_width);
-                cell.setPosition(new Coordinates(x,y));
-                cell.setSprite(ResourceManagerQueueCell.getSprite((String)cellJSON.get("sidemask")));
+                cell.setPosition(new Coordinates(x, y));
+                cell.setSprite(ResourceManagerQueueCell.getSprite((String) cellJSON.get("sidemask")));
                 qcells.add(cell);
             }
             return new QueuePoligon(qcells);
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
             return null;
         }
     }

@@ -14,17 +14,22 @@ import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class Level1Controller implements Initializable {
     public Canvas canvasL1;
+    AtomicReference<Double>  amount_people;
     public CanvasRendering ctx;
-
-    public GameLoop loop ;
+    public Spinner Amount;
+    public GameLoop loop;
 
     private Collection<User> userCollection = new ArrayList<>();
 
@@ -44,7 +49,12 @@ public class Level1Controller implements Initializable {
     }
 
     @FXML
-    public void startGame() throws IOException {
+    public void startGame() throws IOException{
+
+        //зміна кількості людей-----------------------------------------
+//        Game.setUsersCount(amount_people.get().intValue());
+        //------------------------------------------------------
+
 
         //CanvasRendering obj = new CanvasRendering(canvasL1);
 
@@ -58,11 +68,10 @@ public class Level1Controller implements Initializable {
 //            user.DrawSprite(ctx);
 //        }
 
-        try{
+        try {
             Thread thread = new Thread(loop);
             thread.start();
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             throw new RuntimeException(ex);
         }
     }
@@ -74,8 +83,15 @@ public class Level1Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Game.Init();
-//       canvasL1.setHeight(1920);
-//       canvasL1.setWidth(1920);
+        //Візуальна частина ----------------------------------------------------------------------------
+        canvasL1.setHeight(Game.cell_height*LevelReader.level_height);
+        canvasL1.setWidth(Game.cell_width*LevelReader.level_width);
+        SpinnerValueFactory<Double> valueFactoryAmount = new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 40, 40, 1);
+        Amount.setValueFactory(valueFactoryAmount);
+        amount_people = new AtomicReference<>((double) valueFactoryAmount.getValue());
+
+        //----------------------------------------------------------------------------------------------
+
         AssetsReader.loadAssets();
         Collection<GameLevel> gameLevels = LevelReader.loadLevels();
         if (gameLevels.isEmpty())
