@@ -21,11 +21,6 @@ public class CashRegisterManager {
         else if (register.getState() == State.WORKING) {
 
             processUserTickets(register);
-
-            if(register.getProcessingUser().getTickets().size() == 0) {
-                register.getOurQueue().removeFirsUser();
-                //TODO: log deleted user
-            }
         }
     }
 

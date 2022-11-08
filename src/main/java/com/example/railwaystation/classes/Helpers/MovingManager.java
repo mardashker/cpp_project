@@ -1,13 +1,49 @@
 package com.example.railwaystation.classes.Helpers;
 import com.example.railwaystation.classes.Game.CellState;
 import com.example.railwaystation.classes.Game.GameLevel;
+import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Moduls.GameObject;
+import com.example.railwaystation.classes.Moduls.Users.User;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.stream.Collectors;
 
 public class MovingManager {
 
-    public static GameObject findNextPost(Coordinates usr, Coordinates fin, GameLevel lvl) throws Exception {
+    public static GameObject optimizeMove(GameLevel lvl, QueuePoligon pol, User u, QueueManager man, Iterator<User> ui) throws Exception {
+        var mtrx = lvl.get_matrix();
+        var fin = pol.getQueueTailCoordinates().getPosition();
+        var usr = u.getPosition();
+        var dx = (int)(usr.getX() - fin.getX());
+        var dy = (int)(usr.getY() - fin.getY());
+        var res_pos = new Coordinates(usr.getX(), usr.getY());
+
+        var lst_pos = new ArrayList<Coordinates>();
+        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY() - 1));
+        lst_pos.add(new Coordinates(usr.getX(), usr.getY() - 1));
+        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY() - 1));
+
+        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY()));
+        lst_pos.add(new Coordinates(usr.getX(), usr.getY()));
+        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY()));
+
+        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY() + 1));
+        lst_pos.add(new Coordinates(usr.getX(), usr.getY() + 1));
+        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY() + 1));
+
+        lst_pos.stream().filter(p -> mtrx[(int)p.getX()][(int)p.getY()] == CellState.EMPTY).collect(Collectors.toList());
+
+        return null;
+    }
+
+    public static GameObject findNextPos(GameLevel lvl, QueuePoligon pol, User u, QueueManager man, Iterator<User> ui) throws Exception {
 
         var mtrx = lvl.get_matrix();
+
+        var fin = pol.getQueueTailCoordinates().getPosition();
+
+        var usr = u.getPosition();
 
         var dx = (int)(usr.getX() - fin.getX());
         var dy = (int)(usr.getY() - fin.getY());
@@ -17,6 +53,14 @@ public class MovingManager {
 
         var go = new GameObject();
         var res_pos = new Coordinates(usr.getX(), usr.getY());
+
+        if (dx == 0 && dy == 0) {
+            pol.get_queue().addUser(u);
+            man.addUser(pol, u);
+            ui.remove();
+            go.setPosition(res_pos);
+            return null;
+        }
 
         if (dx == 0 && dy != 0) {
             // move only by Y axis

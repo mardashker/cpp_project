@@ -1,5 +1,6 @@
 package com.example.railwaystation.classes.Moduls.Users;
 
+import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Moduls.GameObject;
 import com.example.railwaystation.classes.Moduls.Ticket;
@@ -22,6 +23,15 @@ public class User extends GameObject implements Cloneable {
     public Priority priority;
     private float speed;
     private State state;
+    private QueuePoligon _target = null;
+
+    public QueuePoligon get_target() {
+        return _target;
+    }
+
+    public void set_target(QueuePoligon _target) {
+        this._target = _target;
+    }
 
     public User(UserType type, UserInfo userInfo, Priority priority, float speed, State state, List<Ticket> tickets) {
         this.type = type;
@@ -30,6 +40,7 @@ public class User extends GameObject implements Cloneable {
         this.speed = speed;
         this.state = state;
         this.tickets = tickets;
+        this._target = null;
     }
 
     public User(Coordinates position, double width, double height, Image sprite, double angle, UserType type, UserInfo userInfo, Priority priority, float speed, State state, List<Ticket> tickets) {
@@ -40,16 +51,19 @@ public class User extends GameObject implements Cloneable {
         this.speed = speed;
         this.state = state;
         this.tickets = tickets;
+        this._target = null;
     }
     public User(Image sprite, UserType type, Priority priority, float speed){
         this.type = type;
         this.speed = speed;
         this.priority = priority;
         this.setSprite(sprite);
+        this._target = null;
     }
     public User userClone(){
         return new User(this.getSprite(), this.type, this.priority, this.speed);
     }
+
     public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates, double angle){
         this.userInfo = new UserInfo(name,surname,age,passportId,phoneNumber);
         this.tickets = tickets;

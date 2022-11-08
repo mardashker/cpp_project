@@ -28,6 +28,8 @@ public class DrawingManager {
      * Draws a new frame using information received from GameLevel.
      */
     public void drawFrame(){
+
+        _context.DrawGrid(1000, 1000, Game.cell_width, Game.cell_height); //TODO: that's just for testing, remove it later
         // draw doors
         for(var door : _level.get_doorsList())
             door.DrawSprite(_context);
@@ -42,7 +44,7 @@ public class DrawingManager {
 
         //draw users beyond any polygon
         for(var user : _level.get_movingUsers())
-            _context.DrawSprite(user.getPosition(), Game.cell_width, Game.cell_height, 0, user.getSprite());
+            user.DrawSprite(_context);
     }
 
     /**

@@ -84,8 +84,8 @@ public class Level1Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Game.Init();
         //Візуальна частина ----------------------------------------------------------------------------
-        canvasL1.setHeight(Game.cell_height*LevelReader.level_height);
-        canvasL1.setWidth(Game.cell_width*LevelReader.level_width);
+        //canvasL1.setHeight(Game.cell_height*LevelReader.level_height);
+        //canvasL1.setWidth(Game.cell_width*LevelReader.level_width);
         SpinnerValueFactory<Double> valueFactoryAmount = new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 40, 40, 1);
         Amount.setValueFactory(valueFactoryAmount);
         amount_people = new AtomicReference<>((double) valueFactoryAmount.getValue());

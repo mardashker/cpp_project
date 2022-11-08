@@ -5,6 +5,7 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
@@ -19,7 +20,7 @@ public class OurQueue implements Iterable<User>{
     private PriorityQueue<User> usersQueue;
 
     public OurQueue() {
-        this.usersQueue = new PriorityQueue<User>(10, new Comparator<User>() {
+        this.usersQueue = new PriorityQueue<>(10, new Comparator<User>() {
             public int compare(User u1, User u2) {
                 return Integer.compare(u1.getPriority().ordinal(), u2.getPriority().ordinal());
             }

@@ -33,6 +33,7 @@ public class CashRegister extends GameObject {
     }
 
     public CashRegister() {
+        ourQueue = new OurQueue();
     }
 
     public CashRegister(OurQueue ourQueue, State state, boolean isOpen) {

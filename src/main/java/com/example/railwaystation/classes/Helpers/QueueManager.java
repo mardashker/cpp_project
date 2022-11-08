@@ -28,8 +28,8 @@ public class QueueManager {
 
     public void addUser(QueuePoligon poligon, User user) {
         this.poligon = poligon;
-        var queue = poligon.get_queue();
-        moveNewUser(user);
+
+        moveNewUser(user,poligon);
     }
 
     private void findPolygonQueue(OurQueue queue){
@@ -67,12 +67,17 @@ public class QueueManager {
         }
     }
 
-    public void moveNewUser(User newUser) {
+    public void moveNewUser(User newUser, QueuePoligon poligon) {
+        this.poligon = poligon;
 
         if(isPolygonFull())
             return;
 
+
         var newUserCellIndex = poligon.get_queue().getUsers().size() - 1;
+        if(newUserCellIndex > poligon.get_queueCells().size() - 1)
+            newUserCellIndex = poligon.get_queueCells().size() - 1;
+
         var cellPosition = poligon.get_queueCells()
                 .stream()
                 .toList()
