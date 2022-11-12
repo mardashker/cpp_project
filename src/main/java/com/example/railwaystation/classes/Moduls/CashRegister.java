@@ -34,6 +34,7 @@ public class CashRegister extends GameObject {
 
     public CashRegister() {
         ourQueue = new OurQueue();
+        this.timer = new StopWatch();
     }
 
     public CashRegister(OurQueue ourQueue, State state, boolean isOpen) {
