@@ -3,11 +3,32 @@ package com.example.railwaystation.classes.Moduls;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import javafx.scene.image.Image;
 
+import java.util.Objects;
+
 public class Door extends GameObject {
 
     private boolean _open;
     public Door(){
         _open = true;
+    }
+
+    @Override
+    public String toString() {
+        return "Door{" +
+                "_open=" + _open +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Door door)) return false;
+        return _open == door._open;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.getPosition());
     }
 
     public Door(Coordinates position, double width, double height, Image sprite, float angle, boolean _open) {

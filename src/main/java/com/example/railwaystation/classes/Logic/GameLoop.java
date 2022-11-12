@@ -67,9 +67,8 @@ public class GameLoop implements Runnable {
         moveUsers();
     }
     private void checkDoorsAndNewUsers(){
-        GeneratingManager manager =
-                new GeneratingManager(_game.get_currentLevel(), this._userSources);
 
+        GeneratingManager manager = new GeneratingManager(_game.get_currentLevel(), this._userSources);
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = userNumber >= _maxUserCount;
         var newUsers = manager.collectUsers();
@@ -98,14 +97,16 @@ public class GameLoop implements Runnable {
                 el.set_target(correct_queue);
             }
 
+            correct_queue.set_potential_count(correct_queue.get_potential_count() + 1);
             try {
-                // TODO: Implement hashmap door logic and user.
-
-                var res = MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
-
-                if(res != null){
-                    el.setPosition(res.getPosition());
+                if (el.get_path() == null) {
+                    var p = Game.resolver.get(el.get_birth_place()).get(el.get_target().getQueueTailCoordinates().getPosition());
+                    el.set_path(p);
                 }
+
+                MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
+
+
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
