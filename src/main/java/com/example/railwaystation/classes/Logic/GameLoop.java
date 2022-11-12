@@ -78,9 +78,11 @@ public class GameLoop implements Runnable {
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = userNumber >= _maxUserCount;
         var newUsers = manager.collectUsers();
-        //Game.currentLevel.get_movingUsers().addAll(newUsers);
+
         if(isCrowded)
             manager.closeDoors();
+        else
+            manager.openDoors();
     }
 
     private void checkRegistryServices(){

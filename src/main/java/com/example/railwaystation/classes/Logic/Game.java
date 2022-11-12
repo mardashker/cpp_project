@@ -3,6 +3,10 @@ package com.example.railwaystation.classes.Logic;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
+import com.example.railwaystation.classes.Game.QueuePoligon;
+import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
+import com.example.railwaystation.classes.Helpers.Star.Node;
 import com.example.railwaystation.classes.Helpers.WiseGenerator;
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Moduls.Door;
@@ -23,6 +27,8 @@ public class Game {
     private static List<Generator> _generators;
 
     public static HashMap<Door, HashMap<Coordinates, List<Node>>> resolver;
+
+    private static OurQueue queueToShow = null;
 
     private static Collection<GameLevel> _levels;
 
@@ -58,28 +64,8 @@ public class Game {
 
     }
 
-//    public void InitAssets(){
-//        generators = new ArrayList<Generator>();
-//        var doors = currentLevel.get_doorsList();
-//        doors.stream().forEach(door -> {
-//            try {
-//                generators.add(new WiseGenerator(door));
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//        });
-//        try {
-//            var prototypeManager = new PrototypeRegistry();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        //GameLoop loop = new GameLoop();
-//        //loop.run();
-//        generators.stream().forEach(generator -> {
-//            var user = generator.generateUser();
-//
-//        });
-//        String assetsFolder = "";
-//    }
-
+    public static void showQueueDetails(OurQueue queue){
+        Game.queueToShow = queue;
+        //TODO: actions to show queue detailed info
+    }
 }

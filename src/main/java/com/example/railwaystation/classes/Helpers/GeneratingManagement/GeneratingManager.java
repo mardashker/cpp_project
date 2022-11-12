@@ -76,6 +76,9 @@ public class GeneratingManager {
     public void closeDoors(){
         _level.get_doorsList().forEach(Door::close);
     }
+    public void openDoors(){
+        _level.get_doorsList().forEach(Door::open);
+    }
 }
 
 
