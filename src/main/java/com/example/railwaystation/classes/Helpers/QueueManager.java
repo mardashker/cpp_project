@@ -1,19 +1,11 @@
 package com.example.railwaystation.classes.Helpers;
 
-import com.example.railwaystation.classes.Game.QueuePoligon;
-import com.example.railwaystation.classes.Moduls.Users.User;
-
-import java.util.Comparator;
-import java.util.List;
-
-
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Moduls.Users.User;
 
-import java.util.Collection;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class QueueManager {
@@ -93,9 +85,7 @@ public class QueueManager {
     private boolean isPolygonFull() {
         int usersNumber = poligon.get_queue().getUsers().size();
 
-        if(usersNumber >= poligon.get_queueCells().size())
-            return true;
-        return false;
+        return usersNumber >= poligon.get_queueCells().size();
     }
 
     //Клієнт має можливість обирати одну з кас
@@ -107,10 +97,10 @@ public class QueueManager {
 
         var res = lst
                 .stream()
-                .sorted(Comparator.comparingInt(o -> o.get_queue().size())).toList();
+                .sorted(Comparator.comparingInt(QueuePoligon::get_potential_count)).toList();
 
         // if all queues are the same
-        if (res.stream().allMatch(p -> p.get_queue().size() == res.get(0).get_queue().size())) {
+        if (res.stream().allMatch(p -> p.get_potential_count() == res.get(0).get_potential_count())) {
             return res
                     .stream()
                     .sorted(Comparator.comparingInt(o -> DistanceHelper.calcDistance(usr, o))).toList()

@@ -5,7 +5,6 @@ import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class GameLevel {
@@ -29,8 +28,7 @@ public class GameLevel {
     private final List<Door> _doorsList;
     private final List<CashRegister> _cashRegistersList;
     private final List<QueuePoligon> _poligons;
-    private final List<User> _movingUsers = new ArrayList<User>();
-
+    private final List<User> _movingUsers = new ArrayList<>();
 
     //дані можуть міститися в файлі (незалежно від формату файлу матриця не змінюється)
     //TODO: знайти клас Matrix або щось подібне

@@ -26,7 +26,7 @@ public class Game {
     public static int usersCount;
     private static List<Generator> _generators;
 
-    public static HashMap<Door, HashMap<Coordinates, List<Node>>> resolver;
+    public static HashMap<Coordinates, HashMap<Coordinates, List<Node>>> resolver;
 
     private static OurQueue queueToShow = null;
 

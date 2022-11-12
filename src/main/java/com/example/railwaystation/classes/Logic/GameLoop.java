@@ -1,20 +1,15 @@
 package com.example.railwaystation.classes.Logic;
 
-import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.CashRegisterManager;
-import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Helpers.DrawingManagement.DrawingManager;
 import com.example.railwaystation.classes.Helpers.GeneratingManagement.GeneratingManager;
 import com.example.railwaystation.classes.Helpers.MovingManager;
 import com.example.railwaystation.classes.Helpers.QueueManager;
 import com.example.railwaystation.classes.Interfaces.Generator;
-import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.State;
-import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
-import java.util.Iterator;
 import java.util.List;
 
 //TODO: клас для управління всієї логіки програми
@@ -87,42 +82,41 @@ public class GameLoop implements Runnable {
 
     private void checkRegistryServices(){
         var cashRegisters = Game.get_currentLevel().get_cashRegistersList();
-        cashRegisters.forEach(c -> _cashRegisterManager.processUser(c));
+        cashRegisters.forEach(_cashRegisterManager::processUser);
     }
     private void moveUsers() {
-//        var lvl = Game.get_currentLevel();
-//
-//        QueuePoligon correct_queue;
-//        var it = lvl.get_movingUsers().iterator();
-//
-//        while(it.hasNext()){
-//            var el = it.next();
-//            if (el.get_target() != null) {
-//                correct_queue = el.get_target();
-//            } else {
-//                correct_queue = QueueManager.getCorrectQueue(el, lvl.get_poligons());
-//                el.set_target(correct_queue);
-//            }
-//
-//            try {
-//                var res = MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
-//                if(res != null){
-//                    el.setPosition(res.getPosition());
-//                }
-//            } catch (Exception e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
+        var lvl = Game.get_currentLevel();
+        QueuePoligon correct_queue;
+        var it = lvl.get_movingUsers().iterator();
+
+        while(it.hasNext()) {
+            var el = it.next();
+            if (el.get_target() != null) {
+                correct_queue = el.get_target();
+            } else {
+                correct_queue = QueueManager.getCorrectQueue(el, lvl.get_poligons());
+                el.set_target(correct_queue);
+            }
+
+            try {
+                // TODO: Implement hashmap door logic and user.
+
+                var res = MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
+
+                if(res != null){
+                    el.setPosition(res.getPosition());
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     private void renderNewFrame(){
-        var drawingManager
-                = new DrawingManager(_game.get_currentLevel(), _renderingUnit);
+        var drawingManager = new DrawingManager(_game.get_currentLevel(), _renderingUnit);
         drawingManager.clearCanvas();
         drawingManager.drawFrame();
     }
-
-
 
     public boolean isRunning(){
         return _isRunning;

@@ -7,10 +7,19 @@ import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
 import java.util.Collection;
-import java.util.stream.Stream;
 
 public class QueuePoligon extends GameObject {
+
+    private int _potential_count = 0;
     private final Collection<GameObject> _queueCells;
+
+    public int get_potential_count() {
+        return _potential_count;
+    }
+
+    public void set_potential_count(int _potential_count) {
+        this._potential_count = _potential_count;
+    }
 
     private OurQueue _queue = new OurQueue();
     public QueuePoligon(Collection<GameObject> queueCells) {

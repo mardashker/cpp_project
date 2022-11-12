@@ -2,22 +2,58 @@ package com.example.railwaystation.classes.Moduls.Users;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Helpers.Star.Node;
+import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.GameObject;
 import com.example.railwaystation.classes.Moduls.Ticket;
 import javafx.scene.image.Image;
 
+import java.util.Iterator;
 import java.util.List;
 
 enum State{
     MOVING,
     PROCESSING, //користувача обслуговує каса
     PENDING //стоїть в черзі
-
 }
 
 public class User extends GameObject implements Cloneable {
     // TODO: add get setters and getters
     private UserType type;
+
+    private Iterator<Node> _it;
+
+    private List<Node> _path = null;
+
+    public List<Node> get_path() {
+        return _path;
+    }
+
+    private Door _birth_place = null;
+
+    public Door get_birth_place() {
+        return _birth_place;
+    }
+
+    public void set_birth_place(Door _birth_place) {
+        this._birth_place = _birth_place;
+    }
+
+    public boolean move_next_step() {
+        if (_it.hasNext()) {
+            var res = _it.next();
+            setPosition(new Coordinates(res.getCol(), res.getRow()));
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void set_path(List<Node> _path) {
+        this._path = _path;
+        this._it = this._path.iterator();
+    }
+
     private UserInfo userInfo;
     private List<Ticket> tickets;
     public Priority priority;
