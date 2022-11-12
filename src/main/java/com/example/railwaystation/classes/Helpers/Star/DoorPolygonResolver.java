@@ -15,7 +15,7 @@ public class DoorPolygonResolver {
         for (var door : gl.get_doorsList()) {
             var tmap = new HashMap<Coordinates, List<Node>>();
             for (var qe : gl.get_poligons()) {
-                System.out.println(door.getPosition() + " " + qe.getQueueTailCoordinates().getPosition());
+
                 var res = AlgorithmResolver.resolvePath(
                         door.getPosition(),
                         qe.getQueueTailCoordinates().getPosition(),

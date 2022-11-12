@@ -1,8 +1,7 @@
 package com.example.railwaystation.classes.Helpers.Star;
 
-import com.example.railwaystation.classes.Helpers.Coordinates;
-
 public class Node {
+
     private int g;
     private int f;
     private int h;
@@ -10,22 +9,6 @@ public class Node {
     private int col;
     private boolean isBlock;
     private Node parent;
-
-    private boolean start;
-
-    private boolean goal;
-
-    private boolean solid;
-
-    private boolean open;
-
-    private boolean checked;
-
-    public Node(Coordinates c) {
-        super();
-        this.row = (int)c.getX();
-        this.col = (int)c.getY();
-    }
 
     public Node(int row, int col) {
         super();

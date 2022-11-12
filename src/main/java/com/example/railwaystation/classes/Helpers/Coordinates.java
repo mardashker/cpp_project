@@ -13,6 +13,11 @@ public class Coordinates {
         x = 0;
         y = 0;
     }
+
+    public boolean compareStartAlg(Coordinates other) {
+        return this.x == other.y && this.y == other.x;
+    }
+
     public Coordinates(double x, double y){
         this.x = x;
         this.y = y;

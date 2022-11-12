@@ -32,26 +32,16 @@ public class StarAlgorithm {
         this.closedSet = new HashSet<>();
     }
 
-    StarAlgorithm(int rows, int cols, Node initialNode, Node finalNode) {
+    public StarAlgorithm(int rows, int cols, Node initialNode, Node finalNode) {
         this(rows, cols, initialNode, finalNode, DEFAULT_HV_COST, DEFAULT_DIAGONAL_COST);
     }
 
     private void setNodes() {
-        for (int i = 0; i < searchArea.length; i++) { //Y
-            for (int j = 0; j < searchArea[0].length; j++) { //X
-                Node node = new Node(j, i);
+        for (int i = 0; i < searchArea.length; i++) {
+            for (int j = 0; j < searchArea[0].length; j++) {
+                Node node = new Node(i, j);
                 node.calculateHeuristic(getFinalNode());
                 this.searchArea[i][j] = node;
-            }
-        }
-    }
-
-    public void setBlocks(CellState[][] blocksArray) {
-        for (int i = 0; i < blocksArray.length; i++) { //y
-            for (int j = 0; j < blocksArray[0].length; j++) { //x
-                if (blocksArray[i][j] == CellState.CASH_REGISTER_PART || blocksArray[i][j] == CellState.QUEUE) {
-                    setBlock(i, j);
-                }
             }
         }
     }
@@ -64,32 +54,20 @@ public class StarAlgorithm {
         }
     }
 
-    public void printBlocks() {
-        for (int i = 0; i < this.searchArea.length; i++) {
-            for (int j = 0; j < this.searchArea[0].length; j++) {
-                System.out.print(searchArea[i][j].isBlock() + " ");
-            }
-            System.out.println("\n");
-        }
-    }
-
     public void setBlocks(List<Coordinates> blocksArray) {
-        for (var item : blocksArray) {
-            int row = (int)item.getX();
-            int col = (int)item.getY();
-            setBlock(row, col);
+        for (var i : blocksArray) {
+            setBlock((int) i.getY(), (int) i.getX());
         }
 
-        //printBlocks();
     }
 
     public List<Node> findPath() {
         openList.add(initialNode);
         while (!isEmpty(openList)) {
             Node currentNode = openList.poll();
-            System.out.println("CURRENT: " + currentNode);
             closedSet.add(currentNode);
             if (isFinalNode(currentNode)) {
+                System.out.println("FINAL: " + currentNode);
                 return getPath(currentNode);
             } else {
                 addAdjacentNodes(currentNode);
@@ -146,7 +124,6 @@ public class StarAlgorithm {
         int row = currentNode.getRow();
         int col = currentNode.getCol();
         int upperRow = row - 1;
-
         if (upperRow >= 0) {
             if (col - 1 >= 0) {
                 checkNode(currentNode, col - 1, upperRow, getDiagonalCost()); // Comment this if diagonal movements are not allowed
@@ -159,7 +136,6 @@ public class StarAlgorithm {
     }
 
     private void checkNode(Node currentNode, int col, int row, int cost) {
-        System.out.println(row + " " + col);
         Node adjacentNode = getSearchArea()[row][col];
         if (!adjacentNode.isBlock() && !getClosedSet().contains(adjacentNode)) {
             if (!getOpenList().contains(adjacentNode)) {
@@ -186,7 +162,6 @@ public class StarAlgorithm {
     }
 
     private void setBlock(int row, int col) {
-        //System.out.println(row + " " + col);
         this.searchArea[row][col].setBlock(true);
     }
 
@@ -207,7 +182,6 @@ public class StarAlgorithm {
     }
 
     public Node[][] getSearchArea() {
-        //System.out.println(searchArea.length + "ROWS ; " + searchArea[0].length + "COLS;");
         return searchArea;
     }
 
