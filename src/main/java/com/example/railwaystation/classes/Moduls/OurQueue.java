@@ -5,10 +5,8 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.PriorityQueue;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 //черга до каси
 public class OurQueue implements Iterable<User>{
@@ -17,19 +15,26 @@ public class OurQueue implements Iterable<User>{
 
     private Coordinates coordinates;
 
-    private PriorityQueue<User> usersQueue;
+    private CopyOnWriteArrayList<User> usersQueue;
 
     public OurQueue() {
-        this.usersQueue = new PriorityQueue<>(10, new Comparator<User>() {
-            public int compare(User u1, User u2) {
-                return Integer.compare(u1.getPriority().ordinal(), u2.getPriority().ordinal());
-            }
-        });
+        this.usersQueue = new CopyOnWriteArrayList<>( );
+//        this.usersQueue = new PriorityQueue<>(10, new Comparator<User>() {
+//            public int compare(User u1, User u2) {
+//                return Integer.compare(u1.getPriority().ordinal(), u2.getPriority().ordinal());
+//            }
+//        });
     }
 
     public void addUser(User user){
         this.usersQueue.add(user);
-        //TODO
+        if(usersQueue.size() > 1){
+            Collections.sort(usersQueue.subList(1,usersQueue.size()),new Comparator<User>() {
+                public int compare(User u1, User u2) {
+                    return Integer.compare(u2.getPriority().ordinal(), u1.getPriority().ordinal());
+                }
+            });
+        }
     }
 
     public int getSize() {
@@ -48,23 +53,25 @@ public class OurQueue implements Iterable<User>{
         this.coordinates = coordinates;
     }
 
-    public PriorityQueue<User> getUsers() {
+    public List<User> getUsers() {
         return usersQueue;
     }
 
     public int size(){
         return usersQueue.size();
     }
-    public void setUsersQueue(PriorityQueue<User> usersQueue) {
+    public void setUsersQueue(CopyOnWriteArrayList<User> usersQueue) {
         this.usersQueue = usersQueue;
     }
     public void removeFirsUser() {
         if(usersQueue.size() > 0)
-            usersQueue.remove();
+            usersQueue.remove(0);
     }
 
     public User getFirsUser() {
-        return usersQueue.peek();
+        if(usersQueue.size() > 0)
+            return usersQueue.get(0);
+        return null;
     }
 
     @NotNull

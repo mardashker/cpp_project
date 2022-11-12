@@ -66,20 +66,30 @@ public class QueueManager {
             return;
 
 
-        var newUserCellIndex = poligon.get_queue().getUsers().size() - 1;
-        if(newUserCellIndex > poligon.get_queueCells().size() - 1)
-            newUserCellIndex = poligon.get_queueCells().size() - 1;
+//        var newUserCellIndex = poligon.get_queue().getUsers().size() - 1;
+//        if(newUserCellIndex > poligon.get_queueCells().size() - 1)
+//            newUserCellIndex = poligon.get_queueCells().size() - 1;
+//
+//        var cellPosition = poligon.get_queueCells()
+//                .stream()
+//                .toList()
+//                .get(newUserCellIndex)
+//                .getPosition();
+//
+//        newUser.getPosition().setXY(
+//                cellPosition.getX(),
+//                cellPosition.getY()
+//        );
+        var users = poligon.get_queue().getUsers().stream().toList();
+        var cells = poligon.get_queueCells().stream().toList();
 
-        var cellPosition = poligon.get_queueCells()
-                .stream()
-                .toList()
-                .get(newUserCellIndex)
-                .getPosition();
-
-        newUser.getPosition().setXY(
-                cellPosition.getX(),
-                cellPosition.getY()
-        );
+        for (int i = 0; i < poligon.get_queueCells().size(); i++) {
+            if(i >= users.size())
+                return;
+            users.get(i).getPosition().setXY(cells.get(i).getPosition().getX(),cells.get(i).getPosition().getY());
+        }
+        users.get(users.size()-1).getPosition().setXY(cells.get(cells.size()-1).getPosition().getX(),
+                cells.get(cells.size()-1).getPosition().getY());
     }
 
     private boolean isPolygonFull() {

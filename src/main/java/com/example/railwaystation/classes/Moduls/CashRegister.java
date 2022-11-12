@@ -5,13 +5,14 @@ import com.example.railwaystation.classes.Moduls.Users.User;
 import javafx.scene.image.Image;
 
 public class CashRegister extends GameObject {
-
-    private OurQueue ourQueue;
+    private volatile OurQueue ourQueue;
     private User processingUser;
     private long secondsToProcessUser = 0;
     private State state;
     private StopWatch timer;
-    private boolean isOpen;
+    private volatile boolean isOpen;
+
+    private final Object syncObject = new Object();
 
     public void processUser(){
         //TODO: процес обробки першого юзера з черги
@@ -50,7 +51,7 @@ public class CashRegister extends GameObject {
         this.isOpen = isOpen;
     }
 
-    public OurQueue getOurQueue() {
+    public synchronized OurQueue getOurQueue() {
         return ourQueue;
     }
 
@@ -58,12 +59,14 @@ public class CashRegister extends GameObject {
         return state;
     }
 
-    public boolean isOpen() {
+    public synchronized boolean isOpen() {
         return isOpen;
     }
 
-    public void setOurQueue(OurQueue ourQueue) {
-        this.ourQueue = ourQueue;
+    public synchronized void setOurQueue(OurQueue ourQueue) {
+        synchronized (syncObject) {
+            this.ourQueue = ourQueue;
+        }
     }
 
     public User getProcessingUser() {
@@ -94,7 +97,8 @@ public class CashRegister extends GameObject {
         this.timer = timer;
     }
 
-    public void setOpen(boolean open) {
+    public synchronized void setOpen(boolean open) {
         isOpen = open;
+
     }
 }

@@ -66,7 +66,6 @@ public class GeneratingManager {
 
         _level.get_movingUsers().addAll(newUsers);
 
-        newUsers.forEach(u -> System.out.println(u.toString()));
         return newUsers;
     }
 

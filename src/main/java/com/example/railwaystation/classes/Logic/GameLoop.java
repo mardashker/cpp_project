@@ -7,10 +7,15 @@ import com.example.railwaystation.classes.Helpers.GeneratingManagement.Generatin
 import com.example.railwaystation.classes.Helpers.MovingManager;
 import com.example.railwaystation.classes.Helpers.QueueManager;
 import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.classes.Moduls.CashRegister;
+import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Moduls.State;
 import com.example.railwaystation.classes.Rendering.Rendering;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 
 import java.util.List;
+import java.util.Optional;
 
 //TODO: клас для управління всієї логіки програми
 public class GameLoop implements Runnable {
@@ -41,7 +46,18 @@ public class GameLoop implements Runnable {
         double nextFrameTime = System.nanoTime() + drawInterval;// next frame time in nanoseconds
         double timeToWaitBeforeNext = 0;                        // free time after rendering before next iteration
         Game.get_currentLevel().get_cashRegistersList().forEach(c->c.setState(State.OPEN));
+
+        //TODO: remove this porn *_*
+        for (int i = 0; i < Game.get_currentLevel().get_cashRegistersList().size(); i++)
+            Game.get_currentLevel().get_cashRegistersList().get(i).setOurQueue(Game.get_currentLevel().get_poligons().get(i).get_queue());
+
         while(_isRunning){
+
+            for(var p : Game.currentLevel.get_poligons())
+                p.get_queue().getUsers().add(null);
+            for(var p : Game.currentLevel.get_poligons())
+                p.get_queue().getUsers().remove(null);
+
 
             updateStationState();
             renderNewFrame();
@@ -63,9 +79,10 @@ public class GameLoop implements Runnable {
 
     private void updateStationState(){
         checkDoorsAndNewUsers();
-        checkRegistryServices();
         moveUsers();
+        checkRegistryServices();
     }
+    //TODO: fix. It collects users from all the generators even when there's a single spare place
     private void checkDoorsAndNewUsers(){
         GeneratingManager manager =
                 new GeneratingManager(_game.get_currentLevel(), this._userSources);
@@ -124,5 +141,6 @@ public class GameLoop implements Runnable {
     public void stop(){
         this._isRunning = false;
     }
+
 }
 

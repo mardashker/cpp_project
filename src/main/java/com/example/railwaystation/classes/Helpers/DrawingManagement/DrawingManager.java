@@ -34,13 +34,15 @@ public class DrawingManager {
         for(var door : _level.get_doorsList())
             door.DrawSprite(_context);
 
+        // draw polygons and users on these polygons
+        for(var poligonQ : _level.get_poligons()){
+            poligonQ.DrawSprite(_context);
+        }
+
+
         // draw cashRegisters
         for(var register : _level.get_cashRegistersList())
             register.DrawSprite(_context);
-
-        // draw polygons and users on these polygons
-        for(var poligonQ : _level.get_poligons())
-            poligonQ.DrawSprite(_context);
 
         //draw users beyond any polygon
         for(var user : _level.get_movingUsers())

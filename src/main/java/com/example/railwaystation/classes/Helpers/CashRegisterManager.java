@@ -30,6 +30,8 @@ public class CashRegisterManager {
         if(register.getProcessingUser() == null)
             return;
 
+        //register.getOurQueue().removeFirsUser();
+
         register.setState(State.WORKING);
         register.setSecondsToProcessUser(
                 CashRegisterHelper.countTicketProcessTime(
