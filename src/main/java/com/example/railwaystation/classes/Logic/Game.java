@@ -16,6 +16,9 @@ import java.util.List;
 public class Game {
     public static final double cell_width = 20;
     public static final double cell_height = 20;
+
+    public static int maxUserCount;
+
     public static int usersCount;
     private static List<Generator> _generators;
 
