@@ -30,7 +30,6 @@ public class WiseGenerator implements Generator {
         checkProbability();
         if(this.door.isOpen()){
             if(randomizer.nextInt(1, 101) <= probability){
-                Game.usersCount++;
                 var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
                 user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
                         dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets(), door.getPosition(),door.getAngle());
@@ -43,12 +42,11 @@ public class WiseGenerator implements Generator {
         return null;
     }
     private void checkProbability(){
-        var usersCount = Game.usersCount;
-        if(isBetween(usersCount,0,25)){
+        if(isBetween(Game.usersCount,0,(int) (Game.maxUserCount * 0.25))){
             probability = 100;
-        } else if(isBetween(usersCount,25,50)){
+        } else if(isBetween(Game.usersCount,(int) (Game.maxUserCount * 0.25),(int) (Game.maxUserCount * 0.5))){
             probability = 75;
-        } else if(isBetween(usersCount,50,75)){
+        } else if(isBetween(Game.usersCount,(int) (Game.maxUserCount * 0.5),(int)(Game.maxUserCount * 0.75))){
             probability = 50;
         }  else{
             probability = 25;
