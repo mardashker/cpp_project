@@ -17,9 +17,9 @@ public class Game {
     public static final double cell_width = 20;
     public static final double cell_height = 20;
 
-    public static int maxUserCount;
+    private static int maxUserCount;
 
-    public static int usersCount;
+    private static int usersCount;
     private static List<Generator> _generators;
 
     private static Collection<GameLevel> _levels;
@@ -56,7 +56,23 @@ public class Game {
 
     }
 
-//    public void InitAssets(){
+    public static int getMaxUserCount() {
+        return maxUserCount;
+    }
+
+    public static void setMaxUserCount(int maxUserCount) {
+        Game.maxUserCount = maxUserCount;
+    }
+
+    public static int getUsersCount() {
+        return usersCount;
+    }
+
+    public static void setUsersCount(int usersCount) {
+        Game.usersCount = usersCount;
+    }
+
+    //    public void InitAssets(){
 //        generators = new ArrayList<Generator>();
 //        var doors = currentLevel.get_doorsList();
 //        doors.stream().forEach(door -> {
