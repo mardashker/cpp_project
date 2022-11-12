@@ -16,4 +16,5 @@ public class UserInfo {
         this.passportId = passportId;
         this.phoneNumber = phoneNumber;
     }
+
 }

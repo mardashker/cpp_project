@@ -37,7 +37,7 @@ public class UserTypeGenerator implements Generator {
 
 
     @Override
-    public User generateUser() {
+    public User generateUser()  {
         if (this.door.isOpen()) {
             Game.usersCount++;
             var user = PrototypeRegistry.getPrototype(userType).userClone();

@@ -7,6 +7,7 @@ import com.example.railwaystation.classes.Moduls.Ticket;
 import javafx.scene.image.Image;
 
 import java.util.List;
+import java.util.Objects;
 
 enum State{
     MOVING,
@@ -31,6 +32,9 @@ public class User extends GameObject implements Cloneable {
 
     public void set_target(QueuePoligon _target) {
         this._target = _target;
+    }
+
+    public User() {
     }
 
     public User(UserType type, UserInfo userInfo, Priority priority, float speed, State state, List<Ticket> tickets) {
@@ -60,6 +64,7 @@ public class User extends GameObject implements Cloneable {
         this.setSprite(sprite);
         this._target = null;
     }
+
     public User userClone(){
         return new User(this.getSprite(), this.type, this.priority, this.speed);
     }
