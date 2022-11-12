@@ -1,11 +1,13 @@
 package com.example.railwaystation.classes.Helpers;
 
+import com.example.railwaystation.classes.Helpers.GeneratingManagement.GeneratingManager;
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
 import com.example.railwaystation.classes.Moduls.Users.UserType;
+import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
 
 import java.io.IOException;
 import java.util.SplittableRandom;
@@ -32,6 +34,9 @@ public class WiseGenerator implements Generator {
                 var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
                 user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
                         dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets(), door.getPosition(),door.getAngle());
+                if(user.getType() == UserType.ORDINARY){
+                    user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,5)));
+                }
                 return user;
             }
         }

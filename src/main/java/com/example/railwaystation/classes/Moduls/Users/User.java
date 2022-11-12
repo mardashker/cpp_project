@@ -16,7 +16,7 @@ enum State{
 
 }
 
-public class User extends GameObject implements Cloneable {
+public class User extends GameObject {
     // TODO: add get setters and getters
     private UserType type;
     private UserInfo userInfo;
