@@ -1,6 +1,7 @@
 package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
@@ -103,10 +104,13 @@ public class LevelReader {
             }
             if (cashRegisters.size() != queuePoligons.size())
                 return null;
+
             return new GameLevel(doors, cashRegisters, queuePoligons, matrix);
         } catch (Exception ex) {
             return null;
         }
+
+
     }
 
     @Nullable

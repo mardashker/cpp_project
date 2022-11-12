@@ -4,6 +4,7 @@ import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Helpers.*;
+import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Logic.GameLoop;
@@ -118,6 +119,7 @@ public class Level1Controller implements Initializable {
         });
 
         Game game = new Game();
+        Game.resolver = DoorPolygonResolver.calculate(gl);
         Game.currentLevel = gl;
         GameLoop loop = new GameLoop(new Game(), generators, ctx);
         this.loop = loop;

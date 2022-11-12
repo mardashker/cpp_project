@@ -5,12 +5,15 @@ import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Helpers.WiseGenerator;
 import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.classes.Moduls.Door;
+import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Moduls.Users.*;
 import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 public class Game {
@@ -18,6 +21,8 @@ public class Game {
     public static final double cell_height = 20;
     public static int usersCount;
     private static List<Generator> _generators;
+
+    public static HashMap<Door, HashMap<Coordinates, List<Node>>> resolver;
 
     private static Collection<GameLevel> _levels;
 

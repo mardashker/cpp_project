@@ -58,6 +58,7 @@ public class GameObject {
     public void setAngle(double angle) {
         this.angle = angle;
     }
+
     public void DrawSprite(Rendering ctx){
         ctx.DrawSprite(position,width,height,angle,sprite);
     }

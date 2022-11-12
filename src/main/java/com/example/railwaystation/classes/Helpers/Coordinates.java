@@ -1,5 +1,7 @@
 package com.example.railwaystation.classes.Helpers;
 
+import java.util.Objects;
+
 public class Coordinates {
 
     private double x;
@@ -15,6 +17,22 @@ public class Coordinates {
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Coordinates that)) return false;
+        return Double.compare(that.x, x) == 0 && Double.compare(that.y, y) == 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Coordinates{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
+
     public double getX() {
         return x;
     }

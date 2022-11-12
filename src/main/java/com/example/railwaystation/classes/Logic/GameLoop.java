@@ -88,30 +88,29 @@ public class GameLoop implements Runnable {
         cashRegisters.forEach(c -> _cashRegisterManager.processUser(c));
     }
     private void moveUsers() {
-        var lvl = Game.get_currentLevel();
-
-        QueuePoligon correct_queue;
-        var it = lvl.get_movingUsers().iterator();
-
-        while(it.hasNext()){
-            var el = it.next();
-            if (el.get_target() != null) {
-                correct_queue = el.get_target();
-            } else {
-                correct_queue = QueueManager.getCorrectQueue(el, lvl.get_poligons());
-                el.set_target(correct_queue);
-            }
-
-            try {
-                var res = MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
-                if(res != null){
-                    el.setPosition(res.getPosition());
-                }
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
-
+//        var lvl = Game.get_currentLevel();
+//
+//        QueuePoligon correct_queue;
+//        var it = lvl.get_movingUsers().iterator();
+//
+//        while(it.hasNext()){
+//            var el = it.next();
+//            if (el.get_target() != null) {
+//                correct_queue = el.get_target();
+//            } else {
+//                correct_queue = QueueManager.getCorrectQueue(el, lvl.get_poligons());
+//                el.set_target(correct_queue);
+//            }
+//
+//            try {
+//                var res = MovingManager.findNextPos(lvl, correct_queue, el, this._queueManager, it);
+//                if(res != null){
+//                    el.setPosition(res.getPosition());
+//                }
+//            } catch (Exception e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
     }
 
     private void renderNewFrame(){

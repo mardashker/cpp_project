@@ -11,31 +11,6 @@ import java.util.stream.Collectors;
 
 public class MovingManager {
 
-    public static GameObject optimizeMove(GameLevel lvl, QueuePoligon pol, User u, QueueManager man, Iterator<User> ui) throws Exception {
-        var mtrx = lvl.get_matrix();
-        var fin = pol.getQueueTailCoordinates().getPosition();
-        var usr = u.getPosition();
-        var dx = (int)(usr.getX() - fin.getX());
-        var dy = (int)(usr.getY() - fin.getY());
-        var res_pos = new Coordinates(usr.getX(), usr.getY());
-
-        var lst_pos = new ArrayList<Coordinates>();
-        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY() - 1));
-        lst_pos.add(new Coordinates(usr.getX(), usr.getY() - 1));
-        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY() - 1));
-
-        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY()));
-        lst_pos.add(new Coordinates(usr.getX(), usr.getY()));
-        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY()));
-
-        lst_pos.add(new Coordinates(usr.getX() -1, usr.getY() + 1));
-        lst_pos.add(new Coordinates(usr.getX(), usr.getY() + 1));
-        lst_pos.add(new Coordinates(usr.getX() + 1, usr.getY() + 1));
-
-        lst_pos.stream().filter(p -> mtrx[(int)p.getX()][(int)p.getY()] == CellState.EMPTY).collect(Collectors.toList());
-
-        return null;
-    }
 
     public static GameObject findNextPos(GameLevel lvl, QueuePoligon pol, User u, QueueManager man, Iterator<User> ui) throws Exception {
 
