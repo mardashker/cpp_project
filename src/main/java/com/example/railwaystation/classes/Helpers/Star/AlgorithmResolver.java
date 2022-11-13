@@ -25,8 +25,8 @@ public class AlgorithmResolver {
         for (int i = 0; i < rows; i++) { // X
             for (int j = 0; j < cols; j++) { // Y
                 var current = new Coordinates(i, j);
-                if (m[i][j] != null && m[i][j] != CellState.DOOR && current.compareStartAlg(f)) {
-                    System.out.println(i + " " + j);
+                if (m[i][j] != CellState.EMPTY && m[i][j] != CellState.DOOR && current.compareStartAlg(f)) {
+
                     lst.add(new Coordinates(i, j));
                 }
             }

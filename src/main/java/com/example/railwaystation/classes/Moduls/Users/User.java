@@ -21,6 +21,8 @@ public class User extends GameObject implements Cloneable {
     // TODO: add get setters and getters
     private UserType type;
 
+    private int path_index = 1;
+
     private Iterator<Node> _it;
 
     private List<Node> _path = null;
@@ -40,13 +42,15 @@ public class User extends GameObject implements Cloneable {
     }
 
     public boolean move_next_step() {
-        if (_it.hasNext()) {
-            var res = _it.next();
-            setPosition(new Coordinates(res.getCol(), res.getRow()));
+        if (this._path.size() > this.path_index) {
+            var el = this._path.get(this.path_index);
+            System.out.println(el + "path:" + this._path);
+            setPosition(new Coordinates(el.getCol(), el.getRow()));
+            this.path_index++;
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 
     public void set_path(List<Node> _path) {

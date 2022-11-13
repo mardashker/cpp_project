@@ -5,15 +5,12 @@ import com.example.railwaystation.classes.Moduls.TicketType;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SplittableRandom;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -28,7 +25,7 @@ public class UserDataGenerator {
 
     private static SplittableRandom  randomizer;
 
-    private static List<String> randomFisrtNameList;
+    private static List<String> randomFirstNameList;
     private List<String> randomCityList;
     private static List<String> randomLastNameList;
 
@@ -38,7 +35,7 @@ public class UserDataGenerator {
         File fileLastName = new File("src/main/resources/com/example/railwaystation/generatedData/last_name.txt");
         File fileCities = new File("src/main/resources/com/example/railwaystation/generatedData/city.txt");
         try (Stream<String> lines = Files.lines(fileFirstName.toPath())){
-            randomFisrtNameList = lines.collect(Collectors.toList());
+            randomFirstNameList = lines.collect(Collectors.toList());
         }
         try (Stream<String> lines = Files.lines(fileLastName.toPath())) {
             randomLastNameList = lines.collect(Collectors.toList());
@@ -54,7 +51,7 @@ public class UserDataGenerator {
         return String.valueOf(randomizer.nextInt(999999999));
     }
     public String generateName(){
-        return randomFisrtNameList.get(randomizer.nextInt(randomFisrtNameList.size()));
+        return randomFirstNameList.get(randomizer.nextInt(randomFirstNameList.size()));
     }
     public String generateLastName(){
         return randomLastNameList.get(randomizer.nextInt(randomLastNameList.size()));
