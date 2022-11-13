@@ -59,4 +59,8 @@ public class Coordinates {
         this.y = y;
     }
 
+    public Coordinates copy(){
+        return new Coordinates(this.x, this.y);
+    }
+
 }

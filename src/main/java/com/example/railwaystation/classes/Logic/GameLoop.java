@@ -20,7 +20,7 @@ import java.util.Optional;
 //TODO: клас для управління всієї логіки програми
 public class GameLoop implements Runnable {
 
-    private static final int FPS = 6;
+    private static final int FPS = 7;
     private int _maxUserCount = 30;
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
@@ -53,11 +53,6 @@ public class GameLoop implements Runnable {
 
         while(_isRunning){
 
-            for(var p : Game.currentLevel.get_poligons())
-                p.get_queue().getUsers().add(null);
-            for(var p : Game.currentLevel.get_poligons())
-                p.get_queue().getUsers().remove(null);
-
 
             updateStationState();
             renderNewFrame();
@@ -67,7 +62,7 @@ public class GameLoop implements Runnable {
             timeToWaitBeforeNext /= 1_000_000;                          //
 
             try {
-                Thread.sleep(1000);
+                Thread.sleep((long) timeToWaitBeforeNext);
             } catch (Exception ex ){
                 throw new RuntimeException(ex);
             }

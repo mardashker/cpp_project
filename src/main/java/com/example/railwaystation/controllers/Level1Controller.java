@@ -105,5 +105,6 @@ public class Level1Controller implements Initializable {
         this.loop = loop;
         /* click handler to show queue info */
         canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler());
+        //canvasL1.setOnMouseClicked();
     }
 }

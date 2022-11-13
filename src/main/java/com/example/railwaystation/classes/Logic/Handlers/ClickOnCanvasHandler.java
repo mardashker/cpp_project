@@ -1,5 +1,6 @@
 package com.example.railwaystation.classes.Logic.Handlers;
 
+import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
@@ -32,10 +33,6 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
                 System.out.println("There's an open Q already!");
                 return;
             }
-            //check the number of closed cash registers just in case
-            long closedNumber = numberOfClosedCashRegisters();
-            if(closedNumber != 1)
-                throw new RuntimeException("Number of closed cash registers must be 1! It was " + closedNumber);
 
             cashRegister.setOpen(!cashRegister.isOpen());
             // swap queues
@@ -51,11 +48,6 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
 
     }
 
-    public long numberOfClosedCashRegisters(){
-        return Game.get_currentLevel().get_cashRegistersList().stream()
-                .filter(cr -> !cr.isOpen())
-                .count();
-    }
     public static void openSpareRegisterInstadeOf(CashRegister closedCashReg){
         //TODO: simplify it if CashRegister and QueuePolygon is changed
         var reserveCashReg = Game.get_currentLevel().get_reserveCashRegister();
@@ -69,6 +61,8 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
 
 
         //move the queue to the reserve polygon and cashRegister
+        updateCoordinates(closedCashReg, reservePoligon);
+
         reservePoligon.set_queue(closedCashReg.getOurQueue());
         reserveCashReg.setOurQueue(closedCashReg.getOurQueue());
         reserveCashReg.setOpen(true);
@@ -90,6 +84,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
                 .get();
 
 //move the queue to the just opened polygon and cashRegister
+        updateCoordinates(reserveCashReg, openedQPoligon);
         openedQPoligon.set_queue(reservePoligon.get_queue());
         openedReg.setOurQueue(reserveCashReg.getOurQueue());
         reserveCashReg.setOpen(false);
@@ -99,6 +94,8 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         reservePoligon.set_queue(emptyQueue);
         reserveCashReg.setOurQueue(emptyQueue);
     }
+
+    //TODO: these methods should be moved to another class
     private Optional<CashRegister> findCashRegistry(MouseEvent event){
         //find coordinates
         double clickX = event.getX();
@@ -112,5 +109,25 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
                     return poss.getX() == x && poss.getY() == y;
                 })
                 .findFirst();
+    }
+    /**
+     * Changes coordinates of each user according to the polygon
+     * @param cashReg - cashRegister to replace user coordinates to
+     * @param polygon - new poligon for the queue from cashRegister
+     */
+    private static void updateCoordinates(CashRegister cashReg, QueuePoligon polygon){
+        var users = cashReg.getOurQueue().getUsers();
+        var cells = polygon.get_queueCells().stream().toList();
+
+        for(int i = 0; i < users.size(); ++i){
+            users.get(i).setPosition(
+                    cells.get(Math.min(i, cells.size() - 1)).getPosition().copy()
+            );
+        }
+    }
+    public long numberOfClosedCashRegisters(){
+        return Game.get_currentLevel().get_cashRegistersList().stream()
+                .filter(cr -> !cr.isOpen())
+                .count();
     }
 }
