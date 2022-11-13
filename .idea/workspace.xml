@@ -6,29 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/ConstUserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/ConstUserGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/MovingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/MovingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Star/AlgorithmResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Star/AlgorithmResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Star/DoorPolygonResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/Star/DoorPolygonResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/UserDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/UserDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/UserTypeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/UserTypeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/WiseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/WiseGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/MovingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/MovingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/LevelReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Game/LevelReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/AlgorithmResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/AlgorithmResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/DoorPolygonResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/DoorPolygonResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/StarAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/Star/StarAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/UserTypeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/WiseGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/GameLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Door.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Door.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
     </list>
     <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
@@ -56,14 +43,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_10_AlgorithmResolver.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_11_Game.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_4_AlgorithmResolver.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_4_Game.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_6_Game.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_8512_AlgorithmResolver.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,7 +119,7 @@
       <workItem from="1667847790520" duration="10218000" />
       <workItem from="1667928932002" duration="10622000" />
       <workItem from="1668330350179" duration="5703000" />
-      <workItem from="1668336142301" duration="300000" />
+      <workItem from="1668336142301" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1667659728489</created>
