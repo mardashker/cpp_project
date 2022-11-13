@@ -12,6 +12,7 @@ import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
 import com.example.railwaystation.classes.Moduls.Users.UserType;
+import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
 
 //генерує конкретний тип юзеру
 //пошукати можливість передавати тип юзеру (не сам об'єкт)
@@ -36,6 +37,9 @@ public class ConstUserGenerator implements Generator{
             var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
                     dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(), door.getAngle());
+            if(user.getType() == UserType.ORDINARY){
+                user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
+            }
 
             user.set_birth_place(door);
             return user;

@@ -69,6 +69,9 @@ public class Level1Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Game.Init();
+        canvasL1.setWidth(Game.cell_width*LevelReader.level_width);
+        canvasL1.setHeight(Game.cell_height*LevelReader.level_height);
+
         //Візуальна частина ----------------------------------------------------------------------------
         SpinnerValueFactory<Double> valueFactoryAmount = new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 40, 40, 1);
         Amount.setValueFactory(valueFactoryAmount);
