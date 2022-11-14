@@ -20,7 +20,7 @@ public class AlgorithmResolver {
 
         var lst = new ArrayList<Coordinates>();
 
-        System.out.println(s + " " + f);
+//        System.out.println(s + " " + f);
 
         for (int i = 0; i < rows; i++) { // X
             for (int j = 0; j < cols; j++) { // Y
@@ -36,11 +36,11 @@ public class AlgorithmResolver {
 
         List<Node> path = resolver.findPath();
 
-        for (Node node : path) {
-            System.out.println("RES:" + node);
-        }
-
-        System.out.println("\n");
+//        for (Node node : path) {
+//            System.out.println("RES:" + node);
+//        }
+//
+//        System.out.println("\n");
 
 
         return path;

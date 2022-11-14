@@ -37,9 +37,9 @@ public class ConstUserGenerator implements Generator{
             var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
                     dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(), door.getAngle());
-            if(user.getType() == UserType.ORDINARY){
-                user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
-            }
+//            if(user.getType() == UserType.ORDINARY){
+//                user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
+//            }
 
             user.set_birth_place(door);
             return user;

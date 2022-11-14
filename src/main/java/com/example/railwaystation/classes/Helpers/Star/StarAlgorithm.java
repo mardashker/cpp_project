@@ -67,7 +67,7 @@ public class StarAlgorithm {
             Node currentNode = openList.poll();
             closedSet.add(currentNode);
             if (isFinalNode(currentNode)) {
-                System.out.println("FINAL: " + currentNode);
+//                System.out.println("FINAL: " + currentNode);
                 return getPath(currentNode);
             } else {
                 addAdjacentNodes(currentNode);
