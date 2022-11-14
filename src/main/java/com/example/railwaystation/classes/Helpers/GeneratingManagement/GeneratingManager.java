@@ -6,6 +6,7 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -61,6 +62,7 @@ public class GeneratingManager {
     public List<User> collectUsers(int freeNumber){
         // collect users from each generator
         var newUsers = _userSources.stream()
+                .sorted(Comparator.comparingDouble(g -> Math.random()))
                 .map(Generator::generateUser)
                 .filter(Objects::nonNull)
                 .limit(freeNumber)
