@@ -44,7 +44,7 @@ public class User extends GameObject implements Cloneable {
     public boolean move_next_step() {
         if (this._path.size() > this.path_index) {
             var el = this._path.get(this.path_index);
-            System.out.println(el + "path:" + this._path);
+//            System.out.println(el + "path:" + this._path);
             setPosition(new Coordinates(el.getCol(), el.getRow()));
             this.path_index++;
             return true;

@@ -19,9 +19,13 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         if(cashRegistryOpt.isEmpty())
             return;
 
-        if(event.getButton() == MouseButton.PRIMARY)
+        if(event.getButton() == MouseButton.PRIMARY) {
+            System.out.println("Primary");
             Game.showQueueDetails(cashRegistryOpt.get().getOurQueue());
+        }
         else {
+            System.out.println("secondary");
+
             var cashRegister = cashRegistryOpt.get();
 
             // check if user tries to close the reserve cash register
