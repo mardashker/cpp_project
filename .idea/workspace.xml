@@ -4,87 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
-      <change afterPath="$USER_HOME$/Desktop/Project/.idea/Project.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/cpp_project-rendering/untitled.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/Project/Project.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab01/.idea/lab01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab01/Javalab01/Javalab01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab02/.idea/lab02.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab02/Lab02/Lab02.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab03/lab03.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab03/lab03_2/lab03_2.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04/lab04.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04/untitled/untitled.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/1/CP/lab04_GUI/lab04_GUI.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/EXAM/Calculator/.idea/Calculator.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab01/.idea/lab01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab02/.idea/lab02.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab03/.idea/lab03.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Labs_ML/lab4/.idea/lab4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac01/.idea/Prac01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac03/.idea/Prac03.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac04/.idea/Prac04.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/Prac05/.idea/Prac05.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/Practs_ML/pract02/.idea/pract02.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/prac3/.idea/prac3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac3/.idea/prac3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac4/.idea/prac4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/PZ34/2/AI_ML/МЕТРО/prac5/.idea/prac5.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Л†°4/Л†°4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/graphics_project (3)/graphics_project/graphics_project.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/graphics_project/graphics_project/graphics_project.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/Перший семестр/Комп'ютерна Графіка/Твій Погляд/graphics_project/graphics_project.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/JavaTests/JavaTests.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Test/Test.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°1/Л†°1.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°2/Л†°2.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°3/Л†°3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/Архів/Перший семестр/П•аи®© б•ђ•бва/КаЃбѓЂ†вдЃађ•≠• ПаЃ£а†ђгҐ†≠≠п/Л†°4/Л†°4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab1/lab1/lab1.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab2/lab2/lab2.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab3/lab3/lab3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab4/lab4/lab4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab5/lab5/lab5.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab6/lab6.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab6/lab6/lab6.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab7/lab7.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/crosplatform_programming_sd_34-main/lab7/lab7/lab7.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic2/.idea/MLPractic2.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic3/.idea/MLPractic3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic4/.idea/mlLab03.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/MLPractic5/.idea/MLPractic5.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab01/.idea/mlLab01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab02/.idea/mlLab02.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab03/.idea/mlLab03.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3курс/2сем/ші/mlLab04/.idea/mlLab04.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab01/lab01.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab2/lab2.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab3/lab3.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/lab4/lab4.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Downloads/навч/3™габ/1б•ђ/java/test/test.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/R_V.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/RailwayStation 18.11.08/RailwayStation.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/RailwayStation/RailwayStation.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/cpp_project-master/untitled.iml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/untitled.iml" afterDir="false" />
+    <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Helpers/ConstUserGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Moduls/Users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/classes/Rendering/CanvasRendering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/controllers/Level1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/railwaystation/level1.fxml" afterDir="false" />
     </list>
     <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
@@ -190,6 +113,7 @@
       <workItem from="1667928932002" duration="10622000" />
       <workItem from="1668330350179" duration="5703000" />
       <workItem from="1668336142301" duration="831000" />
+      <workItem from="1668440552073" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="generators">
       <created>1667659728489</created>
@@ -221,49 +145,9 @@
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java</url>
-          <line>22</line>
-          <properties field="canvasinfo" class="com.example.railwaystation.classes.Logic.Handlers.ClickOnCanvasHandler" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="usercount" />
+        <watch expression="cashRegisters.get(3).secondsToProcessUser" />
       </configuration>
     </watches-manager>
   </component>

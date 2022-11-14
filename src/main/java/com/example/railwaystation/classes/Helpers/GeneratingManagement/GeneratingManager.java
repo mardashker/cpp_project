@@ -2,6 +2,7 @@ package com.example.railwaystation.classes.Helpers.GeneratingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 
@@ -57,11 +58,12 @@ public class GeneratingManager {
      * moving users of the level.
      * @return Users from all generators without nulls;
      */
-    public List<User> collectUsers(){
+    public List<User> collectUsers(int freeNumber){
         // collect users from each generator
         var newUsers = _userSources.stream()
                 .map(Generator::generateUser)
                 .filter(Objects::nonNull)
+                .limit(freeNumber)
                 .toList();
 
         _level.get_movingUsers().addAll(newUsers);
