@@ -7,11 +7,12 @@ import com.example.railwaystation.classes.Moduls.Users.User;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class QueueManager {
 
 
-    private GameLevel level;
+    private static GameLevel level;
     private QueuePoligon poligon;
 
     public QueueManager(GameLevel level) {
@@ -105,7 +106,15 @@ public class QueueManager {
     // ту, яка є найближчою.
     public static QueuePoligon getCorrectQueue(User usr, List<QueuePoligon> lst) {
 
-        var res = lst
+        var ourq = level.get_cashRegistersList()
+                .stream().filter(p -> p.isOpen())
+                .map(p -> p.getOurQueue()).collect(Collectors.toList());
+
+        var new_lst = lst.stream()
+                .filter(p -> ourq.contains(p.get_queue()))
+                .collect(Collectors.toList());
+
+        var res = new_lst
                 .stream()
                 .sorted(Comparator.comparingInt(QueuePoligon::get_potential_count)).toList();
 
