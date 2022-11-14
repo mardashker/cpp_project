@@ -79,4 +79,9 @@ public class OurQueue implements Iterable<User>{
     public Iterator<User> iterator() {
         return usersQueue.iterator();
     }
+
+    @Override
+    public String toString() {
+        return  "Users" + usersQueue + "\n";
+    }
 }

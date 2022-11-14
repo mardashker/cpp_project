@@ -63,4 +63,9 @@ public class Coordinates {
         return new Coordinates(this.x, this.y);
     }
 
+    public Coordinates add(Coordinates b){
+        return new Coordinates(x + b.x, y + b.y);
+    }
+
+
 }
