@@ -21,8 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Game {
-    public static final double cell_width = 20;
-    public static final double cell_height = 20;
+    public static final double cell_width = 30;
+    public static final double cell_height = 30;
     public static int usersCount;
     private static int maxUserCount;
 

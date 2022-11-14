@@ -4,6 +4,7 @@ import com.example.railwaystation.classes.Helpers.CashRegisterHelper;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
@@ -27,9 +28,9 @@ public class GameLevel {
         //TODO: initialization of the reserve CashReg ↓ ↓ ↓
         this._reserveCashRegister = cashRegistersList.get(cashRegistersList.size() - 1);
         this._reserveQueuePolygon = poligons.get(poligons.size() - 1);
-
         _cashRegistersList.forEach(cr -> cr.setOpen(true));
         _reserveCashRegister.setOpen(false);
+        _reserveCashRegister.setSprite(new Image("file:src/main/resources/com/example/railwaystation/assets/noreservecash.png"));
     }
 
 

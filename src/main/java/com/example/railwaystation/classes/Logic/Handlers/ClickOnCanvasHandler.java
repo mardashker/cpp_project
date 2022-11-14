@@ -5,6 +5,7 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
 import javafx.event.EventHandler;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import java.util.Optional;
@@ -66,6 +67,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         reservePoligon.set_queue(closedCashReg.getOurQueue());
         reserveCashReg.setOurQueue(closedCashReg.getOurQueue());
         reserveCashReg.setOpen(true);
+        reserveCashReg.setSprite(new Image("file:src/main/resources/com/example/railwaystation/assets/reservcash.png"));
 
         //set an empty queue to the closed polygon and cashRegister
         var emptyQueue = new OurQueue();
@@ -88,6 +90,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         openedQPoligon.set_queue(reservePoligon.get_queue());
         openedReg.setOurQueue(reserveCashReg.getOurQueue());
         reserveCashReg.setOpen(false);
+        reserveCashReg.setSprite(new Image("file:src/main/resources/com/example/railwaystation/assets/noreservecash.png"));
 
 //set an empty queue to the closed reserve polygon and cashRegister
         var emptyQueue = new OurQueue();
