@@ -21,8 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Game {
-    public static final double cell_width = 30;
-    public static final double cell_height = 30;
+    public static final double cell_width = 35;
+    public static final double cell_height = 35;
     public static int usersCount;
     private static int maxUserCount;
 
@@ -32,6 +32,8 @@ public class Game {
     public static HashMap<Door, HashMap<Coordinates, List<Node>>> resolver;
 
     private static OurQueue queueToShow = null;
+
+
 
     private static Collection<GameLevel> _levels;
 
@@ -69,7 +71,15 @@ public class Game {
 
     public static void showQueueDetails(OurQueue queue){
         Game.queueToShow = queue;
+        Game.queueToShow.forEach(System.out::println);
         //TODO: actions to show queue detailed info
+    }
+    public static String getShowQueueDetailsString(OurQueue queue){
+        Game.queueToShow = queue;
+        Game.queueToShow.forEach(System.out::println);
+        return Game.queueToShow.toString();
+//        return "Bla";
+
     }
     public static int getMaxUserCount() {
         return maxUserCount;
@@ -86,4 +96,12 @@ public class Game {
     public static void setUsersCount(int usersCount) {
         Game.usersCount = usersCount;
     }
+    public static OurQueue getQueueToShow() {
+        return queueToShow;
+    }
+
+    public static void setQueueToShow(OurQueue queueToShow) {
+        Game.queueToShow = queueToShow;
+    }
+
 }

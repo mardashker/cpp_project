@@ -12,8 +12,8 @@ public class StarTest {
         int[][] blocksArray = new int[][]{{0, 3}, {1, 3}, {2, 3}, {3, 3}, {4,3}};
         aStar.setBlocks(blocksArray);
         List<Node> path = aStar.findPath();
-        for (Node node : path) {
-            System.out.println(node);
-        }
+//        for (Node node : path) {
+//            System.out.println(node);
+//        }
     }
 }

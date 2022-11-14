@@ -16,11 +16,11 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" +
+        return "\nTicket:" +
                 "type=" + type +
                 ", departureDate=" + departureDate +
                 ", price=" + price +
                 ", arrivalPlace='" + arrivalPlace + '\'' +
-                '}';
+                "}\n";
     }
 }

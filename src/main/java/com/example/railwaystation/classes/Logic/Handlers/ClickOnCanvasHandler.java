@@ -5,49 +5,96 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Rendering.Camera2D;
+import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.event.EventHandler;
+import javafx.geometry.VPos;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.TextAlignment;
+
 import java.util.Optional;
 
 public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
     private Camera2D _camera;
-    public ClickOnCanvasHandler(Camera2D camera) {
-        _camera = camera;
+
+    public CanvasRendering ctx_info;
+    public Canvas canvasinfo;
+    private boolean showInfo=false;
+
+    public ClickOnCanvasHandler(Canvas canvasinfo, Camera2D camera) {
+        this.canvasinfo = canvasinfo;
+        this._camera = camera;
     }
 
+
     @Override
-    public void handle(MouseEvent event){
+    public void handle(MouseEvent event) {
 
         var cashRegistryOpt = findCashRegistry(event);
 
-        if(cashRegistryOpt.isEmpty())
+        if (cashRegistryOpt.isEmpty())
             return;
 
-        if(event.getButton() == MouseButton.PRIMARY)
-            Game.showQueueDetails(cashRegistryOpt.get().getOurQueue());
-        else {
+        if (event.getButton() == MouseButton.PRIMARY) {
+
+            ctx_info = new CanvasRendering(canvasinfo);
+
+            if (showInfo) {
+                showInfo=false;
+                canvasinfo.getGraphicsContext2D().clearRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
+                canvasinfo.setHeight(1);
+                canvasinfo.setWidth(1);
+                canvasinfo.setLayoutX(1);
+                canvasinfo.setLayoutY(1);
+            } else {
+                canvasinfo.setHeight(700);
+                canvasinfo.setWidth(700);
+                canvasinfo.setLayoutX(10);
+                canvasinfo.setLayoutY(10);
+                showInfo=true;
+                GraphicsContext gc = canvasinfo.getGraphicsContext2D();
+                gc.setFill(Color.GREY);
+                gc.fillRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
+                gc.setTextAlign(TextAlignment.CENTER);
+                gc.setTextBaseline(VPos.CENTER);
+                gc.setFill(Color.BLACK);
+                gc.setFont(new Font("Georgia", 20));
+                gc.fillText(
+                        Game.getShowQueueDetailsString(cashRegistryOpt.get().getOurQueue()),
+                        Math.round(canvasinfo.getWidth() / 2),
+                        Math.round(canvasinfo.getHeight() / 2)
+                );
+            }
+
+
+        } else {
+
+            System.out.println("secondary");
+
             var cashRegister = cashRegistryOpt.get();
 
             // check if user tries to close the reserve cash register
-            if(Game.get_currentLevel().get_reserveCashRegister().equals(cashRegister)){
+            if (Game.get_currentLevel().get_reserveCashRegister().equals(cashRegister)) {
                 System.out.println("Can't close/open the reserve Q!");
                 return;
             }
             //if the reserve cash register is already opened then we can't close one more cash register
-            if(cashRegister.isOpen() && Game.get_currentLevel().get_reserveCashRegister().isOpen()) {
+            if (cashRegister.isOpen() && Game.get_currentLevel().get_reserveCashRegister().isOpen()) {
                 System.out.println("There's an open Q already!");
                 return;
             }
 
             cashRegister.setOpen(!cashRegister.isOpen());
             // swap queues
-            if(cashRegister.isOpen()) {
+            if (cashRegister.isOpen()) {
                 openRegisterInsteadOfSpare(cashRegister);
                 System.out.println("Move users to the opened Q!");
-            }
-            else {
+            } else {
                 openSpareRegisterInstadeOf(cashRegister);
                 System.out.println("Move users to the reserve Q!");
             }
@@ -55,7 +102,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
 
     }
 
-    public static void openSpareRegisterInstadeOf(CashRegister closedCashReg){
+    public static void openSpareRegisterInstadeOf(CashRegister closedCashReg) {
         //TODO: simplify it if CashRegister and QueuePolygon is changed
         var reserveCashReg = Game.get_currentLevel().get_reserveCashRegister();
         var reservePoligon = Game.get_currentLevel().get_reservePolygon();
@@ -80,7 +127,8 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         closedQPoligon.set_queue(emptyQueue);
         closedCashReg.setOurQueue(emptyQueue);
     }
-    public static void openRegisterInsteadOfSpare(CashRegister openedReg){
+
+    public static void openRegisterInsteadOfSpare(CashRegister openedReg) {
         //TODO: simplify it if CashRegister and QueuePolygon is changed
         var reserveCashReg = Game.get_currentLevel().get_reserveCashRegister();
         var reservePoligon = Game.get_currentLevel().get_reservePolygon();
@@ -105,7 +153,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
     }
 
     //TODO: these methods should be moved to another class
-    private Optional<CashRegister> findCashRegistry(MouseEvent event){
+    private Optional<CashRegister> findCashRegistry(MouseEvent event) {
         //find coordinates
         double clickX = event.getX() + _camera.get_position().getX();
         double clickY = event.getY() + _camera.get_position().getY();
@@ -119,22 +167,25 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
                 })
                 .findFirst();
     }
+
     /**
      * Changes coordinates of each user according to the polygon
+     *
      * @param cashReg - cashRegister to replace user coordinates to
      * @param polygon - new poligon for the queue from cashRegister
      */
-    private static void updateCoordinates(CashRegister cashReg, QueuePoligon polygon){
+    private static void updateCoordinates(CashRegister cashReg, QueuePoligon polygon) {
         var users = cashReg.getOurQueue().getUsers();
         var cells = polygon.get_queueCells().stream().toList();
 
-        for(int i = 0; i < users.size(); ++i){
+        for (int i = 0; i < users.size(); ++i) {
             users.get(i).setPosition(
                     cells.get(Math.min(i, cells.size() - 1)).getPosition().copy()
             );
         }
     }
-    public long numberOfClosedCashRegisters(){
+
+    public long numberOfClosedCashRegisters() {
         return Game.get_currentLevel().get_cashRegistersList().stream()
                 .filter(cr -> !cr.isOpen())
                 .count();

@@ -7,7 +7,8 @@ public class UserInfo {
     private String passportId;
     private String phoneNumber;
 
-    public UserInfo(){}
+    public UserInfo() {
+    }
 
     public UserInfo(String name, String surname, int age, String passportId, String phoneNumber) {
         this.name = name;
@@ -15,5 +16,10 @@ public class UserInfo {
         this.age = age;
         this.passportId = passportId;
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo:" + name + ' ' + surname  + "\n";
     }
 }

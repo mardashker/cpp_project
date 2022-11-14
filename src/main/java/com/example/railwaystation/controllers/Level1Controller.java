@@ -1,5 +1,6 @@
 package com.example.railwaystation.controllers;
 
+import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
@@ -15,6 +16,7 @@ import com.example.railwaystation.classes.Moduls.Users.UserType;
 import com.example.railwaystation.classes.Rendering.Camera2D;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.event.EventHandler;
+import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
@@ -25,6 +27,7 @@ import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.net.URL;
@@ -33,6 +36,9 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class Level1Controller implements Initializable {
+    public Text usercountText;
+    public Text maxuserText;
+
     public Canvas canvasL1;
     private double mouseX;
     private double mouseY;
@@ -41,8 +47,11 @@ public class Level1Controller implements Initializable {
     AtomicReference<Double>  amount_people;
     public CanvasRendering ctx;
     public Camera2D _camera;
+    public Canvas canvasinfo;
+
     public Spinner Amount;
     public GameLoop loop;
+    public int maxCount = 40;
 
     private Collection<User> userCollection = new ArrayList<>();
 
@@ -62,10 +71,10 @@ public class Level1Controller implements Initializable {
     }
 
     @FXML
-    public void startGame() throws IOException{
+    public void startGame() throws IOException {
 
         try {
-             thread = new Thread(loop);
+            thread = new Thread(loop);
             thread.start();
         } catch (Exception ex) {
             throw new RuntimeException(ex);
@@ -79,14 +88,9 @@ public class Level1Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Game.Init();
-        canvasL1.setWidth(Game.cell_width*LevelReader.level_width);
-        canvasL1.setHeight(Game.cell_height*LevelReader.level_height);
+        canvasL1.setWidth(Game.cell_width * LevelReader.level_width);
+        canvasL1.setHeight(Game.cell_height * LevelReader.level_height);
 
-        //Візуальна частина ----------------------------------------------------------------------------
-        SpinnerValueFactory<Double> valueFactoryAmount = new SpinnerValueFactory.DoubleSpinnerValueFactory(0, 40, 40, 1);
-        Amount.setValueFactory(valueFactoryAmount);
-        amount_people = new AtomicReference<>((double) valueFactoryAmount.getValue());
-        //----------------------------------------------------------------------------------------------
 
         AssetsReader.loadAssets();
         Collection<GameLevel> gameLevels = LevelReader.loadLevels();
@@ -112,14 +116,13 @@ public class Level1Controller implements Initializable {
                 throw new RuntimeException(e);
             }
         });
-
         Game game = new Game();
         Game.resolver = DoorPolygonResolver.calculate(gl);
         Game.currentLevel = gl;
         GameLoop loop = new GameLoop(new Game(), generators, ctx, _camera);
         this.loop = loop;
         /* click handler to show queue info */
-        canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler(_camera));
+        canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler(canvasinfo,_camera));
 
         canvasL1.setOnMousePressed(e -> {
             if (e.getButton() == MouseButton.PRIMARY) {
@@ -146,6 +149,20 @@ public class Level1Controller implements Initializable {
                 else if(deltaY < 0)
                     _camera.set_zoom((Math.max(_camera.get_zoom() - zoom_factor, 0.5)));
             }
+        });
+
+        //Візуальна частина --------------------------------------------------------------------------------------------------------
+        SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 40, 40, 1);
+        Amount.setValueFactory(valueFactoryAmount);
+        //------------------------------------------------------------------------------------------------------------------------
+
+        maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
+
+        Amount.valueProperty().addListener((ChangeListener<Integer>) (observableValue, oldValue, newValue) -> {
+            maxCount = (newValue);
+            Game.setMaxUserCount(maxCount);
+            maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
+
         });
     }
 }
