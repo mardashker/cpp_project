@@ -1,5 +1,6 @@
 package com.example.railwaystation.classes.Rendering;
 
+import com.example.railwaystation.classes.Rendering.Camera2D;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Logic.Game;
 import javafx.scene.canvas.Canvas;
@@ -9,24 +10,50 @@ import javafx.scene.paint.Color;
 
 public class CanvasRendering implements Rendering {
     private Canvas _canvas;
+
+    private Camera2D _camera;
+    public Camera2D get_camera() {
+        return _camera;
+    }
+
+    public void set_camera(Camera2D _camera) {
+        this._camera = _camera;
+    }
+
     public CanvasRendering(Canvas canvas_1) {
         _canvas=canvas_1;
+        _camera = new Camera2D();
     }
 
     @Override
     public void DrawSprite(Coordinates pos, double width, double height, double angle, Image sprite) {
-        _canvas.getGraphicsContext2D().drawImage(sprite, pos.getX()* Game.cell_width, pos.getY()*Game.cell_height, Game.cell_width, Game.cell_height);
+        _canvas.getGraphicsContext2D().drawImage(
+                sprite,
+                pos.getX()*Game.cell_width * _camera.get_zoom() - _camera.get_position().getX(),
+                pos.getY()*Game.cell_height * _camera.get_zoom() - _camera.get_position().getY(),
+                Game.cell_width * _camera.get_zoom(),
+                Game.cell_height * _camera.get_zoom()
+        );
     }
 
     @Override
     public void DrawGrid(double width, double height, double step_x, double step_y) {
         var ctx = _canvas.getGraphicsContext2D();
         ctx.setStroke(Color.BLUEVIOLET);
-        for(double x=0; x <= width; x+=step_x ){
-            _canvas.getGraphicsContext2D().strokeLine(x,0,x,height);
+        double width_low = 0 - _camera.get_position().getX();
+        double width_high = width*_camera.get_zoom() - _camera.get_position().getX();
+
+        double height_low = 0 - _camera.get_position().getY();
+        double height_high = height*_camera.get_zoom() - _camera.get_position().getY();
+
+        step_x *=_camera.get_zoom();
+        step_y *=_camera.get_zoom();
+
+        for(double x=width_low; x <= width_high; x+=step_x){
+            _canvas.getGraphicsContext2D().strokeLine(x,height_low,x,height_high);
         }
-        for (double y=0; y <= height; y+= step_y){
-            _canvas.getGraphicsContext2D().strokeLine(0,y,width,y);
+        for (double y=height_low; y <= height_high; y+=step_y){
+            _canvas.getGraphicsContext2D().strokeLine(width_low,y,width_high,y);
         }
     }
     @Override

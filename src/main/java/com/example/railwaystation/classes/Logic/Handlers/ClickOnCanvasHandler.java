@@ -4,6 +4,7 @@ import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
+import com.example.railwaystation.classes.Rendering.Camera2D;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
@@ -11,6 +12,11 @@ import javafx.scene.input.MouseEvent;
 import java.util.Optional;
 
 public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
+    private Camera2D _camera;
+    public ClickOnCanvasHandler(Camera2D camera) {
+        _camera = camera;
+    }
+
     @Override
     public void handle(MouseEvent event){
 
@@ -101,10 +107,10 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
     //TODO: these methods should be moved to another class
     private Optional<CashRegister> findCashRegistry(MouseEvent event){
         //find coordinates
-        double clickX = event.getX();
-        double clickY = event.getY();
-        double x = (int)(clickX / Game.cell_width);
-        double y = (int)(clickY / Game.cell_height);
+        double clickX = event.getX() + _camera.get_position().getX();
+        double clickY = event.getY() + _camera.get_position().getY();
+        double x = (int)(clickX / Game.cell_width / _camera.get_zoom());
+        double y = (int)(clickY / Game.cell_height / _camera.get_zoom());
         //find the clicked queue
         return Game.get_currentLevel().get_cashRegistersList().stream()
                 .filter(cr -> {

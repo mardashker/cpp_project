@@ -10,6 +10,7 @@ import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Moduls.State;
+import com.example.railwaystation.classes.Rendering.Camera2D;
 import com.example.railwaystation.classes.Rendering.Rendering;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
@@ -28,7 +29,7 @@ public class GameLoop implements Runnable {
     private final Rendering _renderingUnit;
     private final QueueManager _queueManager;
     private final CashRegisterManager _cashRegisterManager;
-    public GameLoop(Game game, List<Generator> userSources, Rendering renderingUnit){
+    public GameLoop(Game game, List<Generator> userSources, Rendering renderingUnit, Camera2D camera){
         if(game == null || userSources == null || renderingUnit == null)
             throw new IllegalArgumentException("Parameters can't be null!");
         this._game = game;
