@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_18_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_18_0_1.xml" beforeDir="false" />
+    <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_2022_12_10_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RailwayStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
     </list>
     <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
