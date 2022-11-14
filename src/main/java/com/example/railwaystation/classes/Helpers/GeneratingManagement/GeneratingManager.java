@@ -58,11 +58,12 @@ public class GeneratingManager {
      * moving users of the level.
      * @return Users from all generators without nulls;
      */
-    public List<User> collectUsers(){
+    public List<User> collectUsers(int freeNumber){
         // collect users from each generator
         var newUsers = _userSources.stream()
                 .map(Generator::generateUser)
                 .filter(Objects::nonNull)
+                .limit(freeNumber)
                 .toList();
 
         _level.get_movingUsers().addAll(newUsers);

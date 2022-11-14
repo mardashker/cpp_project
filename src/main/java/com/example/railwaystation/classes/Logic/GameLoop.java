@@ -79,15 +79,18 @@ public class GameLoop implements Runnable {
     private void checkDoorsAndNewUsers(){
 
         GeneratingManager manager = new GeneratingManager(_game.get_currentLevel(), this._userSources);
+
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = userNumber >= _maxUserCount;
-        var newUsers = manager.collectUsers();
-        Game.setUsersCount(userNumber + newUsers.size());  // better way to control the number of users
-
         if(isCrowded)
             manager.closeDoors();
         else
             manager.openDoors();
+
+        int freeSpots = _maxUserCount - userNumber;
+        var newUsers = manager.collectUsers(freeSpots);
+
+        Game.setUsersCount(userNumber + newUsers.size());  // better way to control the number of users
     }
 
     private void checkRegistryServices(){
