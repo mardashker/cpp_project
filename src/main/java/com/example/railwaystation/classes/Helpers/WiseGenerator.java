@@ -41,12 +41,11 @@ public class WiseGenerator implements Generator {
         return null;
     }
     private void checkProbability(){
-        var usersCount = Game.usersCount;
-        if(isBetween(usersCount,0,25)){
+        if(isBetween(Game.getUsersCount(),0,(int) (Game.getMaxUserCount() * 0.25))){
             probability = 100;
-        } else if(isBetween(usersCount,25,50)){
+        } else if(isBetween(Game.getUsersCount(),(int) (Game.getMaxUserCount() * 0.25),(int) (Game.getMaxUserCount() * 0.5))){
             probability = 75;
-        } else if(isBetween(usersCount,50,75)){
+        } else if(isBetween(Game.getUsersCount(),(int) (Game.getMaxUserCount() * 0.5),(int)(Game.getMaxUserCount() * 0.75))){
             probability = 50;
         }  else{
             probability = 25;

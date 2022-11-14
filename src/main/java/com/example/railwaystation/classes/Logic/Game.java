@@ -24,6 +24,9 @@ public class Game {
     public static final double cell_width = 20;
     public static final double cell_height = 20;
     public static int usersCount;
+    private static int maxUserCount;
+
+
     private static List<Generator> _generators;
 
     public static HashMap<Door, HashMap<Coordinates, List<Node>>> resolver;
@@ -67,5 +70,20 @@ public class Game {
     public static void showQueueDetails(OurQueue queue){
         Game.queueToShow = queue;
         //TODO: actions to show queue detailed info
+    }
+    public static int getMaxUserCount() {
+        return maxUserCount;
+    }
+
+    public static void setMaxUserCount(int maxUserCount) {
+        Game.maxUserCount = maxUserCount;
+    }
+
+    public static int getUsersCount() {
+        return usersCount;
+    }
+
+    public static void setUsersCount(int usersCount) {
+        Game.usersCount = usersCount;
     }
 }
