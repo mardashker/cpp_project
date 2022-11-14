@@ -11,8 +11,7 @@ import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.OurQueue;
 import com.example.railwaystation.classes.Moduls.State;
 import com.example.railwaystation.classes.Rendering.Rendering;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -52,8 +51,6 @@ public class GameLoop implements Runnable {
             Game.get_currentLevel().get_cashRegistersList().get(i).setOurQueue(Game.get_currentLevel().get_poligons().get(i).get_queue());
 
         while(_isRunning){
-
-
             updateStationState();
             renderNewFrame();
 
@@ -84,6 +81,7 @@ public class GameLoop implements Runnable {
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = userNumber >= _maxUserCount;
         var newUsers = manager.collectUsers();
+        Game.setUsersCount(userNumber + newUsers.size());  // better way to control the number of users
 
         if(isCrowded)
             manager.closeDoors();

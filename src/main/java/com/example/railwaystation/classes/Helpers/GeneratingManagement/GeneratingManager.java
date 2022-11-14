@@ -2,6 +2,7 @@ package com.example.railwaystation.classes.Helpers.GeneratingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.Door;
 import com.example.railwaystation.classes.Moduls.Users.User;
 

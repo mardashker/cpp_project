@@ -25,26 +25,18 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
             var cashRegister = cashRegistryOpt.get();
 
             // check if user tries to close the reserve cash register
-            if(Game.get_currentLevel().get_reserveCashRegister().equals(cashRegister)){
-                System.out.println("Can't close/open the reserve Q!");
+            if(Game.get_currentLevel().get_reserveCashRegister().equals(cashRegister))
                 return;
-            }
             //if the reserve cash register is already opened then we can't close one more cash register
-            if(cashRegister.isOpen() && Game.get_currentLevel().get_reserveCashRegister().isOpen()) {
-                System.out.println("There's an open Q already!");
+            if(cashRegister.isOpen() && Game.get_currentLevel().get_reserveCashRegister().isOpen())
                 return;
-            }
 
             cashRegister.setOpen(!cashRegister.isOpen());
             // swap queues
-            if(cashRegister.isOpen()) {
+            if(cashRegister.isOpen())
                 openRegisterInsteadOfSpare(cashRegister);
-                System.out.println("Move users to the opened Q!");
-            }
-            else {
+            else
                 openSpareRegisterInstadeOf(cashRegister);
-                System.out.println("Move users to the reserve Q!");
-            }
         }
 
     }
