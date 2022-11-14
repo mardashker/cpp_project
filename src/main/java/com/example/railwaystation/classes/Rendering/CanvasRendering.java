@@ -2,9 +2,12 @@ package com.example.railwaystation.classes.Rendering;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Logic.Game;
+import javafx.geometry.VPos;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.scene.text.TextAlignment;
 
 
 public class CanvasRendering implements Rendering {
@@ -29,6 +32,11 @@ public class CanvasRendering implements Rendering {
             _canvas.getGraphicsContext2D().strokeLine(0,y,width,y);
         }
     }
+
+
+
+
+
     @Override
     public void ClearCtx(){
         _canvas.getGraphicsContext2D().clearRect(0, 0, _canvas.getWidth(), _canvas.getHeight());

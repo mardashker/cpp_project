@@ -141,10 +141,7 @@ public class User extends GameObject implements Cloneable {
                 "type=" + type +
                 ", userInfo=" + userInfo +
                 ", tickets=" + tickets +
-                ", priority=" + priority +
-                ", speed=" + speed +
-                ", state=" + state +
-                '}';
+                "}\n";
     }
 }
 

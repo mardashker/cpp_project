@@ -30,13 +30,16 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class Level1Controller implements Initializable {
-    public  Text usercountText;
-    public  Text maxuserText ;
+    public Text usercountText;
+    public Text maxuserText;
 
     public Canvas canvasL1;
+    public Canvas canvasinfo;
+
     Thread thread;
     AtomicReference<Double> amount_people;
     public CanvasRendering ctx;
+
     public Spinner Amount;
     public GameLoop loop;
     public int maxCount = 40;
@@ -108,14 +111,15 @@ public class Level1Controller implements Initializable {
         GameLoop loop = new GameLoop(new Game(), generators, ctx);
         this.loop = loop;
         /* click handler to show queue info */
-        canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler());
+
+        canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler(canvasinfo));
         //canvasL1.setOnMouseClicked();
 
 
-        //Візуальна частина ----------------------------------------------------------------------------
+        //Візуальна частина --------------------------------------------------------------------------------------------------------
         SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 40, 40, 1);
         Amount.setValueFactory(valueFactoryAmount);
-        //----------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------
 
         maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
 
@@ -125,5 +129,7 @@ public class Level1Controller implements Initializable {
             maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
 
         });
+//
+
     }
 }

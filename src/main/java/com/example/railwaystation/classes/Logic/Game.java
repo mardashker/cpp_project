@@ -33,6 +33,8 @@ public class Game {
 
     private static OurQueue queueToShow = null;
 
+
+
     private static Collection<GameLevel> _levels;
 
     public static GameLevel getCurrentLevel() {
@@ -72,6 +74,13 @@ public class Game {
         Game.queueToShow.forEach(System.out::println);
         //TODO: actions to show queue detailed info
     }
+    public static String getShowQueueDetailsString(OurQueue queue){
+        Game.queueToShow = queue;
+        Game.queueToShow.forEach(System.out::println);
+        return Game.queueToShow.toString();
+//        return "Bla";
+
+    }
     public static int getMaxUserCount() {
         return maxUserCount;
     }
@@ -87,4 +96,12 @@ public class Game {
     public static void setUsersCount(int usersCount) {
         Game.usersCount = usersCount;
     }
+    public static OurQueue getQueueToShow() {
+        return queueToShow;
+    }
+
+    public static void setQueueToShow(OurQueue queueToShow) {
+        Game.queueToShow = queueToShow;
+    }
+
 }
