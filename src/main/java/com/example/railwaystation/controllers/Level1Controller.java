@@ -29,6 +29,7 @@ import java.util.stream.Collectors;
 
 public class Level1Controller implements Initializable {
     public Canvas canvasL1;
+    Thread thread ;
     AtomicReference<Double>  amount_people;
     public CanvasRendering ctx;
     public Spinner Amount;
@@ -55,7 +56,7 @@ public class Level1Controller implements Initializable {
     public void startGame() throws IOException{
 
         try {
-            Thread thread = new Thread(loop);
+             thread = new Thread(loop);
             thread.start();
         } catch (Exception ex) {
             throw new RuntimeException(ex);
