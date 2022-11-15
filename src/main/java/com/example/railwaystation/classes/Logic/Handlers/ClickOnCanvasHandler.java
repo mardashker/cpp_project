@@ -1,5 +1,6 @@
 package com.example.railwaystation.classes.Logic.Handlers;
 
+import com.example.railwaystation.classes.Game.CanvasInfo;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
@@ -23,12 +24,10 @@ import java.util.Optional;
 public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
     private Camera2D _camera;
 
-    public CanvasRendering ctx_info;
-    public Canvas canvasinfo;
-    private boolean showInfo = false;
+    CanvasInfo obj;
 
     public ClickOnCanvasHandler(Canvas canvasinfo, Camera2D camera) {
-        this.canvasinfo = canvasinfo;
+        obj = new CanvasInfo(canvasinfo);
         this._camera = camera;
     }
 
@@ -38,47 +37,16 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
 
         var cashRegistryOpt = findCashRegistry(event);
 
-        if (cashRegistryOpt.isEmpty())
+        if (cashRegistryOpt.isEmpty()) {
+            obj.cleanCanvas();
             return;
-
+        }
         if (event.getButton() == MouseButton.PRIMARY) {
-
-            ctx_info = new CanvasRendering(canvasinfo);
-
-            if (showInfo) {
-                showInfo = false;
-                canvasinfo.getGraphicsContext2D().clearRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
-                canvasinfo.setHeight(1);
-                canvasinfo.setWidth(1);
-                canvasinfo.setLayoutX(1);
-                canvasinfo.setLayoutY(1);
-            } else {
-                canvasinfo.setHeight(1000);
-                canvasinfo.setWidth(1050);
-                canvasinfo.setLayoutX(350);
-                canvasinfo.setLayoutY(10);
-                showInfo = true;
-                GraphicsContext gc = canvasinfo.getGraphicsContext2D();
-                gc.setFill(Color.rgb(182, 144, 106));
-                gc.fillRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
-                gc.setTextAlign(TextAlignment.LEFT);
-                gc.setFill(Color.BLACK);
-                gc.setFont(new Font("Georgia Bold", 20));
-                gc.fillText(
-                        "    User Type              User Info                                                            Tickets Info                                                  ",
-                        10, 25);
-                gc.fillText(
-                        "---------------------------------------------------------------------------------------------------------------------------------------",
-                        10, 35);
-                gc.setFont(new Font("Georgia", 20));
-
-                gc.fillText(
-                        Game.getShowQueueDetailsString(cashRegistryOpt.get().getOurQueue()), 10, 55);
-            }
+               obj.ShowQueueInfo(cashRegistryOpt);
 
 
         } else {
-
+            obj.cleanCanvas();
             var cashRegister = cashRegistryOpt.get();
 
             // check if user tries to close the reserve cash register

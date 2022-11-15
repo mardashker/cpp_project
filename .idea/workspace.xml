@@ -69,27 +69,22 @@
       <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/cpp_project-master/untitled.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RailwayStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/DrawingManagement/DrawingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CanvasInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CanvasInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/OurQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level4Controller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/chooselevel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/chooselevel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/7IsD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/cosmos.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level4.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/railwaystation/classes/Game/LevelReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/railwaystation/classes/Game/LevelReaderTest.java" afterDir="false" />
     </list>
     <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
@@ -137,19 +132,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/oksanaspodarik/Documents/cpp_project/src/main/resources/com/example/railwaystation/img/levelview",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oksanaspodarik/Documents/cpp_project/src/main/resources/com/example/railwaystation/img/levelview&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/levelview" />

@@ -101,6 +101,8 @@ public class CashRegister extends GameObject {
         isOpen = open;
         if(!open){
             this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
+        }else {
+            this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
         }
 
     }

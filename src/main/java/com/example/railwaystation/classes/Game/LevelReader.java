@@ -31,6 +31,7 @@ public class LevelReader {
     public static int level_width = 1;
     public static int level_height = 1;
 
+
     public static Collection<GameLevel> loadLevels() {
         URL levelFolder = LevelReader.class.getClassLoader().getResource("com/example/railwaystation/assets/levels");
         File dir = new File(levelFolder.getPath());
@@ -67,6 +68,7 @@ public class LevelReader {
 
             level_width = width;
             level_height = height;
+
 
             CellState[][] matrix = new CellState[width][height];
 

@@ -21,8 +21,10 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Game {
-    public static final double cell_width = 35;
-    public static final double cell_height = 35;
+    public static  double cell_width = 1;
+    public static  double cell_height = 1;
+    public static  double cell_size = 1;
+
     public static int usersCount;
     private static int maxUserCount;
 
@@ -66,19 +68,18 @@ public class Game {
         PrototypeRegistry.setPrototype(UserType.PREGNANT,new User(ResourceManagerUser.getSprite("pregnant"),UserType.PREGNANT,Priority.MEDIUM,3));
         PrototypeRegistry.setPrototype(UserType.DISABLED,new User(ResourceManagerUser.getSprite("disabled"),UserType.DISABLED,Priority.HIGH,2));
 
+        cell_width=cell_size;
+
+        cell_height=cell_size;
 
     }
 
     public static void showQueueDetails(OurQueue queue){
         Game.queueToShow = queue;
-        Game.queueToShow.forEach(System.out::println);
-        //TODO: actions to show queue detailed info
     }
     public static String getShowQueueDetailsString(OurQueue queue){
         Game.queueToShow = queue;
-        Game.queueToShow.forEach(System.out::println);
         return Game.queueToShow.toString();
-//        return "Bla";
 
     }
     public static int getMaxUserCount() {

@@ -88,6 +88,8 @@ public class Level2Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Game.cell_size=45;
+
         Game.Init();
         canvasL1.setWidth(Game.cell_width * LevelReader.level_width);
         canvasL1.setHeight(Game.cell_height * LevelReader.level_height);

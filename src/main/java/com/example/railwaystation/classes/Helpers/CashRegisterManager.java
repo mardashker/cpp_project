@@ -2,6 +2,7 @@ package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Moduls.CashRegister;
 import com.example.railwaystation.classes.Moduls.State;
+import javafx.scene.image.Image;
 
 public class CashRegisterManager {
     private QueueManager manager;
@@ -59,12 +60,14 @@ public class CashRegisterManager {
     }
 
     public void closeCashRegister(CashRegister register){
+
         register.setState(State.CLOSE);
         //TODO: закрити касу
 //        register.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
     }
 
     public void openCashRegister(CashRegister register) {
+
         register.setState(State.OPEN);
 
         //TODO: відкрити касу
