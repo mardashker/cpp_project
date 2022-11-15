@@ -15,6 +15,7 @@ import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.classes.Moduls.Users.UserType;
 import com.example.railwaystation.classes.Rendering.Camera2D;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
+import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
 import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
@@ -45,6 +46,7 @@ public class Level1Controller implements Initializable {
 
     Thread thread ;
     AtomicReference<Double>  amount_people;
+    AnimationTimer _timer;
     public CanvasRendering ctx;
     public Camera2D _camera;
     public Canvas canvasinfo;
@@ -72,13 +74,14 @@ public class Level1Controller implements Initializable {
 
     @FXML
     public void startGame() throws IOException {
-
-        try {
-            thread = new Thread(loop);
-            thread.start();
-        } catch (Exception ex) {
-            throw new RuntimeException(ex);
-        }
+        //loop.run();
+        _timer.start();
+//        try {
+//            thread = new Thread(loop);
+//            thread.start();
+//        } catch (Exception ex) {
+//            throw new RuntimeException(ex);
+//        }
     }
 
     public double mapValue(double a) {
@@ -164,5 +167,13 @@ public class Level1Controller implements Initializable {
             maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
 
         });
+        _timer = new AnimationTimer() {
+            @Override
+            public void handle(long l) {
+                ctx.ClearCtx();
+                //ctx.DrawGrid(Game.getCurrentLevel().get_matrix().length * Game.cell_width, Game.get_currentLevel().get_matrix()[0].length * Game.cell_height, Game.cell_width, Game.cell_height); //TODO: that's just for testing, remove it later
+                loop.run();
+            }
+        };
     }
 }

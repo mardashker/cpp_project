@@ -51,7 +51,6 @@ public class GameLoop implements Runnable {
         for (int i = 0; i < Game.get_currentLevel().get_cashRegistersList().size(); i++)
             Game.get_currentLevel().get_cashRegistersList().get(i).setOurQueue(Game.get_currentLevel().get_poligons().get(i).get_queue());
 
-        while(_isRunning){
             updateStationState();
             renderNewFrame();
 
@@ -66,7 +65,6 @@ public class GameLoop implements Runnable {
             }
 
             nextFrameTime += drawInterval;
-        }
     }
 
 
