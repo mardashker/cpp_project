@@ -9,8 +9,8 @@ import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 //черга до каси
-public class OurQueue implements Iterable<User>{
-//чому не наслідує GameObject
+public class OurQueue implements Iterable<User> {
+    //чому не наслідує GameObject
     private int size;
 
     private Coordinates coordinates;
@@ -18,7 +18,7 @@ public class OurQueue implements Iterable<User>{
     private CopyOnWriteArrayList<User> usersQueue;
 
     public OurQueue() {
-        this.usersQueue = new CopyOnWriteArrayList<>( );
+        this.usersQueue = new CopyOnWriteArrayList<>();
 //        this.usersQueue = new PriorityQueue<>(10, new Comparator<User>() {
 //            public int compare(User u1, User u2) {
 //                return Integer.compare(u1.getPriority().ordinal(), u2.getPriority().ordinal());
@@ -26,10 +26,10 @@ public class OurQueue implements Iterable<User>{
 //        });
     }
 
-    public void addUser(User user){
+    public void addUser(User user) {
         this.usersQueue.add(user);
-        if(usersQueue.size() > 1){
-            Collections.sort(usersQueue.subList(1,usersQueue.size()),new Comparator<User>() {
+        if (usersQueue.size() > 1) {
+            Collections.sort(usersQueue.subList(1, usersQueue.size()), new Comparator<User>() {
                 public int compare(User u1, User u2) {
                     return Integer.compare(u2.getPriority().ordinal(), u1.getPriority().ordinal());
                 }
@@ -57,19 +57,21 @@ public class OurQueue implements Iterable<User>{
         return usersQueue;
     }
 
-    public int size(){
+    public int size() {
         return usersQueue.size();
     }
+
     public void setUsersQueue(CopyOnWriteArrayList<User> usersQueue) {
         this.usersQueue = usersQueue;
     }
+
     public void removeFirsUser() {
-        if(usersQueue.size() > 0)
+        if (usersQueue.size() > 0)
             usersQueue.remove(0);
     }
 
     public User getFirsUser() {
-        if(usersQueue.size() > 0)
+        if (usersQueue.size() > 0)
             return usersQueue.get(0);
         return null;
     }
@@ -82,6 +84,13 @@ public class OurQueue implements Iterable<User>{
 
     @Override
     public String toString() {
-        return  "Users" + usersQueue + "\n";
+        String trynewString = "";
+        for (int i = 0; i < usersQueue.size(); i++) {
+            trynewString += usersQueue.get(i);
+        }
+        trynewString += "\n";
+
+
+        return trynewString;
     }
 }

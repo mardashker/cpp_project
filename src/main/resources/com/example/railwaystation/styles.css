@@ -1,5 +1,5 @@
 .t {
-    -fx-text-fill: white;
+    -fx-text-fill: red;
 }
 
 .anchor {
@@ -29,8 +29,12 @@
 .button{
    -fx-background-color: #b6906a;
 }
+.train{
+     -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/train.png');
+     -fx-background-color: transparent;
+}
 .level{
-   -fx-background-color: #5bbad4;
+   -fx-background-color: #B38A62;
     -fx-background-size: 100% 100%;
 
 }

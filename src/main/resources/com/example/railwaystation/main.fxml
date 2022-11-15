@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-    <AnchorPane  maxHeight="900" maxWidth="667"
-                 minHeight="900" minWidth="667"
-                 prefHeight="900.0" prefWidth="667.0"
+    <AnchorPane  maxHeight="1000" maxWidth="667"
+                 minHeight="1000" minWidth="667"
+                 prefHeight="1000.0" prefWidth="667.0"
                  styleClass="m"
                  xmlns="http://javafx.com/javafx/17"
                  xmlns:fx="http://javafx.com/fxml/1"

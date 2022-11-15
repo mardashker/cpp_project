@@ -11,7 +11,7 @@ import javafx.scene.image.Image;
 import java.util.Iterator;
 import java.util.List;
 
-enum State{
+enum State {
     MOVING,
     PROCESSING, //користувача обслуговує каса
     PENDING //стоїть в черзі
@@ -93,24 +93,27 @@ public class User extends GameObject implements Cloneable {
         this.tickets = tickets;
         this._target = null;
     }
-    public User(Image sprite, UserType type, Priority priority, float speed){
+
+    public User(Image sprite, UserType type, Priority priority, float speed) {
         this.type = type;
         this.speed = speed;
         this.priority = priority;
         this.setSprite(sprite);
         this._target = null;
     }
-    public User userClone(){
+
+    public User userClone() {
         return new User(this.getSprite(), this.type, this.priority, this.speed);
     }
 
-    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates, double angle){
-        this.userInfo = new UserInfo(name,surname,age,passportId,phoneNumber);
+    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates, double angle) {
+        this.userInfo = new UserInfo(name, surname, age, passportId, phoneNumber);
         this.tickets = tickets;
         this.setPosition(coordinates);
         this.setAngle(angle);
         this.state = State.MOVING;
     }
+
     public UserType getType() {
         return type;
     }
@@ -137,11 +140,31 @@ public class User extends GameObject implements Cloneable {
 
     @Override
     public String toString() {
-        return "User{" +
-                "type=" + type +
-                ", userInfo=" + userInfo +
-                ", tickets=" + tickets +
-                "}\n";
+        String tmp = "";
+
+        tmp += "   " + type + "    " + refact(userInfo.toString(), 35) + " ";
+        tmp += tickets.get(0);
+        for (int i = 1; i < tickets.size(); i++) {
+            tmp += "                                                                               " + tickets.get(i);
+        }
+        tmp += "----------------------------------------------------------------------------------------------------------------------------------------\n";
+
+        return tmp;
+    }
+
+    public String refact(String user, int len) {
+        int a = userInfo.toString().length();
+        len -= a;
+        String add = "";
+
+        for (int i = 0; i < len / 2; i++) {
+            add += " ";
+        }
+        if ((len % 2 == 1) && (len > 0)) {
+            return add + user + add + " ";
+        } else {
+            return add + user + add;
+        }
     }
 }
 

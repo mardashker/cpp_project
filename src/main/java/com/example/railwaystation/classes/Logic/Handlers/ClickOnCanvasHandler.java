@@ -10,6 +10,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.VPos;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
@@ -24,7 +25,7 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
 
     public CanvasRendering ctx_info;
     public Canvas canvasinfo;
-    private boolean showInfo=false;
+    private boolean showInfo = false;
 
     public ClickOnCanvasHandler(Canvas canvasinfo, Camera2D camera) {
         this.canvasinfo = canvasinfo;
@@ -45,30 +46,34 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
             ctx_info = new CanvasRendering(canvasinfo);
 
             if (showInfo) {
-                showInfo=false;
+                showInfo = false;
                 canvasinfo.getGraphicsContext2D().clearRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
                 canvasinfo.setHeight(1);
                 canvasinfo.setWidth(1);
                 canvasinfo.setLayoutX(1);
                 canvasinfo.setLayoutY(1);
             } else {
-                canvasinfo.setHeight(700);
-                canvasinfo.setWidth(700);
-                canvasinfo.setLayoutX(10);
+                canvasinfo.setHeight(1000);
+                canvasinfo.setWidth(1050);
+                canvasinfo.setLayoutX(350);
                 canvasinfo.setLayoutY(10);
-                showInfo=true;
+                showInfo = true;
                 GraphicsContext gc = canvasinfo.getGraphicsContext2D();
-                gc.setFill(Color.GREY);
+                gc.setFill(Color.rgb(182, 144, 106));
                 gc.fillRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
-                gc.setTextAlign(TextAlignment.CENTER);
-                gc.setTextBaseline(VPos.CENTER);
+                gc.setTextAlign(TextAlignment.LEFT);
                 gc.setFill(Color.BLACK);
-                gc.setFont(new Font("Georgia", 20));
+                gc.setFont(new Font("Georgia Bold", 20));
                 gc.fillText(
-                        Game.getShowQueueDetailsString(cashRegistryOpt.get().getOurQueue()),
-                        Math.round(canvasinfo.getWidth() / 2),
-                        Math.round(canvasinfo.getHeight() / 2)
-                );
+                        "    User Type              User Info                                                            Tickets Info                                                  ",
+                        10, 25);
+                gc.fillText(
+                        "---------------------------------------------------------------------------------------------------------------------------------------",
+                        10, 35);
+                gc.setFont(new Font("Georgia", 20));
+
+                gc.fillText(
+                        Game.getShowQueueDetailsString(cashRegistryOpt.get().getOurQueue()), 10, 55);
             }
 
 
@@ -148,8 +153,8 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         //find coordinates
         double clickX = event.getX() + _camera.get_position().getX();
         double clickY = event.getY() + _camera.get_position().getY();
-        double x = (int)(clickX / Game.cell_width / _camera.get_zoom());
-        double y = (int)(clickY / Game.cell_height / _camera.get_zoom());
+        double x = (int) (clickX / Game.cell_width / _camera.get_zoom());
+        double y = (int) (clickY / Game.cell_height / _camera.get_zoom());
         //find the clicked queue
         return Game.get_currentLevel().get_cashRegistersList().stream()
                 .filter(cr -> {

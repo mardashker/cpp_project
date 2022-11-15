@@ -19,20 +19,36 @@
 
     <children>
         <AnchorPane prefHeight="450.0" prefWidth="192.0">
-            <Text layoutX="150.0" layoutY="80.0"  styleClass="t" textAlignment="CENTER" text="Обрати рівень">
+            <Text layoutX="150.0" layoutY="60.0"  styleClass="t" textAlignment="CENTER" text="Обрати рівень">
                 <font>
                     <Font name="Georgia Bold" size="49.0"  />
                 </font>
             </Text>
             <children>
-                <Text layoutX="90.0" layoutY="155.0"  textAlignment="CENTER" text="Варіант 1">
+                <Text layoutX="270.0" layoutY="110.0"  textAlignment="CENTER" text="Варіант 1">
                     <font>
-                        <Font name="Georgia Bold" size="29.0" />
+                        <Font name="Georgia Bold" size="25.0" />
                     </font>
                 </Text>
-                <Button fx:id="btnLevel1" layoutX="50.0" layoutY="180.0" mnemonicParsing="false"
-                        onAction="#chooseLevel1" prefHeight="250.0" prefWidth="250.0"
-                        styleClass="button1" text="Зберегти">
+                <Button fx:id="btnLevel1" layoutX="140.0" layoutY="120.0" mnemonicParsing="false"
+                        onAction="#chooseLevel1" prefHeight="248.0" prefWidth="400.0"
+                        style=" -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/levelview/level11Img.png');" text=" ">
+
+                <font>
+                        <Font name="Georgia Regular" size="20.0"/>
+                    </font>
+                </Button>
+
+
+
+                <Text layoutX="270.0" layoutY="405.0"  textAlignment="CENTER" text="Варіант 2">
+                    <font>
+                        <Font name="Georgia Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Button fx:id="btnLevel2" layoutX="140.0" layoutY="415.0" mnemonicParsing="false"
+                        onAction="#chooseLevel2" prefHeight="284.0" prefWidth="400.0"
+                        style=" -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/levelview/level12Img.png');" text=" ">
                     <font>
                         <Font name="Georgia Regular" size="20.0"/>
                     </font>
@@ -40,30 +56,15 @@
 
 
 
-                <Text layoutX="390.0" layoutY="155.0"  textAlignment="CENTER" text="Варіант 2">
+                <Text layoutX="270.0" layoutY="730.0"  textAlignment="CENTER" text="Варіант 3">
                     <font>
-                        <Font name="Georgia Bold" size="29.0" />
+                        <Font name="Georgia Bold" size="25.0" />
                     </font>
                 </Text>
-                <Button fx:id="btnLevel2" layoutX="350.0" layoutY="180.0" mnemonicParsing="false"
-                        onAction="#chooseLevel2" prefHeight="250.0" prefWidth="250.0"
-                        styleClass="button2" text="Зберегти">
-                    <font>
-                        <Font name="Georgia Regular" size="20.0"/>
-                    </font>
-                </Button>
-
-
-
-                <Text layoutX="90.0" layoutY="480.0"  textAlignment="CENTER" text="Варіант 3">
-                    <font>
-                        <Font name="Georgia Bold" size="29.0" />
-                    </font>
-                </Text>
-                <Button fx:id="btnLevel3" layoutX="50.0" layoutY="500.0" mnemonicParsing="false"
-                        onAction="#chooseLevel3" prefHeight="250.0" prefWidth="250.0"
-                        styleClass="button3" text="Зберегти">
-                    <font>
+                <Button fx:id="btnLevel3" layoutX="140.0" layoutY="740.0" mnemonicParsing="false"
+                        onAction="#chooseLevel3" prefHeight="209.0" prefWidth="400.0"
+                        style=" -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/levelview/level13Img.png');" text=" ">
+                <font>
                         <Font name="Georgia Regular" size="20.0"/>
                     </font>
                 </Button>
@@ -71,18 +72,17 @@
 
 
 
-                <Text layoutX="390.0" layoutY="480.0"  textAlignment="CENTER" text="Варіант 4">
-                    <font>
-                        <Font name="Georgia Bold" size="29.0" />
-                    </font>
-                </Text>
-                <Button fx:id="btnLevel4" layoutX="350.0" layoutY="500.0" mnemonicParsing="false"
-                        onAction="#chooseLevel4" prefHeight="250.0" prefWidth="250.0"
-                        styleClass="button4" text="Зберегти">
-                    <font>
-                        <Font name="Georgia Regular" size="20.0"/>
-                    </font>
-                </Button>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

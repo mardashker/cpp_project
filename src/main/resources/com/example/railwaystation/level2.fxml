@@ -8,13 +8,59 @@
 
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.Font?>
+
+<?import javafx.scene.canvas.Canvas?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.railwaystation.controllers.Level2Controller"
-            prefHeight="400.0" prefWidth="600.0">
-    <Text layoutX="10.0" layoutY="42.0" textAlignment="CENTER" text="2">
+            prefHeight="900.0" prefWidth="4000.0"
+            styleClass="levelView">
+    <Button fx:id="back" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToMain"
+            prefHeight="100.0" prefWidth="100.0" styleClass="train" text="        ">
         <font>
-            <Font name="Georgia Bold" size="29.0" />
+            <Font name="Georgia BOLD" size="30.0"/>
+        </font>
+    </Button>
+    <Button fx:id="startGame" layoutX="135.0" layoutY="50.0" mnemonicParsing="false" onAction="#startGame"
+            prefHeight="60.0" prefWidth="245.0" styleClass="button" text="Почати гру">
+        <font>
+            <Font name="Georgia BOLD" size="30.0"/>
+        </font>
+    </Button>
+    <Text layoutX="135.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальна кількість "
+          textAlignment="LEFT" wrappingWidth="499.0">
+        <font>
+            <Font name="Georgia BOLD" size="24.0"/>
         </font>
     </Text>
+    <Spinner fx:id="Amount" styleClass="spin" editable="true" layoutX="440.0" layoutY="8.0" prefHeight="30.0"
+             prefWidth="100.0" amountToStepBy="2"/>
+        <Text layoutX="1200.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поточна кількість людей|"
+              textAlignment="RIGHT" wrappingWidth="499.0">
+            <font>
+                <Font name="Georgia BOLD" size="24.0"/>
+            </font>
+        </Text>
+        <Text fx:id="usercountText" layoutX="1700.0" layoutY="35.0" text="0" textAlignment="LEFT"
+              wrappingWidth="250">
+            <font>
+                <Font name="Georgia" size="24.0"/>
+            </font>
+        </Text>
+        <Text layoutX="1150.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальна кількість людей|"
+              textAlignment="RIGHT" wrappingWidth="499.0">
+            <font>
+                <Font name="Georgia BOLD" size="24.0"/>
+            </font>
+        </Text>
+        <Text fx:id="maxuserText" layoutX="1700.0" layoutY="55.0" text="0" textAlignment="LEFT"
+              wrappingWidth="250">
+            <font>
+                <Font name="Georgia" size="24.0"/>
+            </font>
+        </Text>
+        <Canvas fx:id="canvasL1" height="1000.0" width="1000.0" layoutX="15.0" layoutY="200.0"/>
+        <Canvas fx:id="canvasinfo" height="1.0" width="1.0" layoutX="1.0" layoutY="1.0">
+        </Canvas>
+
 </AnchorPane>

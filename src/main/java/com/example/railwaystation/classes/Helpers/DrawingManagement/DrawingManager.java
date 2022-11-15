@@ -29,7 +29,7 @@ public class DrawingManager {
      */
     public void drawFrame(){
 
-        _context.DrawGrid(_level.get_matrix().length * Game.cell_width, _level.get_matrix()[0].length * Game.cell_height, Game.cell_width, Game.cell_height); //TODO: that's just for testing, remove it later
+//        _context.DrawGrid(_level.get_matrix().length * Game.cell_width, _level.get_matrix()[0].length * Game.cell_height, Game.cell_width, Game.cell_height); //TODO: that's just for testing, remove it later
         // draw doors
         for(var door : _level.get_doorsList())
             door.DrawSprite(_context);

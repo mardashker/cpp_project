@@ -20,6 +20,6 @@ public class UserInfo {
 
     @Override
     public String toString() {
-        return "UserInfo:" + name + ' ' + surname  + "\n";
+        return  name + ' ' + surname  ;
     }
 }

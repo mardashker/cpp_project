@@ -1,5 +1,6 @@
 package com.example.railwaystation.controllers;
 
+import com.example.railwaystation.App;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
@@ -54,6 +55,10 @@ public class Level1Controller implements Initializable {
     public int maxCount = 40;
 
     private Collection<User> userCollection = new ArrayList<>();
+    @FXML
+    private void backToMain() throws IOException {
+        App.setRoot("chooselevel_other");
+    }
 
     public void PaintEverything() {
         AssetsReader.loadAssets();
