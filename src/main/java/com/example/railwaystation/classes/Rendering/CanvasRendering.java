@@ -42,7 +42,7 @@ public class CanvasRendering implements Rendering {
     @Override
     public void DrawGrid(double width, double height, double step_x, double step_y) {
         var ctx = _canvas.getGraphicsContext2D();
-        ctx.setStroke(Color.BLUEVIOLET);
+//        ctx.setStroke(Color.BLUEVIOLET);
         double width_low = 0 - _camera.get_position().getX();
         double width_high = width*_camera.get_zoom() - _camera.get_position().getX();
 
@@ -52,12 +52,12 @@ public class CanvasRendering implements Rendering {
         step_x *=_camera.get_zoom();
         step_y *=_camera.get_zoom();
 
-        for(double x=width_low; x <= width_high; x+=step_x){
-            _canvas.getGraphicsContext2D().strokeLine(x,height_low,x,height_high);
-        }
-        for (double y=height_low; y <= height_high; y+=step_y){
-            _canvas.getGraphicsContext2D().strokeLine(width_low,y,width_high,y);
-        }
+//        for(double x=width_low; x <= width_high; x+=step_x){
+//            _canvas.getGraphicsContext2D().strokeLine(x,height_low,x,height_high);
+//        }
+//        for (double y=height_low; y <= height_high; y+=step_y){
+//            _canvas.getGraphicsContext2D().strokeLine(width_low,y,width_high,y);
+//        }
     }
 
 

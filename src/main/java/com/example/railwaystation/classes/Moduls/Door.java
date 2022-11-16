@@ -41,9 +41,11 @@ public class Door extends GameObject {
         return _open;
     }
     public void open(){
+        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/door1.png"));
         setState(true);
     }
     public void close(){
+        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nodoor1.png"));
         setState(false);
     }
     public void setState(boolean flag){

@@ -34,32 +34,9 @@
         </font>
     </Text>
     <Spinner fx:id="Amount" styleClass="spin" editable="true" layoutX="440.0" layoutY="8.0" prefHeight="30.0"
-             prefWidth="100.0" amountToStepBy="2"/>
+             prefWidth="150.0" amountToStepBy="2"/>
 
-    <Text layoutX="1200.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поточна кількість людей|"
-          textAlignment="RIGHT" wrappingWidth="499.0">
-        <font>
-            <Font name="Georgia BOLD" size="24.0"/>
-        </font>
-    </Text>
-    <Text fx:id="usercountText" layoutX="1700.0" layoutY="35.0" text="0" textAlignment="LEFT"
-          wrappingWidth="250">
-        <font>
-            <Font name="Georgia" size="24.0"/>
-        </font>
-    </Text>
-    <Text layoutX="1150.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальна кількість людей|"
-          textAlignment="RIGHT" wrappingWidth="499.0">
-        <font>
-            <Font name="Georgia BOLD" size="24.0"/>
-        </font>
-    </Text>
-    <Text fx:id="maxuserText" layoutX="1700.0" layoutY="55.0" text="0" textAlignment="LEFT"
-          wrappingWidth="250">
-        <font>
-            <Font name="Georgia" size="24.0"/>
-        </font>
-    </Text>
+
     <Canvas fx:id="canvasL1" height="1000.0" width="1000.0" layoutX="15.0" layoutY="200.0"/>
     <Canvas fx:id="canvasinfo" height="1.0" width="1.0" layoutX="1.0" layoutY="1.0">
     </Canvas>
