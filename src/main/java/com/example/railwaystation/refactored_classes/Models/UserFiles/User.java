@@ -35,27 +35,7 @@ public class User extends GameObject implements Cloneable {
 
         return false;
     }
-
-
-    public User(UserType type, UserInfo userInfo, Priority priority, float speed, List<Ticket> tickets) {
-        this.type = type;
-        this.userInfo = userInfo;
-        this.priority = priority;
-        this.speed = speed;
-        this.tickets = tickets;
-        this.target = null;
-    }
-
-    public User(Coordinates position, double width, double height, Image sprite, double angle, UserType type, UserInfo userInfo, Priority priority, float speed, List<Ticket> tickets) {
-        super(position, width, height, sprite, angle);
-        this.type = type;
-        this.userInfo = userInfo;
-        this.priority = priority;
-        this.speed = speed;
-        this.tickets = tickets;
-        this.target = null;
-    }
-
+    
     public User(Image sprite, UserType type, Priority priority, float speed) {
         this.type = type;
         this.speed = speed;
