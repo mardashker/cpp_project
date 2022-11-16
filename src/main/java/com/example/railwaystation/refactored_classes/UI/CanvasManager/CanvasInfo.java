@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Game;
+package com.example.railwaystation.refactored_classes.UI.CanvasManager;
 
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.refactored_classes.Models.CashRegister;

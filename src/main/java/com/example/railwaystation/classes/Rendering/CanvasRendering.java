@@ -1,19 +1,14 @@
 package com.example.railwaystation.classes.Rendering;
 
-import com.example.railwaystation.classes.Rendering.Camera2D;
+import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Logic.Game;
-import javafx.geometry.VPos;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
-import javafx.scene.text.TextAlignment;
 
 
 public class CanvasRendering implements Rendering {
     private Canvas _canvas;
-
     private Camera2D _camera;
     public Camera2D get_camera() {
         return _camera;

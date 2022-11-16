@@ -1,6 +1,7 @@
-package com.example.railwaystation.classes.Helpers;
+package com.example.railwaystation.refactored_classes.Generators;
 
-import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.refactored_classes.Generators.UserDataGenerator;
+import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
@@ -31,7 +32,7 @@ public class WiseGenerator implements Generator {
             if(randomizer.nextInt(1, 101) <= probability){
                 var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
                 user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets(), door.getPosition(),door.getAngle(), this.door);
+                        dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(), dataGenerator.generateTickets(), door.getPosition(), this.door);
                 if(user.getType() == UserType.ORDINARY){
                     user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
                 }

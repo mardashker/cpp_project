@@ -1,7 +1,7 @@
 package com.example.railwaystation.classes.Helpers.GeneratingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
-import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 

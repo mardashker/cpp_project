@@ -26,8 +26,6 @@ import java.util.List;
 //клас для читання інфи для Level з файлу
 public class LevelReader {
     private static int level_size = 1;
-
-
     public static Collection<GameLevel> loadLevels() {
         URL levelFolder = LevelReader.class.getClassLoader().getResource("com/example/railwaystation/assets/levels");
         File dir = new File(levelFolder.getPath());

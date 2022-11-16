@@ -2,13 +2,13 @@ package com.example.railwaystation.classes.Logic;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.CashRegisterManager;
-import com.example.railwaystation.classes.Helpers.DrawingManagement.DrawingManager;
+import com.example.railwaystation.refactored_classes.UI.DrawingManagement.DrawingManager;
 import com.example.railwaystation.classes.Helpers.GeneratingManagement.GeneratingManager;
 import com.example.railwaystation.classes.Helpers.MovingManager;
 import com.example.railwaystation.classes.Helpers.QueueManager;
-import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.State;
-import com.example.railwaystation.classes.Rendering.Camera2D;
+import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
 

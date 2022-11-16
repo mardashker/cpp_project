@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 
 
-public class User extends GameObject implements Cloneable {
+public class User extends GameObject  {
     private UserType type;
     private int pathIndex = 1;
     private Iterator<Node> _it;
@@ -20,7 +20,6 @@ public class User extends GameObject implements Cloneable {
     private UserInfo userInfo;
     private List<Ticket> tickets;
     public Priority priority;
-    private float speed;
     private QueuePoligon target = null;
     private Door birthPlace = null;
 
@@ -36,23 +35,21 @@ public class User extends GameObject implements Cloneable {
         return false;
     }
 
-    public User(Image sprite, UserType type, Priority priority, float speed) {
+    public User(Image sprite, UserType type, Priority priority) {
         this.type = type;
-        this.speed = speed;
         this.priority = priority;
         this.setSprite(sprite);
         this.target = null;
     }
 
     public User userClone() {
-        return new User(this.getSprite(), this.type, this.priority, this.speed);
+        return new User(this.getSprite(), this.type, this.priority);
     }
 
-    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates, double angle, Door birthPlace) {
+    public void setPersonInfo(String name, String surname, int age, String passportId, String phoneNumber, List<Ticket> tickets, Coordinates coordinates, Door birthPlace) {
         this.userInfo = new UserInfo(name, surname, age, passportId, phoneNumber);
         this.tickets = tickets;
         this.setPosition(coordinates);
-        this.setAngle(angle);
         this.birthPlace = birthPlace;
     }
 

@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Helpers;
+package com.example.railwaystation.refactored_classes.Generators;
 
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.TicketType;

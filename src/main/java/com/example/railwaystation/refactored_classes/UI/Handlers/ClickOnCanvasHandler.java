@@ -1,11 +1,11 @@
 package com.example.railwaystation.refactored_classes.UI.Handlers;
 
-import com.example.railwaystation.classes.Game.CanvasInfo;
+import com.example.railwaystation.refactored_classes.UI.CanvasManager.CanvasInfo;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.refactored_classes.Models.CashRegister;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
-import com.example.railwaystation.classes.Rendering.Camera2D;
+import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
 import javafx.event.EventHandler;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
@@ -16,15 +16,12 @@ import java.util.Optional;
 
 public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
     private Camera2D _camera;
-
     CanvasInfo obj;
 
     public ClickOnCanvasHandler(Canvas canvasinfo, Camera2D camera) {
         obj = new CanvasInfo(canvasinfo);
         this._camera = camera;
     }
-
-
     @Override
     public void handle(MouseEvent event) {
 
@@ -36,8 +33,6 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         }
         if (event.getButton() == MouseButton.PRIMARY) {
                obj.ShowQueueInfo(cashRegistryOpt);
-
-
         } else {
             obj.cleanCanvas();
             var cashRegister = cashRegistryOpt.get();

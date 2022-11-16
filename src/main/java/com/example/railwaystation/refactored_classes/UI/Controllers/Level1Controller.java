@@ -5,16 +5,18 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
-import com.example.railwaystation.classes.Helpers.*;
 import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
-import com.example.railwaystation.classes.Interfaces.Generator;
+import com.example.railwaystation.refactored_classes.Generators.ConstUserGenerator;
+import com.example.railwaystation.refactored_classes.Generators.UserTypeGenerator;
+import com.example.railwaystation.refactored_classes.Generators.WiseGenerator;
+import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Logic.GameLoop;
 import com.example.railwaystation.refactored_classes.UI.Handlers.ClickOnCanvasHandler;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
-import com.example.railwaystation.classes.Rendering.Camera2D;
+import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
@@ -113,7 +115,6 @@ public class Level1Controller implements Initializable {
         ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.get_currentLevelCell_Size(),
                 Arrays.stream(gl.get_matrix()[0]).toList().size() *Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size());
 
-        //4
         var doors = gl.get_doorsList();
         List<Generator> generators = new ArrayList<>();
         try {
