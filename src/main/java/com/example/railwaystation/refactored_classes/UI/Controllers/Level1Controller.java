@@ -1,7 +1,7 @@
 package com.example.railwaystation.refactored_classes.UI.Controllers;
 
 import com.example.railwaystation.App;
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
@@ -14,10 +14,10 @@ import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Logic.GameLoop;
 import com.example.railwaystation.refactored_classes.UI.Handlers.ClickOnCanvasHandler;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
-import com.example.railwaystation.classes.Rendering.CanvasRendering;
+import com.example.railwaystation.refactored_classes.Rendering.CanvasRendering;
 import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
 import javafx.beans.value.ChangeListener;

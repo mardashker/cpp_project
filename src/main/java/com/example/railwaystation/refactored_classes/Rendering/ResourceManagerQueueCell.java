@@ -1,10 +1,10 @@
-package com.example.railwaystation.classes.Rendering;
+package com.example.railwaystation.refactored_classes.Rendering;
 
 import javafx.scene.image.Image;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ResourceManagerGameObjects {
+public class ResourceManagerQueueCell {
     private static final Map<String, Image> sprites = new HashMap<>();
     public static Image getSprite(String key){
         return sprites.get(key);

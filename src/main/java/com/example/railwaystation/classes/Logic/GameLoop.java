@@ -9,7 +9,7 @@ import com.example.railwaystation.classes.Helpers.QueueManager;
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.State;
 import com.example.railwaystation.refactored_classes.UI.CanvasManager.Camera2D;
-import com.example.railwaystation.classes.Rendering.Rendering;
+import com.example.railwaystation.refactored_classes.Rendering.Rendering;
 
 
 import java.util.List;
@@ -17,7 +17,6 @@ import java.util.List;
 //TODO: клас для управління всієї логіки програми
 public class GameLoop {
 
-    private static final int FPS = 7;
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
     private final Game _game;
@@ -51,24 +50,6 @@ public class GameLoop {
 
     }
 
-    private boolean overcrowded = false;
-
-    private boolean isCrowded(GeneratingManager manager){
-        int userNumber = manager.countUsersInStation();
-        if(overcrowded == false){
-
-            boolean isCrowded = userNumber >= Game.getMaxUserCount();
-            if(isCrowded == true)
-                overcrowded = true;
-            return isCrowded;
-        }else {
-            boolean isCrowded = userNumber >= (int)Game.getMaxUserCount() * 0.7;
-            if(isCrowded == false)
-                overcrowded = false;
-            return isCrowded;
-        }
-    }
-
     private void updateStationState(){
         checkDoorsAndNewUsers();
         moveUsers();
@@ -80,7 +61,7 @@ public class GameLoop {
         GeneratingManager manager = new GeneratingManager(_game.get_currentLevel(), this._userSources);
 
         int userNumber = manager.countUsersInStation();
-        boolean isCrowded = isCrowded(manager);
+        boolean isCrowded = manager.isCrowded(Game.getMaxUserCount());
         if(isCrowded)
             manager.closeDoors();
         else

@@ -6,10 +6,10 @@ import java.util.SplittableRandom;
 
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.Door;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
-import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerUser;
 
 
 

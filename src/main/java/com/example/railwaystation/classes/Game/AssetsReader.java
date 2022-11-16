@@ -1,11 +1,10 @@
 package com.example.railwaystation.classes.Game;
 
-import com.example.railwaystation.classes.Rendering.ResourceManagerCashRegister;
-import com.example.railwaystation.classes.Rendering.ResourceManagerDoor;
-import com.example.railwaystation.classes.Rendering.ResourceManagerQueueCell;
-import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerCashRegister;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerDoor;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerQueueCell;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerUser;
 import javafx.scene.image.Image;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -14,8 +13,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.SplittableRandom;
 
 public class AssetsReader {

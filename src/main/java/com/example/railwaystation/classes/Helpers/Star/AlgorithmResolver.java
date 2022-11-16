@@ -2,7 +2,7 @@ package com.example.railwaystation.classes.Helpers.Star;
 
 import com.example.railwaystation.classes.Game.CellState;
 import com.example.railwaystation.classes.Game.GameLevel;
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 
 import java.util.ArrayList;
 import java.util.List;

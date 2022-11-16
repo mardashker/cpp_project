@@ -1,22 +1,16 @@
-package com.example.railwaystation.classes.Helpers;
-
-import java.util.Objects;
+package com.example.railwaystation.refactored_classes.Helpers;
 
 public class Coordinates {
 
     private double x;
     private double y;
 
-    //зробити гетери сетери
 
     public Coordinates(){
         x = 0;
         y = 0;
     }
 
-    public boolean compareStartAlg(Coordinates other) {
-        return this.x == other.y && this.y == other.x;
-    }
 
     public Coordinates(double x, double y){
         this.x = x;
@@ -58,14 +52,14 @@ public class Coordinates {
         this.x = x;
         this.y = y;
     }
-
     public Coordinates copy(){
         return new Coordinates(this.x, this.y);
     }
-
     public Coordinates add(Coordinates b){
         return new Coordinates(x + b.x, y + b.y);
     }
-
+    public boolean compareStartAlg(Coordinates other) {
+        return this.x == other.y && this.y == other.x;
+    }
 
 }

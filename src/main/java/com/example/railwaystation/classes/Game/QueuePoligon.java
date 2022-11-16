@@ -4,7 +4,7 @@ package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.refactored_classes.Models.GameObject;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
-import com.example.railwaystation.classes.Rendering.Rendering;
+import com.example.railwaystation.refactored_classes.Rendering.Rendering;
 
 import java.util.Collection;
 

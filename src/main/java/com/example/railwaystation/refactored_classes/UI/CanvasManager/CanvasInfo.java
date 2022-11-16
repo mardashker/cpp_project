@@ -2,7 +2,7 @@ package com.example.railwaystation.refactored_classes.UI.CanvasManager;
 
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.refactored_classes.Models.CashRegister;
-import com.example.railwaystation.classes.Rendering.CanvasRendering;
+import com.example.railwaystation.refactored_classes.Rendering.CanvasRendering;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;

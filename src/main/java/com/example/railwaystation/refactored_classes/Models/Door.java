@@ -1,6 +1,6 @@
 package com.example.railwaystation.refactored_classes.Models;
 
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import javafx.scene.image.Image;
 
 import java.util.Objects;

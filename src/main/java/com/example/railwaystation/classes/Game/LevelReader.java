@@ -1,12 +1,12 @@
 package com.example.railwaystation.classes.Game;
 
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.refactored_classes.Models.CashRegister;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.refactored_classes.Models.GameObject;
-import com.example.railwaystation.classes.Rendering.ResourceManagerCashRegister;
-import com.example.railwaystation.classes.Rendering.ResourceManagerDoor;
-import com.example.railwaystation.classes.Rendering.ResourceManagerQueueCell;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerCashRegister;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerDoor;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerQueueCell;
 import javafx.scene.image.Image;
 import org.jetbrains.annotations.Nullable;
 import org.json.simple.JSONArray;

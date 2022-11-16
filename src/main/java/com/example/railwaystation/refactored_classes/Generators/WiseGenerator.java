@@ -1,11 +1,10 @@
 package com.example.railwaystation.refactored_classes.Generators;
 
-import com.example.railwaystation.refactored_classes.Generators.UserDataGenerator;
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.refactored_classes.Models.Door;
-import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Rendering.ResourceManagerUser;
+import com.example.railwaystation.classes.Moduls.Users.User;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 

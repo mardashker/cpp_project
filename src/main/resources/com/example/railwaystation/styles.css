@@ -27,14 +27,14 @@
 }
 
 .button{
-   -fx-background-color: #b6906a;
+   -fx-background-color: #CE9448;
 }
 .train{
      -fx-background-image:url('file:src/main/resources/com/example/railwaystation/img/train.png');
      -fx-background-color: transparent;
 }
 .level{
-   -fx-background-color: #B38A62;
+   -fx-background-color: #06A8EF;
     -fx-background-size: 100% 100%;
 
 }

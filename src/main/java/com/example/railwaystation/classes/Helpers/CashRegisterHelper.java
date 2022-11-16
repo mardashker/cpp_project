@@ -7,7 +7,7 @@ import java.util.List;
 
 
 public class CashRegisterHelper {
-    private static long processTicketTime = 5;
+    private static long processTicketTime = 1;
 
     public static boolean userProcessingTimeExpired(long seconds, StopWatch timer) {
         if(timer.getElapsedTimeSecs() >= seconds)

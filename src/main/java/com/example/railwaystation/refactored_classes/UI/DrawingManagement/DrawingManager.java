@@ -1,8 +1,7 @@
 package com.example.railwaystation.refactored_classes.UI.DrawingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
-import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Rendering.Rendering;
+import com.example.railwaystation.refactored_classes.Rendering.Rendering;
 public class DrawingManager {
 
     private final GameLevel _level;

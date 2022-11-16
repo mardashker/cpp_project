@@ -1,11 +1,14 @@
-package com.example.railwaystation.refactored_classes.Models.UserFiles;
+package com.example.railwaystation.classes.Moduls.Users;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Helpers.Star.Node;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.refactored_classes.Models.GameObject;
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.Priority;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserInfo;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 import javafx.scene.image.Image;
 
 import java.util.Iterator;
@@ -86,9 +89,6 @@ public class User extends GameObject  {
     public Door get_birth_place() {
         return birthPlace;
     }
-
-
-
 
 
 

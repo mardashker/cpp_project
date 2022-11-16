@@ -1,5 +1,7 @@
 package com.example.railwaystation.refactored_classes.Models.UserFiles;
 
+import com.example.railwaystation.classes.Moduls.Users.User;
+
 import java.util.HashMap;
 import java.util.Map;
 

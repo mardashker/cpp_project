@@ -1,7 +1,7 @@
 package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.classes.Moduls.Users.User;
 
 public class DistanceHelper {
     public static int calcDistance(User usr, QueuePoligon qp) {

@@ -3,7 +3,7 @@ package com.example.railwaystation.classes.Helpers.GeneratingManagement;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.Door;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.classes.Moduls.Users.User;
 
 import java.util.Comparator;
 import java.util.List;
@@ -16,6 +16,7 @@ public class GeneratingManager {
 
     private final GameLevel _level;
     private final List<Generator> _userSources;
+    private boolean overcrowded = false;
 
     /**
      * @param level - level to handle
@@ -71,9 +72,26 @@ public class GeneratingManager {
         return newUsers;
     }
 
+    public boolean isCrowded(int maxUserCount){
+        int userNumber = this.countUsersInStation();
+        if(overcrowded == false){
+
+            boolean isCrowded = userNumber >= maxUserCount;
+            if(isCrowded == true)
+                overcrowded = true;
+            return isCrowded;
+        }else {
+            boolean isCrowded = userNumber >= (int)maxUserCount * 0.7;
+            if(isCrowded == false)
+                overcrowded = false;
+            return isCrowded;
+        }
+    }
+
     /**
      * Will close all doors in the level.
      */
+
     public void closeDoors(){
         _level.get_doorsList().forEach(Door::close);
     }

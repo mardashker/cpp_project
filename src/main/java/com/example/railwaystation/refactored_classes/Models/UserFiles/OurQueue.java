@@ -1,8 +1,8 @@
 package com.example.railwaystation.refactored_classes.Models.UserFiles;
 
 
-import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Moduls.Users.User;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;

@@ -1,6 +1,6 @@
 package com.example.railwaystation.refactored_classes.UI.CanvasManager;
 
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 
 public class Camera2D {
 
