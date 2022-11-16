@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 //TODO: клас для управління всієї логіки програми
-public class GameLoop implements Runnable {
+public class GameLoop {
 
     private static final int FPS = 7;
     private int _maxUserCount = 30;
@@ -38,33 +38,21 @@ public class GameLoop implements Runnable {
         this._cashRegisterManager = new CashRegisterManager(_queueManager);
     }
 
+    public void animation_step(){
+        updateStationState();
+        renderNewFrame();
+    }
 
-    public void run() {
+    public void restore(){
         this._isRunning = true;
 
-        double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
-        double nextFrameTime = System.nanoTime() + drawInterval;// next frame time in nanoseconds
-        double timeToWaitBeforeNext = 0;                        // free time after rendering before next iteration
+        //TODO: that's a crutches
         Game.get_currentLevel().get_cashRegistersList().forEach(c->c.setState(State.OPEN));
 
-        //TODO: remove this porn *_*
+        //TODO: and remove this porn *_*
         for (int i = 0; i < Game.get_currentLevel().get_cashRegistersList().size(); i++)
             Game.get_currentLevel().get_cashRegistersList().get(i).setOurQueue(Game.get_currentLevel().get_poligons().get(i).get_queue());
 
-            updateStationState();
-            renderNewFrame();
-
-            timeToWaitBeforeNext = nextFrameTime - System.nanoTime();   //
-            timeToWaitBeforeNext = Math.max(timeToWaitBeforeNext, 0);   //calculate a time to wait before next iteration
-            timeToWaitBeforeNext /= 1_000_000;                          //
-
-            try {
-                Thread.sleep((long) timeToWaitBeforeNext);
-            } catch (Exception ex ){
-                throw new RuntimeException(ex);
-            }
-
-            nextFrameTime += drawInterval;
     }
 
 

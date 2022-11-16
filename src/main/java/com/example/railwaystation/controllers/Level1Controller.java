@@ -44,8 +44,10 @@ public class Level1Controller implements Initializable {
     private double mouseX;
     private double mouseY;
 
-    Thread thread ;
+    private AnimationTimer _animationTimer;
+
     AtomicReference<Double>  amount_people;
+
     AnimationTimer _timer;
     public CanvasRendering ctx;
     public Camera2D _camera;
@@ -74,14 +76,22 @@ public class Level1Controller implements Initializable {
 
     @FXML
     public void startGame() throws IOException {
-        //loop.run();
-        _timer.start();
-//        try {
-//            thread = new Thread(loop);
-//            thread.start();
-//        } catch (Exception ex) {
-//            throw new RuntimeException(ex);
-//        }
+
+        this.loop.restore();
+        final int FPS = 7;
+        double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
+        this._animationTimer = new AnimationTimer()
+        {
+            private long lastTime = 0;
+            public void handle(long currentNanoTime)
+            {
+                if(currentNanoTime - lastTime  >= drawInterval) {
+                    lastTime = currentNanoTime;
+                    loop.animation_step();
+                }
+            }
+        };
+        this._animationTimer.start();
     }
 
     public double mapValue(double a) {
@@ -167,13 +177,5 @@ public class Level1Controller implements Initializable {
             maxuserText.setText(String.valueOf(Game.getMaxUserCount()));
 
         });
-        _timer = new AnimationTimer() {
-            @Override
-            public void handle(long l) {
-                ctx.ClearCtx();
-                //ctx.DrawGrid(Game.getCurrentLevel().get_matrix().length * Game.cell_width, Game.get_currentLevel().get_matrix()[0].length * Game.cell_height, Game.cell_width, Game.cell_height); //TODO: that's just for testing, remove it later
-                loop.run();
-            }
-        };
     }
 }
