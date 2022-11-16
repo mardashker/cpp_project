@@ -1,4 +1,4 @@
-package com.example.railwaystation.controllers;
+package com.example.railwaystation.refactored_classes.UI.Controllers;
 
 import com.example.railwaystation.App;
 import javafx.fxml.FXML;

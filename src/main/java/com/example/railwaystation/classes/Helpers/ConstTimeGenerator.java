@@ -1,8 +1,8 @@
 package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Interfaces.Generator;
-import com.example.railwaystation.classes.Moduls.Door;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.Door;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 
 public class ConstTimeGenerator implements Generator {
 

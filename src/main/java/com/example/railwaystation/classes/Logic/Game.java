@@ -6,10 +6,13 @@ import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Helpers.Star.Node;
 import com.example.railwaystation.classes.Interfaces.Generator;
-import com.example.railwaystation.classes.Moduls.Door;
+import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.classes.Moduls.OurQueue;
-import com.example.railwaystation.classes.Moduls.Users.*;
 import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.Priority;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 
 import java.util.Collection;
 import java.util.HashMap;

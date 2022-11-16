@@ -1,11 +1,9 @@
 package com.example.railwaystation.classes.Game;
 
-import com.example.railwaystation.classes.Helpers.CashRegisterHelper;
 import com.example.railwaystation.classes.Moduls.CashRegister;
-import com.example.railwaystation.classes.Moduls.Door;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.Door;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 import javafx.scene.image.Image;
-import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 import java.util.List;

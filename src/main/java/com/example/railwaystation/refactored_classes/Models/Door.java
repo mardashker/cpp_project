@@ -1,6 +1,7 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Moduls.GameObject;
 import javafx.scene.image.Image;
 
 import java.util.Objects;
@@ -36,7 +37,6 @@ public class Door extends GameObject {
         this._open = _open;
     }
 
-//передавати кут як стрічку і так витягувати картинку
     public boolean isOpen() {
         return _open;
     }

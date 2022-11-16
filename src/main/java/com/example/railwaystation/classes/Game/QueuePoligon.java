@@ -25,14 +25,16 @@ public class QueuePoligon extends GameObject {
         // draw N first users from the queue
         _queueCells.forEach(g -> g.DrawSprite(ctx));
 
+        if(_queue.getUsers().size() <= 0)
+            return;
+
         var usersToDrawAtStart = get_queue().getUsers().stream()
                 .limit(_queueCells.size() - 1)
                 .toList();
         usersToDrawAtStart.forEach(u -> u.DrawSprite(ctx));
 
         //if there are no users return
-        if(_queue.getUsers().size() <= 0)
-            return;
+
         //else draw the last user
         get_queue().getUsers().stream()
                 .toList()

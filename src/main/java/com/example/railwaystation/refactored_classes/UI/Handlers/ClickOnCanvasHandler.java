@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Logic.Handlers;
+package com.example.railwaystation.refactored_classes.UI.Handlers;
 
 import com.example.railwaystation.classes.Game.CanvasInfo;
 import com.example.railwaystation.classes.Game.LevelReader;

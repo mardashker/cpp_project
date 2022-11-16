@@ -2,14 +2,12 @@ package com.example.railwaystation.classes.Helpers.GeneratingManagement;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Interfaces.Generator;
-import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Moduls.Door;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.Door;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 /**
  * Class which is supposed to handle generating and control number of users in level.

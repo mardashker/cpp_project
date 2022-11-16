@@ -8,12 +8,11 @@ import java.util.SplittableRandom;
 // so add 1 to make it inclusive
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Moduls.Door;
-import com.example.railwaystation.classes.Moduls.Users.User;
-import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
-import com.example.railwaystation.classes.Moduls.Users.UserType;
+import com.example.railwaystation.refactored_classes.Models.Door;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
-import com.example.railwaystation.controllers.Level1Controller;
 
 
 //генерує конкретний тип юзеру
@@ -38,12 +37,10 @@ public class ConstUserGenerator implements Generator{
             var typeIndex = randomizer.nextInt(UserType.values().length);
             var user = PrototypeRegistry.getPrototype(UserType.values()[randomizer.nextInt(UserType.values().length)]).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(), door.getAngle());
+                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(), door.getAngle(),door);
             if(user.getType() == UserType.ORDINARY){
                 user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
             }
-//            UpdateTableInfo.updateTavleValue();
-            user.set_birth_place(door);
             return user;
         } return null;
     }

@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models;
 
 //стан каси
 public enum State {

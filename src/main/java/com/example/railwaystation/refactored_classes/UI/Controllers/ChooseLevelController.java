@@ -1,4 +1,4 @@
-package com.example.railwaystation.controllers;
+package com.example.railwaystation.refactored_classes.UI.Controllers;
 
 import com.example.railwaystation.App;
 import javafx.fxml.FXML;
@@ -10,10 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

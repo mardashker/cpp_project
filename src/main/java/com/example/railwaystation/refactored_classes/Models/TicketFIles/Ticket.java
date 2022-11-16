@@ -1,4 +1,6 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models.TicketFIles;
+
+import com.example.railwaystation.refactored_classes.Models.TicketFIles.TicketType;
 
 import java.time.LocalDate;
 

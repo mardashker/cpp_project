@@ -2,10 +2,11 @@ package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Moduls.Door;
-import com.example.railwaystation.classes.Moduls.Users.User;
-import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
-import com.example.railwaystation.classes.Moduls.Users.UserType;
+import com.example.railwaystation.refactored_classes.Models.Door;
+import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 
 
 import java.io.IOException;
@@ -42,11 +43,11 @@ public class UserTypeGenerator implements Generator {
             Game.usersCount++;
             var user = PrototypeRegistry.getPrototype(userType).userClone();
             user.setPersonInfo(dataGenerator.generateName(), dataGenerator.generateLastName(), dataGenerator.generateAge(),
-                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(),door.getAngle());
-
-            user.set_birth_place(door);
+                    dataGenerator.generatePassportId(), dataGenerator.generatePhoneNumber(),dataGenerator.generateTickets(), door.getPosition(),door.getAngle(), this.door);
+            if(user.getType() == UserType.ORDINARY){
+                user.setSprite(ResourceManagerUser.getSprite("ordinary_"+randomizer.nextInt(1,36)));
+            }
             return user;
-            //return new User(Game.imageForUserType.get(userType), "Stephan", "Mariik", 18, "FD1223", "+380987197943", userType,door.coordinates);
         }
         return null;
     }

@@ -2,7 +2,7 @@ package com.example.railwaystation.classes.Moduls;
 
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;

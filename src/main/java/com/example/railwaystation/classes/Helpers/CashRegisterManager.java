@@ -1,8 +1,7 @@
 package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Moduls.CashRegister;
-import com.example.railwaystation.classes.Moduls.State;
-import javafx.scene.image.Image;
+import com.example.railwaystation.refactored_classes.Models.State;
 
 public class CashRegisterManager {
     private QueueManager manager;

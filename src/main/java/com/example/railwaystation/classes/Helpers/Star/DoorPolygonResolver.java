@@ -2,7 +2,7 @@ package com.example.railwaystation.classes.Helpers.Star;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Moduls.Door;
+import com.example.railwaystation.refactored_classes.Models.Door;
 
 import java.util.HashMap;
 import java.util.List;

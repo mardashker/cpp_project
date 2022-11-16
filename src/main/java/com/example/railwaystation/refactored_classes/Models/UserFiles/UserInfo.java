@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Moduls.Users;
+package com.example.railwaystation.refactored_classes.Models.UserFiles;
 
 public class UserInfo {
     private String name;

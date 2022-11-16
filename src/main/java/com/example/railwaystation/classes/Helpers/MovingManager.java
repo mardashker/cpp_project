@@ -1,10 +1,8 @@
 package com.example.railwaystation.classes.Helpers;
 
-import com.example.railwaystation.classes.Game.CellState;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.QueuePoligon;
-import com.example.railwaystation.classes.Moduls.GameObject;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 
 import java.util.Iterator;
 

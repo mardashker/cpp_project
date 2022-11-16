@@ -1,22 +1,24 @@
-package com.example.railwaystation.controllers;
+package com.example.railwaystation.refactored_classes.UI.Controllers;
 
 import com.example.railwaystation.App;
+import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
-import com.example.railwaystation.classes.Helpers.ConstUserGenerator;
-import com.example.railwaystation.classes.Helpers.Coordinates;
+import com.example.railwaystation.classes.Helpers.*;
 import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Logic.GameLoop;
-import com.example.railwaystation.classes.Logic.Handlers.ClickOnCanvasHandler;
-import com.example.railwaystation.classes.Moduls.Users.PrototypeRegistry;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.UI.Handlers.ClickOnCanvasHandler;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.UserType;
 import com.example.railwaystation.classes.Rendering.Camera2D;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
-import javafx.beans.value.ChangeListener;
+import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
+import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
@@ -25,7 +27,6 @@ import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
-import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.net.URL;
@@ -33,15 +34,18 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-public class Level3Controller implements Initializable {
+public class Level1Controller implements Initializable {
 
 
     public Canvas canvasL1;
     private double mouseX;
     private double mouseY;
 
-    Thread thread ;
+    private AnimationTimer _animationTimer;
+
     AtomicReference<Double>  amount_people;
+
+    AnimationTimer _timer;
     public CanvasRendering ctx;
     public Camera2D _camera;
     public Canvas canvasinfo;
@@ -60,13 +64,24 @@ public class Level3Controller implements Initializable {
 
     @FXML
     public void startGame() throws IOException {
+        canvasL1.setLayoutY(0.0);
 
-        try {
-            thread = new Thread(loop);
-            thread.start();
-        } catch (Exception ex) {
-            throw new RuntimeException(ex);
-        }
+
+        this.loop.restore();
+        final int FPS = 7;
+        double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
+        this._animationTimer = new AnimationTimer()
+        {
+            private long lastTime = 0;
+            public void handle(long currentNanoTime)
+            {
+                if(currentNanoTime - lastTime  >= drawInterval) {
+                    lastTime = currentNanoTime;
+                    loop.animation_step();
+                }
+            }
+        };
+        this._animationTimer.start();
     }
 
     public double mapValue(double a) {
@@ -75,6 +90,7 @@ public class Level3Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         Game.Init();
 
 
@@ -83,7 +99,7 @@ public class Level3Controller implements Initializable {
         Collection<GameLevel> gameLevels = LevelReader.loadLevels();
         if (gameLevels.isEmpty())
             return;
-        GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(2);
+        GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
         Game.setCurrentLevel(gl);
         System.out.println("!!!"+gl.getCell_size());
         canvasL1.setWidth(Game.get_currentLevelCell_Size() * gl.getWidth());
@@ -97,19 +113,26 @@ public class Level3Controller implements Initializable {
         ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.get_currentLevelCell_Size(),
                 Arrays.stream(gl.get_matrix()[0]).toList().size() *Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size());
 
-
+        //4
         var doors = gl.get_doorsList();
         List<Generator> generators = new ArrayList<>();
-
+        try {
+            generators.add(new ConstUserGenerator(doors.get(0)));
+            generators.add(new UserTypeGenerator(doors.get(1),UserType.ORDINARY));
+            generators.add(new WiseGenerator(doors.get(2)));
+            generators.add(new WiseGenerator(doors.get(3)));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         var prototypeManager = new PrototypeRegistry();
-        doors.stream().forEach(door -> {
+        /*doors.stream().forEach(door -> {
             try {
                 door.setState(true);
                 generators.add(new ConstUserGenerator(door));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        });
+        });*/
         Game game = new Game();
         Game.resolver = DoorPolygonResolver.calculate(gl);
         Game.currentLevel = gl;
@@ -146,7 +169,7 @@ public class Level3Controller implements Initializable {
         });
 
         //Візуальна частина --------------------------------------------------------------------------------------------------------
-        SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 200, 50, 1);
+        SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 30, 10, 1);
         Amount.setValueFactory(valueFactoryAmount);
         //------------------------------------------------------------------------------------------------------------------------
 

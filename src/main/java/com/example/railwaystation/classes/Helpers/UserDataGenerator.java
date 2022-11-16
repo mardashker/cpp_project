@@ -1,7 +1,7 @@
 package com.example.railwaystation.classes.Helpers;
 
-import com.example.railwaystation.classes.Moduls.Ticket;
-import com.example.railwaystation.classes.Moduls.TicketType;
+import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;
+import com.example.railwaystation.refactored_classes.Models.TicketFIles.TicketType;
 
 import java.io.File;
 import java.io.IOException;

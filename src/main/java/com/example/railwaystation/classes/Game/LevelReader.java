@@ -1,14 +1,11 @@
 package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
-import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
-import com.example.railwaystation.classes.Moduls.Door;
+import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.classes.Moduls.GameObject;
 import com.example.railwaystation.classes.Rendering.ResourceManagerCashRegister;
 import com.example.railwaystation.classes.Rendering.ResourceManagerDoor;
-import com.example.railwaystation.classes.Rendering.ResourceManagerGameObjects;
 import com.example.railwaystation.classes.Rendering.ResourceManagerQueueCell;
 import javafx.scene.image.Image;
 import org.jetbrains.annotations.Nullable;

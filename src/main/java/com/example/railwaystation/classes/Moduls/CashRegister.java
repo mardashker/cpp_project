@@ -1,7 +1,8 @@
 package com.example.railwaystation.classes.Moduls;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Moduls.Users.User;
+import com.example.railwaystation.refactored_classes.Models.State;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 import javafx.scene.image.Image;
 
 public class CashRegister extends GameObject {
@@ -11,27 +12,9 @@ public class CashRegister extends GameObject {
     private State state;
     private StopWatch timer;
     private volatile boolean isOpen;
-
     private final Object syncObject = new Object();
 
-    public void processUser(){
-        //TODO: процес обробки першого юзера з черги
-    }
 
-    public void updateQueue(){
-        //TODO: повідомляє про те що обробили ще одного юзера або взяли ще одного юзера
-    }
-
-    public void closeCashRegister(){
-        //TODO: закрити касу
-//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
-    }
-
-    public void openCashRegister(){
-        //TODO: відкрити касу
-//        this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
-
-    }
 
     public CashRegister() {
         ourQueue = new OurQueue();
@@ -69,6 +52,20 @@ public class CashRegister extends GameObject {
         }
     }
 
+
+
+    public synchronized void setOpen(boolean open) {
+        isOpen = open;
+        if(!open){
+            this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
+        }else {
+            this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
+        }
+
+    }
+
+
+
     public User getProcessingUser() {
         return processingUser;
     }
@@ -97,13 +94,5 @@ public class CashRegister extends GameObject {
         this.timer = timer;
     }
 
-    public synchronized void setOpen(boolean open) {
-        isOpen = open;
-        if(!open){
-            this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/nocash.png"));
-        }else {
-            this.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
-        }
 
-    }
 }
