@@ -7,7 +7,7 @@ import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Helpers.Star.Node;
 import com.example.railwaystation.classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.Door;
-import com.example.railwaystation.classes.Moduls.OurQueue;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
 import com.example.railwaystation.classes.Rendering.ResourceManagerUser;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.Priority;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.PrototypeRegistry;

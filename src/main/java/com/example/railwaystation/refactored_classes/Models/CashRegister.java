@@ -1,7 +1,8 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
-import com.example.railwaystation.refactored_classes.Models.State;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
+import com.example.railwaystation.refactored_classes.MovingFiles.StopWatch;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 import javafx.scene.image.Image;
 

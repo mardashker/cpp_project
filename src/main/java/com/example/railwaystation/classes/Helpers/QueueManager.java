@@ -2,7 +2,7 @@ package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.QueuePoligon;
-import com.example.railwaystation.classes.Moduls.OurQueue;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.User;
 
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models.UserFiles;
 
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
@@ -8,9 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-//черга до каси
 public class OurQueue implements Iterable<User> {
-    //чому не наслідує GameObject
     private int size;
 
     private Coordinates coordinates;
@@ -19,11 +17,6 @@ public class OurQueue implements Iterable<User> {
 
     public OurQueue() {
         this.usersQueue = new CopyOnWriteArrayList<>();
-//        this.usersQueue = new PriorityQueue<>(10, new Comparator<User>() {
-//            public int compare(User u1, User u2) {
-//                return Integer.compare(u1.getPriority().ordinal(), u2.getPriority().ordinal());
-//            }
-//        });
     }
 
     public void addUser(User user) {

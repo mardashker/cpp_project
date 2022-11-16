@@ -4,7 +4,7 @@ import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Helpers.Star.Node;
 import com.example.railwaystation.refactored_classes.Models.Door;
-import com.example.railwaystation.classes.Moduls.GameObject;
+import com.example.railwaystation.refactored_classes.Models.GameObject;
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;
 import javafx.scene.image.Image;
 
@@ -35,7 +35,7 @@ public class User extends GameObject implements Cloneable {
 
         return false;
     }
-    
+
     public User(Image sprite, UserType type, Priority priority, float speed) {
         this.type = type;
         this.speed = speed;
@@ -55,22 +55,6 @@ public class User extends GameObject implements Cloneable {
         this.setAngle(angle);
         this.birthPlace = birthPlace;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public UserType getType() {
         return type;
@@ -97,6 +81,7 @@ public class User extends GameObject implements Cloneable {
     public List<Ticket> getTickets() {
         return tickets;
     }
+
     public List<Node> get_path() {
         return path;
     }
@@ -105,9 +90,10 @@ public class User extends GameObject implements Cloneable {
         return birthPlace;
     }
 
-    public void set_birth_place(Door _birth_place) {
-        this.birthPlace = _birth_place;
-    }
+
+
+
+
 
     @Override
     public String toString() {

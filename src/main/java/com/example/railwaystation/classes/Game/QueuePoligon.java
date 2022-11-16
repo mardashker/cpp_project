@@ -2,8 +2,8 @@ package com.example.railwaystation.classes.Game;
 
 //клас для зображення черги, вигляд (координати) черги
 
-import com.example.railwaystation.classes.Moduls.GameObject;
-import com.example.railwaystation.classes.Moduls.OurQueue;
+import com.example.railwaystation.refactored_classes.Models.GameObject;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
 import com.example.railwaystation.classes.Rendering.Rendering;
 
 import java.util.Collection;

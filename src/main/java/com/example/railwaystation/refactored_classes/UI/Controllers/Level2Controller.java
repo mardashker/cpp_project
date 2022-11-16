@@ -117,7 +117,6 @@ public class Level2Controller implements Initializable {
 
         var doors = gl.get_doorsList();
         List<Generator> generators = new ArrayList<>();
-        //5
         var prototypeManager = new PrototypeRegistry();
         try {
             generators.add(new ConstUserGenerator(doors.get(0)));
@@ -171,12 +170,14 @@ public class Level2Controller implements Initializable {
                     _camera.set_zoom((Math.max(_camera.get_zoom() - zoom_factor, 0.5)));
             }
         });
-
         //Візуальна частина --------------------------------------------------------------------------------------------------------
         SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 200, 50, 1);
         Amount.setValueFactory(valueFactoryAmount);
         //------------------------------------------------------------------------------------------------------------------------
 
+
+        maxCount= (int) Amount.getValue();
+        Game.setMaxUserCount(maxCount);
 
         Amount.valueProperty().addListener((ChangeListener<Integer>) (observableValue, oldValue, newValue) -> {
             maxCount = (newValue);

@@ -1,24 +1,16 @@
 package com.example.railwaystation.refactored_classes.UI.Handlers;
 
 import com.example.railwaystation.classes.Game.CanvasInfo;
-import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Moduls.CashRegister;
-import com.example.railwaystation.classes.Moduls.OurQueue;
+import com.example.railwaystation.refactored_classes.Models.CashRegister;
+import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
 import com.example.railwaystation.classes.Rendering.Camera2D;
-import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.event.EventHandler;
-import javafx.geometry.VPos;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.TextAlignment;
 
 import java.util.Optional;
 

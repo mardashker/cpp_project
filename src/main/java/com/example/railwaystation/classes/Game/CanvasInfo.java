@@ -1,7 +1,7 @@
 package com.example.railwaystation.classes.Game;
 
 import com.example.railwaystation.classes.Logic.Game;
-import com.example.railwaystation.classes.Moduls.CashRegister;
+import com.example.railwaystation.refactored_classes.Models.CashRegister;
 import com.example.railwaystation.classes.Rendering.CanvasRendering;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;

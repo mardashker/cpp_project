@@ -173,6 +173,8 @@ public class Level1Controller implements Initializable {
         Amount.setValueFactory(valueFactoryAmount);
         //------------------------------------------------------------------------------------------------------------------------
 
+        maxCount= (int) Amount.getValue();
+        Game.setMaxUserCount(maxCount);
 
         Amount.valueProperty().addListener((ChangeListener<Integer>) (observableValue, oldValue, newValue) -> {
             maxCount = (newValue);

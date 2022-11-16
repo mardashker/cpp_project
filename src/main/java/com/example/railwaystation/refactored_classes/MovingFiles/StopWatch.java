@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.MovingFiles;
 
 public class StopWatch {
     private long startTime = 0;
@@ -14,7 +14,6 @@ public class StopWatch {
     }
 
 
-    //elaspsed time in milliseconds
     public long getElapsedTime() {
         long elapsed;
         if (running) {

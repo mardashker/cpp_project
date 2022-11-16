@@ -1,6 +1,6 @@
 package com.example.railwaystation.classes.Helpers;
 
-import com.example.railwaystation.classes.Moduls.CashRegister;
+import com.example.railwaystation.refactored_classes.Models.CashRegister;
 import com.example.railwaystation.refactored_classes.Models.State;
 
 public class CashRegisterManager {

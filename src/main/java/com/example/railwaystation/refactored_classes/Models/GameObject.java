@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Moduls;
+package com.example.railwaystation.refactored_classes.Models;
 
 import com.example.railwaystation.classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Rendering.Rendering;
@@ -6,7 +6,6 @@ import javafx.scene.image.Image;
 
 
 public class GameObject {
-    //двічі position в дверях
     private Coordinates position;
     private double width;
     private double height;

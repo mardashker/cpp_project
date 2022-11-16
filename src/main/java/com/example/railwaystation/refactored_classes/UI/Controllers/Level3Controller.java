@@ -37,9 +37,6 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class Level3Controller implements Initializable {
-
-
-
     public Canvas canvasL1;
     private double mouseX;
     private double mouseY;
@@ -170,11 +167,11 @@ public class Level3Controller implements Initializable {
             }
         });
 
-        //Візуальна частина --------------------------------------------------------------------------------------------------------
         SpinnerValueFactory<Integer> valueFactoryAmount = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 200, 50, 1);
         Amount.setValueFactory(valueFactoryAmount);
-        //------------------------------------------------------------------------------------------------------------------------
 
+        maxCount= (int) Amount.getValue();
+        Game.setMaxUserCount(maxCount);
 
         Amount.valueProperty().addListener((ChangeListener<Integer>) (observableValue, oldValue, newValue) -> {
             maxCount = (newValue);

@@ -18,7 +18,6 @@ import java.util.List;
 public class GameLoop {
 
     private static final int FPS = 7;
-    private int _maxUserCount = 50;
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
     private final Game _game;
@@ -52,6 +51,23 @@ public class GameLoop {
 
     }
 
+    private boolean overcrowded = false;
+
+    private boolean isCrowded(GeneratingManager manager){
+        int userNumber = manager.countUsersInStation();
+        if(overcrowded == false){
+
+            boolean isCrowded = userNumber >= Game.getMaxUserCount();
+            if(isCrowded == true)
+                overcrowded = true;
+            return isCrowded;
+        }else {
+            boolean isCrowded = userNumber >= (int)Game.getMaxUserCount() * 0.7;
+            if(isCrowded == false)
+                overcrowded = false;
+            return isCrowded;
+        }
+    }
 
     private void updateStationState(){
         checkDoorsAndNewUsers();
@@ -64,13 +80,13 @@ public class GameLoop {
         GeneratingManager manager = new GeneratingManager(_game.get_currentLevel(), this._userSources);
 
         int userNumber = manager.countUsersInStation();
-        boolean isCrowded = userNumber >= _maxUserCount;
+        boolean isCrowded = isCrowded(manager);
         if(isCrowded)
             manager.closeDoors();
         else
             manager.openDoors();
 
-        int freeSpots = _maxUserCount - userNumber;
+        int freeSpots = Game.getMaxUserCount() - userNumber;
         var newUsers = manager.collectUsers(freeSpots);
 
         Game.setUsersCount(userNumber + newUsers.size());  // better way to control the number of users
