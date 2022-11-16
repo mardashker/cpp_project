@@ -4,7 +4,7 @@ import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Helpers.Star.Node;
+import com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo.Node;
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;

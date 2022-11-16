@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Helpers.Star;
+package com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo;
 
 import com.example.railwaystation.classes.Game.CellState;
 import com.example.railwaystation.classes.Game.GameLevel;
@@ -20,13 +20,11 @@ public class AlgorithmResolver {
 
         var lst = new ArrayList<Coordinates>();
 
-//        System.out.println(s + " " + f);
 
         for (int i = 0; i < rows; i++) { // X
             for (int j = 0; j < cols; j++) { // Y
                 var current = new Coordinates(i, j);
-                if (m[i][j] != CellState.EMPTY && m[i][j] != CellState.DOOR && current.compareStartAlg(f)) {
-
+                if ((m[i][j] == CellState.CASH_REGISTER_PART || m[i][j] == CellState.QUEUE) && !current.equals(f)) {
                     lst.add(new Coordinates(i, j));
                 }
             }
@@ -36,11 +34,6 @@ public class AlgorithmResolver {
 
         List<Node> path = resolver.findPath();
 
-//        for (Node node : path) {
-//            System.out.println("RES:" + node);
-//        }
-//
-//        System.out.println("\n");
 
 
         return path;

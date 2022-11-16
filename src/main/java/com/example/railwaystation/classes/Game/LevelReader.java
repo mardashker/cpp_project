@@ -65,6 +65,11 @@ public class LevelReader {
 
 
             CellState[][] matrix = new CellState[width][height];
+            for (int i = 0; i < width; i++) {
+                for (int j = 0; j <height; j++) {
+                    matrix[i][j] = CellState.EMPTY;
+                }
+            }
 
             JSONArray doorsJSON = (JSONArray) jsonObjectdecode.get("doors");
             List<Door> doors = new ArrayList<>();

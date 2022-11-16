@@ -2,7 +2,7 @@ package com.example.railwaystation.classes.Moduls.Users;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Helpers.Star.Node;
+import com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo.Node;
 import com.example.railwaystation.refactored_classes.Models.Door;
 import com.example.railwaystation.refactored_classes.Models.GameObject;
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;

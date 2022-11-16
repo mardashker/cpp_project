@@ -5,7 +5,7 @@ import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
-import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
+import com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo.DoorPolygonResolver;
 import com.example.railwaystation.refactored_classes.Generators.ConstUserGenerator;
 import com.example.railwaystation.refactored_classes.Generators.UserTypeGenerator;
 import com.example.railwaystation.refactored_classes.Generators.WiseGenerator;
@@ -70,7 +70,7 @@ public class Level1Controller implements Initializable {
 
 
         this.loop.restore();
-        final int FPS = 7;
+        final int FPS = 4;
         double drawInterval = 1_000_000_000f / FPS;             // interval between frames in nanoseconds
         this._animationTimer = new AnimationTimer()
         {
@@ -86,9 +86,6 @@ public class Level1Controller implements Initializable {
         this._animationTimer.start();
     }
 
-    public double mapValue(double a) {
-        return a * 50;
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

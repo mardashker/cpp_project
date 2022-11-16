@@ -2,6 +2,7 @@ package com.example.railwaystation.classes.Helpers;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.QueuePoligon;
+import com.example.railwaystation.refactored_classes.Helpers.DistanceHelper;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
 import com.example.railwaystation.classes.Moduls.Users.User;
 

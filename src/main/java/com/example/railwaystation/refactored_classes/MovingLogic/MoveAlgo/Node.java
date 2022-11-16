@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Helpers.Star;
+package com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo;
 
 public class Node {
 

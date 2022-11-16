@@ -6,7 +6,7 @@ import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.refactored_classes.Generators.ConstUserGenerator;
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
-import com.example.railwaystation.classes.Helpers.Star.DoorPolygonResolver;
+import com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo.DoorPolygonResolver;
 import com.example.railwaystation.refactored_classes.Generators.UserTypeGenerator;
 import com.example.railwaystation.refactored_classes.Generators.WiseGenerator;
 import com.example.railwaystation.refactored_classes.Interfaces.Generator;

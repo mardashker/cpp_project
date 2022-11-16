@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Helpers;
+package com.example.railwaystation.refactored_classes.Helpers;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Moduls.Users.User;

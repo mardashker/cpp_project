@@ -30,11 +30,11 @@ public class CanvasInfo {
             setCanvas();
             showInfo = true;
             GraphicsContext gc = canvasinfo.getGraphicsContext2D();
-            gc.setFill(Color.rgb(182, 144, 106));
+            gc.setFill(Color.rgb(75, 103, 153));
             gc.fillRect(0, 0, canvasinfo.getWidth(), canvasinfo.getHeight());
             gc.setTextAlign(TextAlignment.LEFT);
             gc.setFill(Color.BLACK);
-            gc.setFont(new Font("Georgia Bold", 20));
+            gc.setFont(new Font("Georgia Bold", 10));
             gc.fillText(
                     "    User Type              User Info                                                            Tickets Info                                                  ",
                     10, 25);
@@ -60,8 +60,8 @@ public class CanvasInfo {
 
     public void setCanvas() {
         canvasinfo.setHeight(1000);
-        canvasinfo.setWidth(1050);
-        canvasinfo.setLayoutX(350);
+        canvasinfo.setWidth(600);
+        canvasinfo.setLayoutX(650);
         canvasinfo.setLayoutY(10);
     }
 }

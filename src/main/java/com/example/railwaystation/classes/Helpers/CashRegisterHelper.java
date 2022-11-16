@@ -1,6 +1,6 @@
 package com.example.railwaystation.classes.Helpers;
 
-import com.example.railwaystation.refactored_classes.MovingFiles.StopWatch;
+import com.example.railwaystation.refactored_classes.MovingLogic.StopWatch;
 import com.example.railwaystation.refactored_classes.Models.TicketFIles.Ticket;
 
 import java.util.List;

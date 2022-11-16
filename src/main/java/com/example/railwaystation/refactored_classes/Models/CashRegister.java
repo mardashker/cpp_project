@@ -2,7 +2,7 @@ package com.example.railwaystation.refactored_classes.Models;
 
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.refactored_classes.Models.UserFiles.OurQueue;
-import com.example.railwaystation.refactored_classes.MovingFiles.StopWatch;
+import com.example.railwaystation.refactored_classes.MovingLogic.StopWatch;
 import com.example.railwaystation.classes.Moduls.Users.User;
 import javafx.scene.image.Image;
 

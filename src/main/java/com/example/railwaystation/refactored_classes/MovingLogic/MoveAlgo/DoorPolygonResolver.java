@@ -1,4 +1,4 @@
-package com.example.railwaystation.classes.Helpers.Star;
+package com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo;
 
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
