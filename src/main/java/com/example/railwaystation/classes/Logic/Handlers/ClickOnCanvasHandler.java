@@ -1,6 +1,7 @@
 package com.example.railwaystation.classes.Logic.Handlers;
 
 import com.example.railwaystation.classes.Game.CanvasInfo;
+import com.example.railwaystation.classes.Game.LevelReader;
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Logic.Game;
 import com.example.railwaystation.classes.Moduls.CashRegister;
@@ -121,8 +122,8 @@ public class ClickOnCanvasHandler implements EventHandler<MouseEvent> {
         //find coordinates
         double clickX = event.getX() + _camera.get_position().getX();
         double clickY = event.getY() + _camera.get_position().getY();
-        double x = (int) (clickX / Game.cell_width / _camera.get_zoom());
-        double y = (int) (clickY / Game.cell_height / _camera.get_zoom());
+        double x = (int) (clickX / Game.get_currentLevelCell_Size() / _camera.get_zoom());
+        double y = (int) (clickY / Game.get_currentLevelCell_Size() / _camera.get_zoom());
         //find the clicked queue
         return Game.get_currentLevel().get_cashRegistersList().stream()
                 .filter(cr -> {

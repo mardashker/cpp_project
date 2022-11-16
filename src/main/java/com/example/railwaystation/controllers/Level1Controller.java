@@ -60,20 +60,7 @@ public class Level1Controller implements Initializable {
         App.setRoot("chooselevel_other");
     }
 
-    public void PaintEverything() {
-        AssetsReader.loadAssets();
-        URL assetFolder = Level1Controller.class.getClassLoader().getResource("com/example/railwaystation/assets");
-        Collection<GameLevel> gameLevels = LevelReader.loadLevels();
-        if (gameLevels.isEmpty())
-            return;
-        GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
-        ctx = new CanvasRendering(canvasL1);
-        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
-                Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
-        gl.get_doorsList().forEach(door -> door.DrawSprite(ctx));
-        gl.get_cashRegistersList().forEach(c -> c.DrawSprite(ctx));
-        gl.get_poligons().forEach(q -> q.DrawSprite(ctx));
-    }
+
 
     @FXML
     public void startGame() throws IOException {
@@ -92,11 +79,8 @@ public class Level1Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Game.cell_size=50;
         Game.Init();
 
-        canvasL1.setWidth(Game.cell_width * LevelReader.level_width);
-        canvasL1.setHeight(Game.cell_height * LevelReader.level_height);
 
 
         AssetsReader.loadAssets();
@@ -104,11 +88,18 @@ public class Level1Controller implements Initializable {
         if (gameLevels.isEmpty())
             return;
         GameLevel gl = gameLevels.stream().collect(Collectors.toList()).get(0);
+        Game.setCurrentLevel(gl);
+        System.out.println("!!!"+gl.getCell_size());
+        canvasL1.setWidth(Game.get_currentLevelCell_Size() * gl.getWidth());
+        canvasL1.setHeight(Game.get_currentLevelCell_Size() * gl.getHeight());
+
+
+
         _camera = new Camera2D(new Coordinates(0,0), 1);
         ctx = new CanvasRendering(canvasL1);
         ctx.set_camera(_camera);
-        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.cell_width,
-                Arrays.stream(gl.get_matrix()[0]).toList().size() * Game.cell_height, Game.cell_width, Game.cell_height);
+        ctx.DrawGrid(Arrays.stream(gl.get_matrix()).toList().size() * Game.get_currentLevelCell_Size(),
+                Arrays.stream(gl.get_matrix()[0]).toList().size() *Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size(), Game.get_currentLevelCell_Size());
 
 
         var doors = gl.get_doorsList();

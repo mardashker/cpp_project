@@ -59,7 +59,7 @@
                 <Font name="Georgia" size="24.0"/>
             </font>
         </Text>
-        <Canvas fx:id="canvasL1" height="1000.0" width="1000.0" layoutX="150.0" layoutY="150.0"/>
+        <Canvas fx:id="canvasL1" height="1000.0" width="1000.0" layoutX="200.0" layoutY="150.0"/>
         <Canvas fx:id="canvasinfo" height="1.0" width="1.0" layoutX="1.0" layoutY="1.0">
         </Canvas>
 

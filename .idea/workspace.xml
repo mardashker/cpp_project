@@ -69,21 +69,16 @@
       <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/cpp_project-master/untitled.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/.Trash/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CanvasInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CanvasInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/CashRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Rendering/CanvasRendering.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level2.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/level3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/7IsD.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/img/cosmos.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/level2.fxml" afterDir="false" />
     </list>
     <list id="b45a70d7-9f4b-4214-9f3c-3f13c5abe6ee" name="Changes by artemhuk" comment="" />
@@ -242,11 +237,80 @@
           <line>163</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/controllers/Level1Controller.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="sll" />
+        <watch expression="width" />
+        <watch expression="height" />
+        <watch expression="cell_size" />
+        <watch expression="level_size" />
       </configuration>
     </watches-manager>
   </component>

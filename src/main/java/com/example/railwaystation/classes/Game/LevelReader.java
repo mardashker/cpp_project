@@ -28,8 +28,7 @@ import java.util.List;
 
 //клас для читання інфи для Level з файлу
 public class LevelReader {
-    public static int level_width = 1;
-    public static int level_height = 1;
+    private static int level_size = 1;
 
 
     public static Collection<GameLevel> loadLevels() {
@@ -65,9 +64,9 @@ public class LevelReader {
         try {
             int width = (int) (long) jsonObjectdecode.get("width");
             int height = (int) (long) jsonObjectdecode.get("height");
+            int cell_size = (int) (long) jsonObjectdecode.get("cell_size");
 
-            level_width = width;
-            level_height = height;
+            level_size =  (int) (long) jsonObjectdecode.get("cell_size");
 
 
             CellState[][] matrix = new CellState[width][height];
@@ -107,7 +106,7 @@ public class LevelReader {
             if (cashRegisters.size() != queuePoligons.size())
                 return null;
 
-            return new GameLevel(doors, cashRegisters, queuePoligons, matrix);
+            return new GameLevel(cell_size,height,width,doors, cashRegisters, queuePoligons, matrix);
         } catch (Exception ex) {
             return null;
         }
@@ -120,8 +119,8 @@ public class LevelReader {
         try {
             Door newDoor = new Door();
 
-            newDoor.setWidth(Game.cell_width);
-            newDoor.setHeight(Game.cell_height);
+            newDoor.setWidth(level_size);
+            newDoor.setHeight(level_size);
 
             double x = (long) ((JSONObject) o).get("x");
             double y = (long) ((JSONObject) o).get("y");
@@ -143,8 +142,8 @@ public class LevelReader {
         try {
             CashRegister cashRegister = new CashRegister();
 
-            cashRegister.setWidth(Game.cell_width);
-            cashRegister.setHeight(Game.cell_height);
+            cashRegister.setWidth(level_size);
+            cashRegister.setHeight(level_size);
 
             double x = (long) ((JSONObject) o).get("x");
             double y = (long) ((JSONObject) o).get("y");
@@ -172,8 +171,8 @@ public class LevelReader {
                 double x = (long) cellJSON.get("x");
                 double y = (long) cellJSON.get("y");
 
-                cell.setHeight(Game.cell_height);
-                cell.setWidth(Game.cell_width);
+                cell.setHeight(level_size);
+                cell.setWidth(level_size);
                 cell.setPosition(new Coordinates(x, y));
                 cell.setSprite(ResourceManagerQueueCell.getSprite((String) cellJSON.get("sidemask")));
                 qcells.add(cell);

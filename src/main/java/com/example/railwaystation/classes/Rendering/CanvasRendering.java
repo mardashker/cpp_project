@@ -32,10 +32,10 @@ public class CanvasRendering implements Rendering {
     public void DrawSprite(Coordinates pos, double width, double height, double angle, Image sprite) {
         _canvas.getGraphicsContext2D().drawImage(
                 sprite,
-                pos.getX()*Game.cell_width * _camera.get_zoom() - _camera.get_position().getX(),
-                pos.getY()*Game.cell_height * _camera.get_zoom() - _camera.get_position().getY(),
-                Game.cell_width * _camera.get_zoom(),
-                Game.cell_height * _camera.get_zoom()
+                pos.getX()*Game.get_currentLevelCell_Size() * _camera.get_zoom() - _camera.get_position().getX(),
+                pos.getY()*Game.get_currentLevelCell_Size() * _camera.get_zoom() - _camera.get_position().getY(),
+                Game.get_currentLevelCell_Size() * _camera.get_zoom(),
+                Game.get_currentLevelCell_Size() * _camera.get_zoom()
         );
     }
 
