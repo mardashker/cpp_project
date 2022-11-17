@@ -15,7 +15,7 @@
 <?import java.lang.String?>
 <AnchorPane maxHeight="900" maxWidth="667" minHeight="900" minWidth="667" prefHeight="900.0" prefWidth="667.0"
             styleClass="level" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.railwaystation.controllers.ChooseLevelController">
+            fx:controller="com.example.railwaystation.UI.Controllers.ChooseLevelController">
 
     <children>
         <AnchorPane prefHeight="450.0" prefWidth="192.0">

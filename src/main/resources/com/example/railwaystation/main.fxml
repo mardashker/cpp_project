@@ -14,7 +14,7 @@
                  styleClass="m"
                  xmlns="http://javafx.com/javafx/17"
                  xmlns:fx="http://javafx.com/fxml/1"
-                 fx:controller="com.example.railwaystation.controllers.MainController">
+                 fx:controller="com.example.railwaystation.UI.Controllers.MainController">
 
     <children>
         <Text layoutX="200.0" layoutY="100.0"  textAlignment="CENTER" text="Привіт!">
