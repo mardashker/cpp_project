@@ -2,8 +2,13 @@ package com.example.railwaystation.Helpers;
 
 import com.example.railwaystation.Models.CashRegister;
 import com.example.railwaystation.Models.State;
+import com.example.railwaystation.Interfaces.Observable;
+import com.example.railwaystation.Interfaces.Observer;
 
-public class CashRegisterManager {
+import java.util.ArrayList;
+import java.util.List;
+
+public class CashRegisterManager implements Observable {
     private QueueManager manager;
 
     public CashRegisterManager(QueueManager manager) {
@@ -44,9 +49,18 @@ public class CashRegisterManager {
 
     private void processUserTickets(CashRegister register) {
         if(CashRegisterHelper.userProcessingTimeExpired(register.getSecondsToProcessUser(), register.getTimer())) {
-            register.getTimer().stop();
-            //TODO: log user
-            register.getOurQueue().removeFirsUser();
+            var timer =  register.getTimer();
+            timer.stop();
+
+            var removedUser = register.getOurQueue().removeFirsUser();
+            notifySubscribers(
+                    new UserProcessedEventArgs(
+                        timer.getStartTime(),
+                        timer.getStopTime(),
+                        removedUser
+                    )
+            );
+
             register.setProcessingUser(null);
             register.setState(State.OPEN);
             // Add event to update Queue Polygon
@@ -72,5 +86,21 @@ public class CashRegisterManager {
         //TODO: відкрити касу
 //        register.setSprite(new Image("file:src/main/resources/com/example/railwaystation/img/icons/cash.png"));
 
+    }
+
+    //TODO:move to top
+    private List<Observer> _observers = new ArrayList<>();
+    @Override
+    public void subscribe(Observer observer) {
+        if(!_observers.contains(observer))
+            _observers.add(observer);
+    }
+    @Override
+    public boolean unsubscribe(Observer observer) {
+        return _observers.remove(observer);
+    }
+    @Override
+    public void notifySubscribers(UserProcessedEventArgs args){
+        this._observers.forEach(o -> o.process(args));
     }
 }

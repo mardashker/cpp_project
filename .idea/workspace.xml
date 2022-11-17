@@ -5,55 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="177c70de-7eae-4a15-9f89-547f59253304" name="Changes" comment="generators">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Interfaces/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Interfaces/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RailwayStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RailwayStation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/AssetsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/AssetsReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/CellState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/CellState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/GameLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/LevelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/QueuePoligon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/QueuePoligon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/CashRegisterHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/CashRegisterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/CashRegisterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/GeneratingManagement/GeneratingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/GeneratingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/MovingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/MovementManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Helpers/QueueManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/QueueManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Moduls/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/UserFiles/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/ConstUserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/ConstUserGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/UserTypeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/UserTypeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/WiseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Generators/WiseGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/DistanceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Helpers/DistanceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Interfaces/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Interfaces/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/CashRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/UserFiles/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/OurQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/UserFiles/PrototypeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Models/UserFiles/PrototypeRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/MovingLogic/MoveAlgo/AlgorithmResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/MovingLogic/MoveAlgo/AlgorithmResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/MovingLogic/MoveAlgo/DoorPolygonResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/MovingLogic/MoveAlgo/DoorPolygonResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Rendering/CanvasRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Rendering/CanvasRendering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Rendering/Rendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Interfaces/Rendering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/CanvasManager/CanvasInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/CanvasManager/CanvasInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/DrawingManagement/DrawingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/DrawingManagement/DrawingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/railwaystation/assets/levels/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/railwaystation/classes/Game/AssetsReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/railwaystation/classes/Game/AssetsReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Game/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Game/GameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/CashRegisterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/CashRegisterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/ConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/ConsoleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/UserProcessedEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Helpers/UserProcessedEventArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/OurQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/OurQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/UserFiles/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/UserFiles/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/UserFiles/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/Models/UserFiles/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/MovingLogic/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/MovingLogic/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/UI/Controllers/Level3Controller.java" afterDir="false" />
     </list>
     <list id="9300a359-cd85-496d-abcf-97c32c693fd8" name="Changes by artemhuk" comment="" />
     <list id="ee84df1c-4ce1-4843-ae27-d0251c72ae95" name="Changes by avenortoz" comment="" />
     <list id="ae22d8d5-94ca-437f-b8fe-31292c775097" name="Changes by Eduard" comment="" />
     <list id="fda6ec05-20ad-444d-b094-ca5e8d4ca510" name="Changes by oksanaspodarik" comment="" />
-    <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Game/LevelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/LevelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/classes/Logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Handlers/ClickOnCanvasHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Handlers/ClickOnCanvasHandler.java" afterDir="false" />
-    </list>
+    <list id="f5e7b8e6-467c-4897-a766-58017f4a36ec" name="Changes by Zakhar" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="Interface" />
       </list>
@@ -77,77 +52,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level2Controller.java">
-      <ranges>
-        <range start1="3" end1="6" start2="3" end2="6" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="12" end1="14" start2="12" end2="14" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="113" end1="114" start2="113" end2="114" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="138" end1="140" start2="138" end2="139" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="141" end1="142" start2="140" end2="141" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/Game.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="2" end1="5" start2="2" end2="2" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="9" end1="10" start2="6" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="13" end1="14" start2="10" end2="11" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="23" end1="24" start2="20" end2="21" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="29" end1="30" start2="26" end2="35" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="33" end1="34" start2="38" end2="39" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="43" end1="46" start2="48" end2="48" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="56" end1="57" start2="58" end2="58" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/Game/LevelReader.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="2" end1="2" start2="2" end2="3" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="27" end1="28" start2="28" end2="29" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="63" end1="64" start2="64" end2="65" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="89" end1="90" start2="90" end2="91" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="108" end1="109" start2="109" end2="110" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="121" end1="123" start2="122" end2="124" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="144" end1="146" start2="145" end2="147" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="173" end1="175" start2="174" end2="176" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java">
-      <ranges>
-        <range start1="4" end1="7" start2="4" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="12" end1="14" start2="12" end2="14" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="111" end1="112" start2="111" end2="112" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="133" end1="135" start2="133" end2="136" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="136" end1="137" start2="137" end2="138" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Handlers/ClickOnCanvasHandler.java">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="5" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="6" end1="7" start2="6" end2="7" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="63" end1="64" start2="63" end2="64" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="71" end1="72" start2="71" end2="72" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="78" end1="79" start2="78" end2="79" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="89" end1="90" start2="89" end2="90" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="95" end1="96" start2="95" end2="96" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="102" end1="103" start2="102" end2="103" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="130" end1="131" start2="130" end2="131" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level3Controller.java">
-      <ranges>
-        <range start1="3" end1="6" start2="3" end2="6" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="12" end1="14" start2="12" end2="14" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="111" end1="112" start2="111" end2="112" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-        <range start1="134" end1="136" start2="134" end2="135" changelist="f5e7b8e6-467c-4897-a766-58017f4a36ec" />
-        <range start1="137" end1="138" start2="136" end2="137" changelist="177c70de-7eae-4a15-9f89-547f59253304" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -158,6 +62,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2H7jvMFefrUCFbXdVQZcF5HV83h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -267,7 +174,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/railwaystation/refactored_classes/UI/Controllers/Level1Controller.java</url>
-          <line>82</line>
+          <line>85</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

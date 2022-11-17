@@ -15,21 +15,20 @@ import com.example.railwaystation.Models.State;
 import java.util.List;
 
 public class GameLoop {
-
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
     private final Rendering _renderingUnit;
     private final QueueManager _queueManager;
     private final CashRegisterManager _cashRegisterManager;
     private final GeneratingManager _generatingManager;
-    public GameLoop(List<Generator> userSources, Rendering renderingUnit, Camera2D camera){
+    public GameLoop(List<Generator> userSources, Rendering renderingUnit, Camera2D camera, QueueManager qManager, CashRegisterManager crMannager){
         if(userSources == null || renderingUnit == null)
             throw new IllegalArgumentException("Parameters can't be null!");
         this._userSources = userSources;
         this._renderingUnit = renderingUnit;
-        this._queueManager = new QueueManager(Game.get_currentLevel());
-        this._cashRegisterManager = new CashRegisterManager(_queueManager);
         this._generatingManager = new GeneratingManager(Game.get_currentLevel(), this._userSources);
+        this._queueManager = qManager;
+        this._cashRegisterManager = crMannager;
     }
 
     public void animation_step(){
@@ -39,7 +38,6 @@ public class GameLoop {
 
     public void restore(){
         this._isRunning = true;
-
         Game.get_currentLevel().get_cashRegistersList().forEach(c->c.setState(State.OPEN));
 
         for (int i = 0; i < Game.get_currentLevel().get_cashRegistersList().size(); i++)

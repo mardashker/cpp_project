@@ -14,6 +14,11 @@ import java.util.List;
 
 public class User extends GameObject {
     private UserType type;
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
     private UserInfo userInfo;
     private List<Ticket> tickets;
     public Priority priority;
