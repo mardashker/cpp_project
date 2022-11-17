@@ -4,7 +4,10 @@ import com.example.railwaystation.App;
 import com.example.railwaystation.classes.Game.AssetsReader;
 import com.example.railwaystation.classes.Game.GameLevel;
 import com.example.railwaystation.classes.Game.LevelReader;
+import com.example.railwaystation.classes.Helpers.CashRegisterManager;
+import com.example.railwaystation.classes.Helpers.QueueManager;
 import com.example.railwaystation.refactored_classes.Generators.ConstUserGenerator;
+import com.example.railwaystation.refactored_classes.Helpers.ConsoleLogger;
 import com.example.railwaystation.refactored_classes.Helpers.Coordinates;
 import com.example.railwaystation.refactored_classes.MovingLogic.MoveAlgo.DoorPolygonResolver;
 import com.example.railwaystation.refactored_classes.Generators.UserTypeGenerator;
@@ -124,19 +127,16 @@ public class Level3Controller implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        /*doors.stream().forEach(door -> {
-            try {
-                door.setState(true);
-                generators.add(new ConstUserGenerator(door));
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });*/
-        Game game = new Game();
+
         Game.resolver = DoorPolygonResolver.calculate(gl);
         Game.currentLevel = gl;
-        GameLoop loop = new GameLoop(new Game(), generators, ctx, _camera);
-        this.loop = loop;
+
+        QueueManager queueManager = new QueueManager(Game.get_currentLevel());
+        CashRegisterManager crManager =  new CashRegisterManager(queueManager);
+        ConsoleLogger logger = new ConsoleLogger();
+        crManager.subscribe(logger);
+
+        this.loop = new GameLoop(generators, ctx, _camera, queueManager, crManager);
         /* click handler to show queue info */
         canvasL1.addEventHandler(MouseEvent.MOUSE_CLICKED, new ClickOnCanvasHandler(canvasinfo,_camera));
 

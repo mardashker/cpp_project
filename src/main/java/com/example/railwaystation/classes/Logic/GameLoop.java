@@ -2,6 +2,7 @@ package com.example.railwaystation.classes.Logic;
 
 import com.example.railwaystation.classes.Game.QueuePoligon;
 import com.example.railwaystation.classes.Helpers.CashRegisterManager;
+import com.example.railwaystation.refactored_classes.Helpers.ConsoleLogger;
 import com.example.railwaystation.refactored_classes.UI.DrawingManagement.DrawingManager;
 import com.example.railwaystation.classes.Helpers.GeneratingManagement.GeneratingManager;
 import com.example.railwaystation.classes.Helpers.MovingManager;
@@ -16,21 +17,18 @@ import java.util.List;
 
 //TODO: клас для управління всієї логіки програми
 public class GameLoop {
-
     private boolean _isRunning = true;
     private final List<Generator> _userSources;
-    private final Game _game;
     private final Rendering _renderingUnit;
     private final QueueManager _queueManager;
     private final CashRegisterManager _cashRegisterManager;
-    public GameLoop(Game game, List<Generator> userSources, Rendering renderingUnit, Camera2D camera){
-        if(game == null || userSources == null || renderingUnit == null)
+    public GameLoop(List<Generator> userSources, Rendering renderingUnit, Camera2D camera, QueueManager qManager, CashRegisterManager crMannager){
+        if(userSources == null || renderingUnit == null)
             throw new IllegalArgumentException("Parameters can't be null!");
-        this._game = game;
         this._userSources = userSources;
         this._renderingUnit = renderingUnit;
-        this._queueManager = new QueueManager(Game.get_currentLevel());
-        this._cashRegisterManager = new CashRegisterManager(_queueManager);
+        this._queueManager = qManager;
+        this._cashRegisterManager = crMannager;
     }
 
     public void animation_step(){
@@ -41,7 +39,7 @@ public class GameLoop {
     public void restore(){
         this._isRunning = true;
 
-        //TODO: that's a crutches
+        //TODO: that's a crutch
         Game.get_currentLevel().get_cashRegistersList().forEach(c->c.setState(State.OPEN));
 
         //TODO: and remove this porn *_*
@@ -58,7 +56,7 @@ public class GameLoop {
     //TODO: fix. It collects users from all the generators even when there's a single spare place
     private void checkDoorsAndNewUsers(){
 
-        GeneratingManager manager = new GeneratingManager(_game.get_currentLevel(), this._userSources);
+        GeneratingManager manager = new GeneratingManager(Game.get_currentLevel(), this._userSources);
 
         int userNumber = manager.countUsersInStation();
         boolean isCrowded = manager.isCrowded(Game.getMaxUserCount());
@@ -108,7 +106,7 @@ public class GameLoop {
     }
 
     private void renderNewFrame(){
-        var drawingManager = new DrawingManager(_game.get_currentLevel(), _renderingUnit);
+        var drawingManager = new DrawingManager(Game.get_currentLevel(), _renderingUnit);
         drawingManager.clearCanvas();
         drawingManager.drawFrame();
     }

@@ -121,6 +121,65 @@ public class User extends GameObject  {
         }
     }
 
+    public void setType(UserType type) {
+        this.type = type;
+    }
+
+    public int getPathIndex() {
+        return pathIndex;
+    }
+
+    public void setPathIndex(int pathIndex) {
+        this.pathIndex = pathIndex;
+    }
+
+    public Iterator<Node> get_it() {
+        return _it;
+    }
+
+    public void set_it(Iterator<Node> _it) {
+        this._it = _it;
+    }
+
+    public List<Node> getPath() {
+        return path;
+    }
+
+    public void setPath(List<Node> path) {
+        this.path = path;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
+
+    public QueuePoligon getTarget() {
+        return target;
+    }
+
+    public void setTarget(QueuePoligon target) {
+        this.target = target;
+    }
+
+    public Door getBirthPlace() {
+        return birthPlace;
+    }
+
+    public void setBirthPlace(Door birthPlace) {
+        this.birthPlace = birthPlace;
+    }
 }
 
 

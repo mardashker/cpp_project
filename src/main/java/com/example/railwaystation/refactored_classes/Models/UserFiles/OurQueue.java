@@ -58,9 +58,10 @@ public class OurQueue implements Iterable<User> {
         this.usersQueue = usersQueue;
     }
 
-    public void removeFirsUser() {
+    public User removeFirsUser() {
         if (usersQueue.size() > 0)
-            usersQueue.remove(0);
+           return usersQueue.remove(0);
+        return null;
     }
 
     public User getFirsUser() {

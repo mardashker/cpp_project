@@ -1,6 +1,14 @@
 package com.example.railwaystation.refactored_classes.MovingLogic;
 
 public class StopWatch {
+    public long getStartTime() {
+        return startTime;
+    }
+
+    public long getStopTime() {
+        return stopTime;
+    }
+
     private long startTime = 0;
     private long stopTime = 0;
     private boolean running = false;
