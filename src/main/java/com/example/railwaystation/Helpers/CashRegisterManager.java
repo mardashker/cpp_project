@@ -53,13 +53,14 @@ public class CashRegisterManager implements Observable {
             timer.stop();
 
             var removedUser = register.getOurQueue().removeFirsUser();
-            notifySubscribers(
-                    new UserProcessedEventArgs(
-                        timer.getStartTime(),
-                        timer.getStopTime(),
-                        removedUser
-                    )
-            );
+            if(removedUser != null)
+                notifySubscribers(
+                        new UserProcessedEventArgs(
+                            timer.getStartTime(),
+                            timer.getStopTime(),
+                            removedUser
+                        )
+                );
 
             register.setProcessingUser(null);
             register.setState(State.OPEN);
